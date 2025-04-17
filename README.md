@@ -34,13 +34,24 @@
 
 ### 📊 GitHub Stats / Статистика GitHub
 
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ashm-dev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="ashm-dev's GitHub Stats"/>
-  <br/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashm-dev&layout=donut&langs_count=8&theme=tokyonight" alt="ashm-dev's Top Languages"/>
-  <br/>
-   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=ashm-dev&theme=tokyonight" alt="ashm-dev's GitHub Streak"/>
-</p>
+<table align="center" style="border: none; width: 100%;">
+  <tr style="border: none;">
+    <!-- Статистика GitHub -->
+    <td width="50%" align="center" style="border: none;">
+      <img src="https://github-readme-stats.vercel.app/api?username=ashm-dev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="ashm-dev's GitHub Stats"/>
+    </td>
+    <!-- Топ языков (компактный вид) -->
+    <td width="50%" align="center" style="border: none;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashm-dev&layout=compact&langs_count=6&theme=tokyonight&hide_border=true" alt="ashm-dev's Top Languages"/>
+    </td>
+  </tr>
+  <tr style="border: none;">
+    <!-- Статистика Streak -->
+    <td colspan="2" align="center" style="border: none;">
+       <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashm-dev&theme=tokyonight&hide_border=&date_format=M%20j%5B%2C%20Y%5D" alt="ashm-dev's GitHub Streak"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
