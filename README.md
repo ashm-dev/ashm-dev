@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ashm-dev/ashm-dev/main/header.png" alt="Header Banner - можно заменить на свою картинку или убрать">
-  <!-- Замените ссылку выше на свою картинку-баннер, если хотите. Или просто удалите этот блок <p>...</p> -->
-</p>
-
 <h1 align="center">Hi there! / Привет! 👋</h1>
 <p align="center">
   <em>I'm ashm-dev, a professional JSON wrangler, nanosecond chaser, and builder of architectural castles (sometimes from sand 😉).</em> <br/>
