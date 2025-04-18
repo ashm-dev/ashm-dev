@@ -1,7 +1,7 @@
 <h1 align="center">Hi there! / Привет! 👋</h1>
 <p align="center">
-  <em>I'm ashm-dev, a professional JSON wrangler, nanosecond chaser, and builder of architectural castles (sometimes from sand 😉).</em> <br/>
-  <em>Я ashm-dev, профессиональный перекладыватель JSON'ов, охотник за наносекундами и строитель архитектурных замков (иногда из песка 😉).</em>
+  <em>I'm Shamil, a professional JSON wrangler, nanosecond chaser, and builder of architectural castles (sometimes from sand 😉).</em> <br/>
+  <em>Я Шамиль, профессиональный перекладыватель JSON'ов, охотник за наносекундами и строитель архитектурных замков (иногда из песка 😉).</em>
 </p>
 
 ---
