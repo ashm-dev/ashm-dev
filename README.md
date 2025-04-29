@@ -38,7 +38,7 @@
   <tr style="border: none;">
     <!-- Статистика GitHub -->
     <td width="50%" align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api?username=ashm-dev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github" alt="ashm-dev's GitHub Stats"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=ashm-dev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="ashm-dev's GitHub Stats"/>
     </td>
     <!-- Топ языков (компактный вид) -->
     <td width="50%" align="center" style="border: none;">
