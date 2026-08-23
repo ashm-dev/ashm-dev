@@ -1,3 +1,3 @@
 ## Hi there 🥷🏻
 
-[![ashm-dev's github stats](https://github-readme-stats.vercel.app/api?username=ashm-dev&count_private=true&show_icons=true)](https://github.com/ashm-dev)
+<img src="https://github-readme-stats-shadowings-projects.vercel.app/api?username=ashm-dev&show_icons=true&count_private=true">
