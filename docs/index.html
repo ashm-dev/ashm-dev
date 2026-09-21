@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<p class="lead">I'm Shamil Abdulaev, a backend and systems engineer. I contribute to CPython, glibc and the Python typing ecosystem, mostly memory-safety and concurrency fixes found with sanitizers.</p>
+
+<h2>Open-source contributions</h2>
+<p>Each project expands into the full list of my pull requests and issues. <span class="dot done"></span> merged or resolved, <span class="dot open"></span> open. Updated daily.</p>
+
+{% for project in site.data.contributions %}
+<details{% if forloop.first %} open{% endif %}>
+  <summary><b>{{ project.name }}</b> — {{ project.summary }}</summary>
+  {% for section in project.sections %}{% if section.items.size > 0 %}
+  <h3>{{ section.title }}</h3>
+  <ul>
+    {% for item in section.items %}
+    <li><span class="dot {{ item.state }}"></span> <a href="{{ item.url }}">{{ item.label }}</a> {{ item.title | escape }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}{% endfor %}
+</details>
+{% endfor %}

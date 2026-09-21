@@ -1,0 +1,1015 @@
+[
+ {
+  "name": "python/cpython",
+  "summary": "33 merged PRs · 40 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#157412",
+      "url": "https://github.com/python/cpython/pull/157412",
+      "title": "gh-157378: Fix SyntaxError.offset for \"Non-UTF-8 code\" error"
+     },
+     {
+      "state": "open",
+      "label": "#157370",
+      "url": "https://github.com/python/cpython/pull/157370",
+      "title": "gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach"
+     },
+     {
+      "state": "open",
+      "label": "#157179",
+      "url": "https://github.com/python/cpython/pull/157179",
+      "title": "gh-157176: Fix GC tracking in PyStructSequence_New"
+     },
+     {
+      "state": "done",
+      "label": "#156769",
+      "url": "https://github.com/python/cpython/pull/156769",
+      "title": "gh-156762: Fix tp_clear slot signature for operator.methodcaller"
+     },
+     {
+      "state": "done",
+      "label": "#156403",
+      "url": "https://github.com/python/cpython/pull/156403",
+      "title": "gh-156402: Modernize annotation usage in libregrtest"
+     },
+     {
+      "state": "done",
+      "label": "#156300",
+      "url": "https://github.com/python/cpython/pull/156300",
+      "title": "gh-156114: Fix crash in perf trampoline with unencodable code names"
+     },
+     {
+      "state": "done",
+      "label": "#156130",
+      "url": "https://github.com/python/cpython/pull/156130",
+      "title": "gh-155911: Fix curses detection with libraries in LIBS"
+     },
+     {
+      "state": "done",
+      "label": "#150079",
+      "url": "https://github.com/python/cpython/pull/150079",
+      "title": "[3.13] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
+     },
+     {
+      "state": "done",
+      "label": "#150078",
+      "url": "https://github.com/python/cpython/pull/150078",
+      "title": "[3.14] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
+     },
+     {
+      "state": "done",
+      "label": "#148833",
+      "url": "https://github.com/python/cpython/pull/148833",
+      "title": "gh-148832: Use `-icf=0` in BOLT_APPLY_FLAGS"
+     },
+     {
+      "state": "done",
+      "label": "#148702",
+      "url": "https://github.com/python/cpython/pull/148702",
+      "title": "gh-148701: Add missing test coverage for asyncio.graph"
+     },
+     {
+      "state": "done",
+      "label": "#148595",
+      "url": "https://github.com/python/cpython/pull/148595",
+      "title": "gh-146553: Fix infinite loop in typing.get_type_hints() on circular __wrapped__"
+     },
+     {
+      "state": "done",
+      "label": "#146201",
+      "url": "https://github.com/python/cpython/pull/146201",
+      "title": "gh-146196: Fix potential Undefined Behavior in _PyUnicodeWriter_WriteASCIIString"
+     },
+     {
+      "state": "done",
+      "label": "#145840",
+      "url": "https://github.com/python/cpython/pull/145840",
+      "title": "gh-144712: Export _Py_jit_entry symbol via PyAPI_DATA"
+     },
+     {
+      "state": "done",
+      "label": "#144987",
+      "url": "https://github.com/python/cpython/pull/144987",
+      "title": "gh-144986: Fix memory leak in atexit.register()"
+     },
+     {
+      "state": "done",
+      "label": "#143097",
+      "url": "https://github.com/python/cpython/pull/143097",
+      "title": "Fix UBSan error in _testcapi: correct create_attr_from_spec signature"
+     },
+     {
+      "state": "done",
+      "label": "#142851",
+      "url": "https://github.com/python/cpython/pull/142851",
+      "title": "gh-142831: Fix UAF in `_json` module"
+     },
+     {
+      "state": "done",
+      "label": "#142492",
+      "url": "https://github.com/python/cpython/pull/142492",
+      "title": "gh-142476: fix memory leak when creating JIT executors"
+     },
+     {
+      "state": "done",
+      "label": "#141554",
+      "url": "https://github.com/python/cpython/pull/141554",
+      "title": "gh-141553: Fix incorrect function signatures in `_testmultiphase`"
+     },
+     {
+      "state": "done",
+      "label": "#141529",
+      "url": "https://github.com/python/cpython/pull/141529",
+      "title": "gh-42400: Fix buffer overflow in _Py_wrealpath for long paths"
+     },
+     {
+      "state": "done",
+      "label": "#140910",
+      "url": "https://github.com/python/cpython/pull/140910",
+      "title": "gh-140594: Fix an out of bounds read when feeding NUL byte to `PyOS_StdioReadline`"
+     },
+     {
+      "state": "done",
+      "label": "#140909",
+      "url": "https://github.com/python/cpython/pull/140909",
+      "title": "gh-140260: Fix data race in _struct module initialization with subinterpreters"
+     },
+     {
+      "state": "done",
+      "label": "#140684",
+      "url": "https://github.com/python/cpython/pull/140684",
+      "title": "[3.13] gh-140301: Fix memory leak in subinterpreter PyConfig cleanup (GH-140303)"
+     },
+     {
+      "state": "done",
+      "label": "#140637",
+      "url": "https://github.com/python/cpython/pull/140637",
+      "title": "Remove dead stores to 'size' in UTF-8 decoder (unicodeobject.c)"
+     },
+     {
+      "state": "done",
+      "label": "#140585",
+      "url": "https://github.com/python/cpython/pull/140585",
+      "title": "Remove unreachable break statements in _ctypes_test.c"
+     },
+     {
+      "state": "done",
+      "label": "#140400",
+      "url": "https://github.com/python/cpython/pull/140400",
+      "title": "gh-140398: Fix memory leaks in readline module when PySys_Audit fails"
+     },
+     {
+      "state": "done",
+      "label": "#140397",
+      "url": "https://github.com/python/cpython/pull/140397",
+      "title": "[3.13] gh-140306: Fix memory leaks in cross-interpreter data handling"
+     },
+     {
+      "state": "done",
+      "label": "#140307",
+      "url": "https://github.com/python/cpython/pull/140307",
+      "title": "gh-140306: Fix memory leaks in cross-interpreter data handling"
+     },
+     {
+      "state": "done",
+      "label": "#140303",
+      "url": "https://github.com/python/cpython/pull/140303",
+      "title": "gh-140301: Fix memory leak in subinterpreter PyConfig cleanup"
+     },
+     {
+      "state": "done",
+      "label": "#140274",
+      "url": "https://github.com/python/cpython/pull/140274",
+      "title": "gh-140272: Fix memory leak in _gdbm.gdbm.clear()"
+     },
+     {
+      "state": "done",
+      "label": "#140265",
+      "url": "https://github.com/python/cpython/pull/140265",
+      "title": "gh-140257: fix data race on eval_breaker during finalization"
+     },
+     {
+      "state": "done",
+      "label": "#140111",
+      "url": "https://github.com/python/cpython/pull/140111",
+      "title": "gh-140067: Fix memory leak in sub-interpreter creation "
+     },
+     {
+      "state": "done",
+      "label": "#139271",
+      "url": "https://github.com/python/cpython/pull/139271",
+      "title": "gh-139269: Fix unaligned memory access in JIT code patching functions"
+     },
+     {
+      "state": "done",
+      "label": "#138667",
+      "url": "https://github.com/python/cpython/pull/138667",
+      "title": "gh-138665: Move `platform.invalidate_caches` docs"
+     },
+     {
+      "state": "done",
+      "label": "#134750",
+      "url": "https://github.com/python/cpython/pull/134750",
+      "title": "gh-134664: Document cleanup_socket parameter in asyncio.start_unix_server()"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#157379",
+      "url": "https://github.com/python/cpython/issues/157379",
+      "title": "`_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field"
+     },
+     {
+      "state": "open",
+      "label": "#157378",
+      "url": "https://github.com/python/cpython/issues/157378",
+      "title": "Wrong `SyntaxError.offset` for \"Non-UTF-8 code starting with ...\" when a non-ASCII character precedes the invalid byte"
+     },
+     {
+      "state": "open",
+      "label": "#157176",
+      "url": "https://github.com/python/cpython/issues/157176",
+      "title": "Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance"
+     },
+     {
+      "state": "open",
+      "label": "#157062",
+      "url": "https://github.com/python/cpython/issues/157062",
+      "title": "Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`"
+     },
+     {
+      "state": "done",
+      "label": "#156762",
+      "url": "https://github.com/python/cpython/issues/156762",
+      "title": "`_operator`: `methodcaller_clear` has the wrong signature for the `tp_clear` slot (returns `void`, not `int`)"
+     },
+     {
+      "state": "open",
+      "label": "#156570",
+      "url": "https://github.com/python/cpython/issues/156570",
+      "title": "test.support.warnings_helper.check_warnings() raises KeyError: 'warnings' under -X lazy_imports=all"
+     },
+     {
+      "state": "open",
+      "label": "#156402",
+      "url": "https://github.com/python/cpython/issues/156402",
+      "title": "Modernize annotation usage in libregrtest"
+     },
+     {
+      "state": "done",
+      "label": "#151039",
+      "url": "https://github.com/python/cpython/issues/151039",
+      "title": "Crash: NULL deref in _datetime when a static type outlives its module"
+     },
+     {
+      "state": "done",
+      "label": "#148832",
+      "url": "https://github.com/python/cpython/issues/148832",
+      "title": "Build: BOLT `-icf=1` breaks type-slot function-pointer identity, causes SIGSEGV"
+     },
+     {
+      "state": "done",
+      "label": "#148775",
+      "url": "https://github.com/python/cpython/issues/148775",
+      "title": "c-analyzer: bump MAX_SIZES for Modules/clinic/_testclinic.c.h"
+     },
+     {
+      "state": "done",
+      "label": "#148701",
+      "url": "https://github.com/python/cpython/issues/148701",
+      "title": "Add missing test coverage for asyncio.graph"
+     },
+     {
+      "state": "done",
+      "label": "#148443",
+      "url": "https://github.com/python/cpython/issues/148443",
+      "title": "Recursive _testcapi.pyobject_vectorcall() aborts with fatal stack overflow instead of raising RecursionError in a small-stack thread"
+     },
+     {
+      "state": "done",
+      "label": "#146429",
+      "url": "https://github.com/python/cpython/issues/146429",
+      "title": "Uninitialized variable replace usage in charmapencode_output (Objects/unicodeobject.c) discovered by scan-build"
+     },
+     {
+      "state": "done",
+      "label": "#146196",
+      "url": "https://github.com/python/cpython/issues/146196",
+      "title": "Undefined Behavior in _PyUnicodeWriter_WriteASCIIString: NULL pointer passed to memcpy when len is 0"
+     },
+     {
+      "state": "done",
+      "label": "#145953",
+      "url": "https://github.com/python/cpython/issues/145953",
+      "title": "Segmentation fault in `test_call.py` (`c_recurse`) on Linux with Clang (LTO+PGO)"
+     },
+     {
+      "state": "done",
+      "label": "#144986",
+      "url": "https://github.com/python/cpython/issues/144986",
+      "title": "Memory leak in `atexit.register()`: missing `Py_DECREF` for `func_args` tuple"
+     },
+     {
+      "state": "done",
+      "label": "#142985",
+      "url": "https://github.com/python/cpython/issues/142985",
+      "title": "Build failure with `--enable-experimental-jit` and ASan: Memory leak in `allocate_executor` during module freezing"
+     },
+     {
+      "state": "done",
+      "label": "#142543",
+      "url": "https://github.com/python/cpython/issues/142543",
+      "title": "SIGSEGV in test_isinstance and test_json with --enable-experimental-jit=yes and --with-lto=full"
+     },
+     {
+      "state": "done",
+      "label": "#142476",
+      "url": "https://github.com/python/cpython/issues/142476",
+      "title": "ASan memory leak in test_gc with --enable-experimental-jit (allocate_executor)"
+     },
+     {
+      "state": "open",
+      "label": "#141621",
+      "url": "https://github.com/python/cpython/issues/141621",
+      "title": "UBSan SEGV in `_Py_LazyJitTrampoline` when building with Clang and `--with-undefined-behavior-sanitizer` + experimental JIT"
+     },
+     {
+      "state": "done",
+      "label": "#141553",
+      "url": "https://github.com/python/cpython/issues/141553",
+      "title": "Fix incorrect function signatures in _testmultiphase (UBSan)"
+     },
+     {
+      "state": "done",
+      "label": "#140431",
+      "url": "https://github.com/python/cpython/issues/140431",
+      "title": "Segfault in gc_free_threading.c after PR #140262 with ASAN build and free-threading tests"
+     },
+     {
+      "state": "open",
+      "label": "#140404",
+      "url": "https://github.com/python/cpython/issues/140404",
+      "title": "LeakSanitizer detects memory leaks in test_import with _testsinglephase module in subinterpreter"
+     },
+     {
+      "state": "done",
+      "label": "#140398",
+      "url": "https://github.com/python/cpython/issues/140398",
+      "title": "Memory leaks in readline module when PySys_Audit fails"
+     },
+     {
+      "state": "done",
+      "label": "#140332",
+      "url": "https://github.com/python/cpython/issues/140332",
+      "title": "MemorySanitizer: use-of-uninitialized-value in _ssl.txt2obj via OpenSSL's OBJ_txt2obj"
+     },
+     {
+      "state": "done",
+      "label": "#140306",
+      "url": "https://github.com/python/cpython/issues/140306",
+      "title": "Memory leak in test__interpchannels: _PyXIData_New not freed in channel_send"
+     },
+     {
+      "state": "done",
+      "label": "#140301",
+      "url": "https://github.com/python/cpython/issues/140301",
+      "title": "Memory leak in test_capi with subinterpreter creation"
+     },
+     {
+      "state": "done",
+      "label": "#140272",
+      "url": "https://github.com/python/cpython/issues/140272",
+      "title": "Memory leak in _gdbm.gdbm.clear() method: missing free() for gdbm_firstkey() result"
+     },
+     {
+      "state": "done",
+      "label": "#140267",
+      "url": "https://github.com/python/cpython/issues/140267",
+      "title": "ThreadSanitizer reports thread leak in multiprocessing.Manager accepter thread"
+     },
+     {
+      "state": "done",
+      "label": "#140260",
+      "url": "https://github.com/python/cpython/issues/140260",
+      "title": "ThreadSanitizer: data race in _struct module initialization with InterpreterPoolExecutor (free-threading build)"
+     },
+     {
+      "state": "done",
+      "label": "#140257",
+      "url": "https://github.com/python/cpython/issues/140257",
+      "title": "ThreadSanitizer: data race in interpreter_clear() vs take_gil() during finalization with daemon threads"
+     },
+     {
+      "state": "open",
+      "label": "#140209",
+      "url": "https://github.com/python/cpython/issues/140209",
+      "title": "TSAN reports multiple data races, SEGV errors, and thread leaks when running the full test suite"
+     },
+     {
+      "state": "done",
+      "label": "#140159",
+      "url": "https://github.com/python/cpython/issues/140159",
+      "title": "Build Failure in posixmodule.c with Clang, ThreadSanitizer, and free-threaded build enabled"
+     },
+     {
+      "state": "done",
+      "label": "#140120",
+      "url": "https://github.com/python/cpython/issues/140120",
+      "title": "Memory leak in `hmac` module with HACL* backend detected by AddressSanitizer"
+     },
+     {
+      "state": "done",
+      "label": "#140067",
+      "url": "https://github.com/python/cpython/issues/140067",
+      "title": "Memory leak in test_sys with subinterpreters creation (AddressSanitizer detection)"
+     },
+     {
+      "state": "open",
+      "label": "#139834",
+      "url": "https://github.com/python/cpython/issues/139834",
+      "title": "JIT: Segfault in _Py_LazyJitTrampoline with ASan/UBSan enabled"
+     },
+     {
+      "state": "done",
+      "label": "#139393",
+      "url": "https://github.com/python/cpython/issues/139393",
+      "title": "`test_capi.test_opt.test_call_len_known_length` fails on JIT+debug builds"
+     },
+     {
+      "state": "done",
+      "label": "#139288",
+      "url": "https://github.com/python/cpython/issues/139288",
+      "title": "JIT: Segmentation fault in _Py_LazyJitTrampoline when running test_asyncio after gh-139269 fix"
+     },
+     {
+      "state": "done",
+      "label": "#139269",
+      "url": "https://github.com/python/cpython/issues/139269",
+      "title": "JIT: UB: unaligned store in `patch_*` functions"
+     },
+     {
+      "state": "done",
+      "label": "#127685",
+      "url": "https://github.com/python/cpython/issues/127685",
+      "title": "Performance Overhead in Ternary Operator Due to Value Loading vs Constant Loading"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "open-webui/open-webui",
+  "summary": "8 merged PRs · 6 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#24118",
+      "url": "https://github.com/open-webui/open-webui/pull/24118",
+      "title": "style(env): satisfy ruff lint on backend/open_webui/env.py"
+     },
+     {
+      "state": "done",
+      "label": "#22987",
+      "url": "https://github.com/open-webui/open-webui/pull/22987",
+      "title": "refactor: modernize typing "
+     },
+     {
+      "state": "done",
+      "label": "#22766",
+      "url": "https://github.com/open-webui/open-webui/pull/22766",
+      "title": "chore: align black with Ruff backend formatting"
+     },
+     {
+      "state": "done",
+      "label": "#22594",
+      "url": "https://github.com/open-webui/open-webui/pull/22594",
+      "title": "refactor: modernize type hints and imports in access_control module"
+     },
+     {
+      "state": "done",
+      "label": "#22576",
+      "url": "https://github.com/open-webui/open-webui/pull/22576",
+      "title": "feat: add ruff linter & formatter"
+     },
+     {
+      "state": "done",
+      "label": "#22265",
+      "url": "https://github.com/open-webui/open-webui/pull/22265",
+      "title": "feat: add OpenTelemetry system metrics instrumentation"
+     },
+     {
+      "state": "done",
+      "label": "#21453",
+      "url": "https://github.com/open-webui/open-webui/pull/21453",
+      "title": "i18n: Add missing Russian (ru-RU) translations"
+     },
+     {
+      "state": "done",
+      "label": "#8212",
+      "url": "https://github.com/open-webui/open-webui/pull/8212",
+      "title": "feat: Small optimization"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#23793",
+      "url": "https://github.com/open-webui/open-webui/issues/23793",
+      "title": "feat: cache get_user_by_id — 25% of all DB queries with zero caching"
+     },
+     {
+      "state": "done",
+      "label": "#21955",
+      "url": "https://github.com/open-webui/open-webui/issues/21955",
+      "title": "bug: Duplicate images displayed when model with thinking/reasoning generates an image (e.g., Gemini 3 Pro Image Preview)"
+     },
+     {
+      "state": "done",
+      "label": "#21641",
+      "url": "https://github.com/open-webui/open-webui/issues/21641",
+      "title": "feat: Add Ruff linter & formatter for Python code quality"
+     },
+     {
+      "state": "done",
+      "label": "#21411",
+      "url": "https://github.com/open-webui/open-webui/issues/21411",
+      "title": "bug: File descriptor leak in audio.py and pipelines.py — open() without close"
+     },
+     {
+      "state": "done",
+      "label": "#21410",
+      "url": "https://github.com/open-webui/open-webui/issues/21410",
+      "title": "bug: Memory leak in SESSION_POOL, USAGE_POOL and YdocManager (with and without Redis)"
+     },
+     {
+      "state": "done",
+      "label": "#9491",
+      "url": "https://github.com/open-webui/open-webui/issues/9491",
+      "title": "Proxy Configuration via Environment Variables and Global Request Sessions"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "python/typeshed",
+  "summary": "8 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#14802",
+      "url": "https://github.com/python/typeshed/pull/14802",
+      "title": "fix(types): cr_frame may be None"
+     },
+     {
+      "state": "done",
+      "label": "#14770",
+      "url": "https://github.com/python/typeshed/pull/14770",
+      "title": "cachetools: precise typing for decorators and cached(); expose cache_info/cache_clear and fix keys signatures"
+     },
+     {
+      "state": "done",
+      "label": "#14153",
+      "url": "https://github.com/python/typeshed/pull/14153",
+      "title": "Remove corus stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14142",
+      "url": "https://github.com/python/typeshed/pull/14142",
+      "title": "Remove caldav stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14141",
+      "url": "https://github.com/python/typeshed/pull/14141",
+      "title": "Remove pygit2 stubs"
+     },
+     {
+      "state": "done",
+      "label": "#13493",
+      "url": "https://github.com/python/typeshed/pull/13493",
+      "title": "remove pyOpenSSL stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12596",
+      "url": "https://github.com/python/typeshed/pull/12596",
+      "title": "Improve type annotations in Flask-Cors stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12585",
+      "url": "https://github.com/python/typeshed/pull/12585",
+      "title": "Add missing constants to flask-cors stubs"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
+  "name": "glibc (sourceware)",
+  "summary": "8 committed patches · 8 bugs",
+  "sections": [
+   {
+    "title": "Patches",
+    "items": [
+     {
+      "state": "open",
+      "label": "patch 144254",
+      "url": "https://patchwork.sourceware.org/patch/144254/",
+      "title": "[v2] libio: Use __wunderflow in _IO_getwline_info"
+     },
+     {
+      "state": "open",
+      "label": "patch 143415",
+      "url": "https://patchwork.sourceware.org/patch/143415/",
+      "title": "[v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]"
+     },
+     {
+      "state": "done",
+      "label": "patch 143055",
+      "url": "https://patchwork.sourceware.org/patch/143055/",
+      "title": "elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]"
+     },
+     {
+      "state": "done",
+      "label": "patch 142924",
+      "url": "https://patchwork.sourceware.org/patch/142924/",
+      "title": "[v2] math: Set errno to ERANGE for logb (+-0) [BZ #6793]"
+     },
+     {
+      "state": "done",
+      "label": "patch 142808",
+      "url": "https://patchwork.sourceware.org/patch/142808/",
+      "title": "[v2] libio: Add test for fopen with an empty \", ccs=\" value [BZ #34574]"
+     },
+     {
+      "state": "done",
+      "label": "patch 142193",
+      "url": "https://patchwork.sourceware.org/patch/142193/",
+      "title": "stdlib, wcsmbs: Add missing __nonnull to strto*/wcsto* [BZ #33053]"
+     },
+     {
+      "state": "done",
+      "label": "patch 134886",
+      "url": "https://patchwork.sourceware.org/patch/134886/",
+      "title": "[v3] libio: Fix race in _IO_new_file_init_internal initialization order [BZ #33785]"
+     },
+     {
+      "state": "done",
+      "label": "patch 134231",
+      "url": "https://patchwork.sourceware.org/patch/134231/",
+      "title": "hugepages: close fd on error path in __get_thp_mode"
+     },
+     {
+      "state": "done",
+      "label": "patch 133861",
+      "url": "https://patchwork.sourceware.org/patch/133861/",
+      "title": "[v2] manual: clarify _FILE_OFFSET_BITS Y2038 implications [BZ #34095]"
+     },
+     {
+      "state": "done",
+      "label": "patch 133858",
+      "url": "https://patchwork.sourceware.org/patch/133858/",
+      "title": "README: fix stale bug-reporting URL [BZ #34094]"
+     }
+    ]
+   },
+   {
+    "title": "Bugs",
+    "items": [
+     {
+      "state": "open",
+      "label": "BZ #34613",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34613",
+      "title": "sem_open with O_CREAT|O_EXCL returns uninitialized pointer if write fails"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34612",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34612",
+      "title": "localedef: charmap ..(2).. ellipsis incorrectly treated as decimal range"
+     },
+     {
+      "state": "done",
+      "label": "BZ #34611",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34611",
+      "title": "wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)"
+     },
+     {
+      "state": "done",
+      "label": "BZ #34610",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34610",
+      "title": "fts_open: invalid free on NULL parent with empty argv on allocation failure"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34609",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34609",
+      "title": "authdes_pk_create: free() called on uninitialized pointer on memory allocation failure"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34608",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34608",
+      "title": "wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $* or $@ with no positional arguments"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34607",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34607",
+      "title": "localedef crashes with SIGSEGV in handle_ellipsis when LC_COLLATE contains only an ellipsis"
+     },
+     {
+      "state": "done",
+      "label": "BZ #34600",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34600",
+      "title": "[2.44 regression] ld.so segfaults at startup with an old-format ld.so.cache"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "streamlit/streamlit",
+  "summary": "4 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#13074",
+      "url": "https://github.com/streamlit/streamlit/pull/13074",
+      "title": "Fix empty Markdown code blocks rendering as “undefined”"
+     },
+     {
+      "state": "done",
+      "label": "#11090",
+      "url": "https://github.com/streamlit/streamlit/pull/11090",
+      "title": "Fix encoding"
+     },
+     {
+      "state": "done",
+      "label": "#10410",
+      "url": "https://github.com/streamlit/streamlit/pull/10410",
+      "title": "Time formatting logic update: seconds/minutes/hours display"
+     },
+     {
+      "state": "done",
+      "label": "#10358",
+      "url": "https://github.com/streamlit/streamlit/pull/10358",
+      "title": "Extend st.navigation functionality to support various page input types"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
+  "name": "typeddjango/django-stubs",
+  "summary": "3 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#2504",
+      "url": "https://github.com/typeddjango/django-stubs/pull/2504",
+      "title": "fix format_lazy typing"
+     },
+     {
+      "state": "done",
+      "label": "#2317",
+      "url": "https://github.com/typeddjango/django-stubs/pull/2317",
+      "title": "Add Typing for EmailField with Support for String Set and Get Types"
+     },
+     {
+      "state": "done",
+      "label": "#2316",
+      "url": "https://github.com/typeddjango/django-stubs/pull/2316",
+      "title": "Fixed bugs with RawQuerySet"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
+  "name": "ag2ai/ag2",
+  "summary": "1 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#2111",
+      "url": "https://github.com/ag2ai/ag2/pull/2111",
+      "title": "fix(io): make console input non-blocking in async processor"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#2110",
+      "url": "https://github.com/ag2ai/ag2/issues/2110",
+      "title": "[Bug]: Blocking I/O in AsyncConsoleEventProcessor halts the event loop"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "sqlalchemy/sqlalchemy",
+  "summary": "1 merged PRs · 2 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#12568",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12568",
+      "title": "Remove unused typing imports"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#13281",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13281",
+      "title": "Modernize type annotations to PEP 604 union syntax"
+     },
+     {
+      "state": "done",
+      "label": "#13240",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13240",
+      "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "elastic/elasticsearch",
+  "summary": "1 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#117235",
+      "url": "https://github.com/elastic/elasticsearch/pull/117235",
+      "title": "Deprecate ChunkingOptions parameter"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
+  "name": "celery/celery",
+  "summary": "1 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#9173",
+      "url": "https://github.com/celery/celery/pull/9173",
+      "title": "Add check for soft_time_limit and time_limit values"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
+  "name": "c3lang/c3c",
+  "summary": "0 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": []
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#3155",
+      "url": "https://github.com/c3lang/c3c/issues/3155",
+      "title": "Add monadic operations (`map`, `bind`, `or_else`) to `std::collections::maybe`"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "llvm/llvm-project",
+  "summary": "0 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": []
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#163263",
+      "url": "https://github.com/llvm/llvm-project/issues/163263",
+      "title": "[BOLT] llvm-bolt segmentation fault during Python optimization with -frame-opt=hot after allocation combiner pass"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "pgadmin-org/pgadmin4",
+  "summary": "0 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": []
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#8500",
+      "url": "https://github.com/pgadmin-org/pgadmin4/issues/8500",
+      "title": "Upgrade Dependencies and Base Systems to Latest Versions"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "litestar-org/litestar",
+  "summary": "0 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": []
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#3848",
+      "url": "https://github.com/litestar-org/litestar/issues/3848",
+      "title": "Bug: Missing WebSocket Connection State Validation on Close and Message Send Operations"
+     }
+    ]
+   }
+  ]
+ }
+]
