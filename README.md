@@ -4,7 +4,7 @@ I'm Shamil Abdulaev, a backend and systems engineer. I contribute to CPython, gl
 
 ## Open-source contributions
 
-Each project below expands into the full list of my pull requests and issues. ✅ merged or resolved · 🟡 open. Closed pull requests that were not merged are left out. Updated daily by [a workflow](.github/workflows/update-readme.yml).
+Each project below expands into the full list of my pull requests and issues. ✅ merged or resolved · 🟡 open. Closed pull requests that were not merged are left out. Updated daily by [a workflow](.github/workflows/update-readme.yml). Same list on [ashm.dev](https://ashm.dev).
 
 <!-- contributions:start -->
 <details>
