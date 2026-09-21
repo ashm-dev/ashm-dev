@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rewrite the contributions section of README.md from GitHub, patchwork and Bugzilla."""
+"""Rewrite the contributions in README.md and docs/_data from GitHub, patchwork and Bugzilla."""
 import html
 import json
 import subprocess
@@ -11,13 +11,15 @@ from pathlib import Path
 GITHUB_USER = "ashm-dev"
 SOURCEWARE_EMAIL = "ashamil435@gmail.com"
 SKIP_OWNERS = ("ashm-dev/", "kartochka/")
-README = Path(__file__).resolve().parent.parent / "README.md"
+ROOT = Path(__file__).resolve().parent.parent
+README = ROOT / "README.md"
+DATA = ROOT / "docs" / "_data" / "contributions.json"
 START = "<!-- contributions:start -->"
 END = "<!-- contributions:end -->"
 
 NOUN = {"Pull requests": "PRs", "Issues": "issues", "Patches": "patches", "Bugs": "bugs"}
-PR_ICON = {"merged": "✅", "open": "🟡"}
-ISSUE_ICON = {"open": "🟡", "closed": "✅"}
+ICON = {"done": "✅", "open": "🟡"}
+ISSUE_STATE = {"open": "open", "closed": "done"}
 
 
 def gh_search(kind):
@@ -38,10 +40,10 @@ def github_projects():
         if pr["state"] == "closed":
             continue
         projects[pr["repository"]["nameWithOwner"]]["Pull requests"].append(
-            (PR_ICON[pr["state"]], f"#{pr['number']}", pr["url"], pr["title"]))
+            ("done" if pr["state"] == "merged" else "open", f"#{pr['number']}", pr["url"], pr["title"]))
     for issue in gh_search("issues"):
         projects[issue["repository"]["nameWithOwner"]]["Issues"].append(
-            (ISSUE_ICON[issue["state"]], f"#{issue['number']}", issue["url"], issue["title"]))
+            (ISSUE_STATE[issue["state"]], f"#{issue['number']}", issue["url"], issue["title"]))
     return projects
 
 
@@ -53,18 +55,33 @@ def glibc_project():
                     reporter=SOURCEWARE_EMAIL, limit=0,
                     include_fields="id,summary,status")["bugs"]
     return {
-        "Patches": [("✅" if p["state"] == "committed" else "🟡", f"patch {p['id']}",
+        "Patches": [("done" if p["state"] == "committed" else "open", f"patch {p['id']}",
                      f"https://patchwork.sourceware.org/patch/{p['id']}/", p["name"])
                     for p in patches if p["state"] not in ("superseded", "dropped", "rejected")],
-        "Bugs": [("✅" if b["status"] == "RESOLVED" else "🟡", f"BZ #{b['id']}",
-                      f"https://sourceware.org/bugzilla/show_bug.cgi?id={b['id']}", b["summary"])
-                     for b in bugs],
+        "Bugs": [("done" if b["status"] == "RESOLVED" else "open", f"BZ #{b['id']}",
+                  f"https://sourceware.org/bugzilla/show_bug.cgi?id={b['id']}", b["summary"])
+                 for b in bugs],
     }
 
 
 def landed(sections):
     first = next(iter(sections.values()))
-    return sum(1 for icon, *_ in first if icon == "✅")
+    return sum(1 for state, *_ in first if state == "done")
+
+
+def summary(sections):
+    (first_name, _), (second_name, second) = sections.items()
+    verb = "committed" if first_name == "Patches" else "merged"
+    return f"{landed(sections)} {verb} {NOUN[first_name]} · {len(second)} {NOUN[second_name]}"
+
+
+def number(item):
+    return int("".join(ch for ch in item[1] if ch.isdigit()))
+
+
+def ordered(projects):
+    nonempty = {name: sections for name, sections in projects.items() if any(sections.values())}
+    return sorted(nonempty.items(), key=lambda kv: landed(kv[1]), reverse=True)
 
 
 def escape(text):
@@ -74,30 +91,33 @@ def escape(text):
     return "`".join(parts)
 
 
-def number(item):
-    return int("".join(ch for ch in item[1] if ch.isdigit()))
-
-
 def render_project(name, sections):
-    (first_name, first), (second_name, second) = sections.items()
-    verb = "committed" if first_name == "Patches" else "merged"
-    summary = f"{landed(sections)} {verb} {NOUN[first_name]} · {len(second)} {NOUN[second_name]}"
-    lines = ["<details>", f"<summary><b>{name}</b> — {summary}</summary>", ""]
+    lines = ["<details>", f"<summary><b>{name}</b> — {summary(sections)}</summary>", ""]
     for title, items in sections.items():
         if not items:
             continue
         lines += [f"#### {title}", ""]
-        lines += [f"- {icon} [{label}]({url}) {escape(text)}"
-                  for icon, label, url, text in sorted(items, key=number, reverse=True)]
+        lines += [f"- {ICON[state]} [{label}]({url}) {escape(text)}"
+                  for state, label, url, text in sorted(items, key=number, reverse=True)]
         lines.append("")
     lines.append("</details>")
     return "\n".join(lines)
 
 
 def render_all(projects):
-    nonempty = {name: sections for name, sections in projects.items() if any(sections.values())}
-    ordered = sorted(nonempty.items(), key=lambda kv: landed(kv[1]), reverse=True)
-    return "\n\n".join(render_project(name, sections) for name, sections in ordered)
+    return "\n\n".join(render_project(name, sections) for name, sections in ordered(projects))
+
+
+def to_data(projects):
+    return [{
+        "name": name,
+        "summary": summary(sections),
+        "sections": [{
+            "title": title,
+            "items": [{"state": state, "label": label, "url": url, "title": text}
+                      for state, label, url, text in sorted(items, key=number, reverse=True)],
+        } for title, items in sections.items()],
+    } for name, sections in ordered(projects)]
 
 
 def splice(text, body):
@@ -110,6 +130,8 @@ def main():
     projects = github_projects()
     projects["glibc (sourceware)"] = glibc_project()
     README.write_text(splice(README.read_text(), render_all(projects)))
+    DATA.parent.mkdir(exist_ok=True)
+    DATA.write_text(json.dumps(to_data(projects), ensure_ascii=False, indent=1) + "\n")
 
 
 if __name__ == "__main__":
