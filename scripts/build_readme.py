@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rewrite the contributions in README.md and docs/_data from GitHub, patchwork and Bugzilla."""
+"""Rewrite the contributions in README.md and contributions.json from GitHub, patchwork and Bugzilla."""
 import html
 import json
 import re
@@ -14,7 +14,7 @@ SOURCEWARE_EMAIL = "ashamil435@gmail.com"
 SKIP_OWNERS = ("ashm-dev/", "kartochka/")
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
-DATA = ROOT / "docs" / "_data" / "contributions.json"
+DATA = ROOT / "contributions.json"
 START = "<!-- contributions:start -->"
 END = "<!-- contributions:end -->"
 
@@ -146,7 +146,6 @@ def main():
     projects = github_projects()
     projects["glibc (sourceware)"] = glibc_project()
     README.write_text(splice(README.read_text(), render_all(projects)))
-    DATA.parent.mkdir(exist_ok=True)
     DATA.write_text(json.dumps(to_data(projects), ensure_ascii=False, indent=1) + "\n")
 
 
