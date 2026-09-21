@@ -466,6 +466,94 @@
   ]
  },
  {
+  "name": "sqlalchemy/sqlalchemy",
+  "summary": "10 merged PRs · 2 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#13261",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13261",
+      "title": "Add sqlite.JSONB type for binary JSON storage (SQLite >= 3.45.0)"
+     },
+     {
+      "state": "done",
+      "label": "#13244",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13244",
+      "title": "Remove unused TypeVars and compat import from typing modules"
+     },
+     {
+      "state": "done",
+      "label": "#13239",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13239",
+      "title": "Add mypy ignore comments for Python 3.14 module imports"
+     },
+     {
+      "state": "done",
+      "label": "#12989",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12989",
+      "title": "Fix parameter mutation in orm_pre_session_exec()"
+     },
+     {
+      "state": "done",
+      "label": "#12988",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12988",
+      "title": "Fix type hint for with_for_update() to support tuples of table classes"
+     },
+     {
+      "state": "done",
+      "label": "#12568",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12568",
+      "title": "Remove unused typing imports"
+     },
+     {
+      "state": "done",
+      "label": "#12539",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12539",
+      "title": "refactor(testing-and-utils): Remove unused code and fix style issues"
+     },
+     {
+      "state": "done",
+      "label": "#12538",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12538",
+      "title": "refactor (sql): simplify and optimize internal SQL handling"
+     },
+     {
+      "state": "done",
+      "label": "#12535",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12535",
+      "title": "refactor: clean up unused variables in engine module"
+     },
+     {
+      "state": "done",
+      "label": "#12534",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12534",
+      "title": "refactor: simplify and clean up dialect-specific code"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#13281",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13281",
+      "title": "Modernize type annotations to PEP 604 union syntax"
+     },
+     {
+      "state": "done",
+      "label": "#13240",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13240",
+      "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name": "open-webui/open-webui",
   "summary": "8 merged PRs · 6 issues",
   "sections": [
@@ -847,40 +935,6 @@
       "label": "#2110",
       "url": "https://github.com/ag2ai/ag2/issues/2110",
       "title": "[Bug]: Blocking I/O in AsyncConsoleEventProcessor halts the event loop"
-     }
-    ]
-   }
-  ]
- },
- {
-  "name": "sqlalchemy/sqlalchemy",
-  "summary": "1 merged PRs · 2 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": [
-     {
-      "state": "done",
-      "label": "#12568",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12568",
-      "title": "Remove unused typing imports"
-     }
-    ]
-   },
-   {
-    "title": "Issues",
-    "items": [
-     {
-      "state": "open",
-      "label": "#13281",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13281",
-      "title": "Modernize type annotations to PEP 604 union syntax"
-     },
-     {
-      "state": "done",
-      "label": "#13240",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13240",
-      "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
      }
     ]
    }

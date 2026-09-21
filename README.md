@@ -4,7 +4,7 @@ I'm Shamil Abdulaev, a backend and systems engineer. I contribute to CPython, gl
 
 ## Open-source contributions
 
-Each project below expands into the full list of my pull requests and issues. ✅ merged or resolved · 🟡 open. Closed pull requests that were not merged are left out. Updated daily by [a workflow](.github/workflows/update-readme.yml). Same list on [ashm.dev](https://ashm.dev).
+Each project below expands into the full list of my pull requests and issues. ✅ merged or resolved · 🟡 open. Pull requests closed without landing are left out. Updated daily by [a workflow](.github/workflows/update-readme.yml). Same list on [ashm.dev](https://ashm.dev).
 
 <!-- contributions:start -->
 <details>
@@ -90,6 +90,29 @@ Each project below expands into the full list of my pull requests and issues. �
 - ✅ [#139288](https://github.com/python/cpython/issues/139288) JIT: Segmentation fault in \_Py\_LazyJitTrampoline when running test\_asyncio after gh-139269 fix
 - ✅ [#139269](https://github.com/python/cpython/issues/139269) JIT: UB: unaligned store in `patch_*` functions
 - ✅ [#127685](https://github.com/python/cpython/issues/127685) Performance Overhead in Ternary Operator Due to Value Loading vs Constant Loading
+
+</details>
+
+<details>
+<summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 2 issues</summary>
+
+#### Pull requests
+
+- ✅ [#13261](https://github.com/sqlalchemy/sqlalchemy/pull/13261) Add sqlite.JSONB type for binary JSON storage (SQLite &gt;= 3.45.0)
+- ✅ [#13244](https://github.com/sqlalchemy/sqlalchemy/pull/13244) Remove unused TypeVars and compat import from typing modules
+- ✅ [#13239](https://github.com/sqlalchemy/sqlalchemy/pull/13239) Add mypy ignore comments for Python 3.14 module imports
+- ✅ [#12989](https://github.com/sqlalchemy/sqlalchemy/pull/12989) Fix parameter mutation in orm\_pre\_session\_exec()
+- ✅ [#12988](https://github.com/sqlalchemy/sqlalchemy/pull/12988) Fix type hint for with\_for\_update() to support tuples of table classes
+- ✅ [#12568](https://github.com/sqlalchemy/sqlalchemy/pull/12568) Remove unused typing imports
+- ✅ [#12539](https://github.com/sqlalchemy/sqlalchemy/pull/12539) refactor(testing-and-utils): Remove unused code and fix style issues
+- ✅ [#12538](https://github.com/sqlalchemy/sqlalchemy/pull/12538) refactor (sql): simplify and optimize internal SQL handling
+- ✅ [#12535](https://github.com/sqlalchemy/sqlalchemy/pull/12535) refactor: clean up unused variables in engine module
+- ✅ [#12534](https://github.com/sqlalchemy/sqlalchemy/pull/12534) refactor: simplify and clean up dialect-specific code
+
+#### Issues
+
+- 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
+- ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
 
 </details>
 
@@ -196,20 +219,6 @@ Each project below expands into the full list of my pull requests and issues. �
 #### Issues
 
 - ✅ [#2110](https://github.com/ag2ai/ag2/issues/2110) [Bug]: Blocking I/O in AsyncConsoleEventProcessor halts the event loop
-
-</details>
-
-<details>
-<summary><b>sqlalchemy/sqlalchemy</b> — 1 merged PRs · 2 issues</summary>
-
-#### Pull requests
-
-- ✅ [#12568](https://github.com/sqlalchemy/sqlalchemy/pull/12568) Remove unused typing imports
-
-#### Issues
-
-- 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
-- ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
 
 </details>
 
