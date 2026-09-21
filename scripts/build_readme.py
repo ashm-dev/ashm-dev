@@ -2,6 +2,7 @@
 """Rewrite the contributions in README.md and docs/_data from GitHub, patchwork and Bugzilla."""
 import html
 import json
+import re
 import subprocess
 import urllib.parse
 import urllib.request
@@ -29,6 +30,16 @@ def gh_search(kind):
     return [r for r in rows if not r["repository"]["nameWithOwner"].startswith(SKIP_OWNERS)]
 
 
+def landed_titles(repo):
+    cmd = ["gh", "api", "--paginate", f"repos/{repo}/commits?author={GITHUB_USER}&per_page=100",
+           "--jq", '.[].commit.message | split("\\n")[0]']
+    return {normalize(line) for line in subprocess.check_output(cmd, text=True).splitlines()}
+
+
+def normalize(title):
+    return re.sub(r"\s*\(#\d+\)\s*$", "", title).strip().casefold()
+
+
 def get_json(url, **params):
     with urllib.request.urlopen(url + "?" + urllib.parse.urlencode(params), timeout=60) as resp:
         return json.load(resp)
@@ -36,11 +47,16 @@ def get_json(url, **params):
 
 def github_projects():
     projects = defaultdict(lambda: {"Pull requests": [], "Issues": []})
-    for pr in gh_search("prs"):
-        if pr["state"] == "closed":
+    prs = gh_search("prs")
+    # Gerrit-based projects (SQLAlchemy) close the GitHub PR and land the same commit by hand.
+    landed = {repo: landed_titles(repo)
+              for repo in {pr["repository"]["nameWithOwner"] for pr in prs if pr["state"] == "closed"}}
+    for pr in prs:
+        repo = pr["repository"]["nameWithOwner"]
+        if pr["state"] == "closed" and normalize(pr["title"]) not in landed[repo]:
             continue
-        projects[pr["repository"]["nameWithOwner"]]["Pull requests"].append(
-            ("done" if pr["state"] == "merged" else "open", f"#{pr['number']}", pr["url"], pr["title"]))
+        projects[repo]["Pull requests"].append(
+            ("open" if pr["state"] == "open" else "done", f"#{pr['number']}", pr["url"], pr["title"]))
     for issue in gh_search("issues"):
         projects[issue["repository"]["nameWithOwner"]]["Issues"].append(
             (ISSUE_STATE[issue["state"]], f"#{issue['number']}", issue["url"], issue["title"]))

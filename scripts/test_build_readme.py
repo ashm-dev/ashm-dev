@@ -1,6 +1,6 @@
 import unittest
 
-from build_readme import render_all, splice, to_data
+from build_readme import normalize, render_all, splice, to_data
 
 PROJECTS = {
     "a/small": {"Pull requests": [("open", "#1", "u", "t")], "Issues": []},
@@ -25,6 +25,9 @@ class RenderTest(unittest.TestCase):
         self.assertEqual([p["name"] for p in data], ["b/big", "a/small"])
         self.assertEqual(data[0]["summary"], "2 merged PRs · 1 issues")
         self.assertEqual(data[0]["sections"][0]["items"][0]["title"], "<termios.h> __wrapped__ `_json`")
+
+    def test_normalize_drops_pr_suffix(self):
+        self.assertEqual(normalize("Remove unused typing imports (#12568) "), "remove unused typing imports")
 
     def test_splice_keeps_text_outside_markers(self):
         text = "intro\n<!-- contributions:start -->\nold\n<!-- contributions:end -->\ntail"
