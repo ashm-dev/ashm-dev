@@ -16,7 +16,7 @@ START = "<!-- contributions:start -->"
 END = "<!-- contributions:end -->"
 
 NOUN = {"Pull requests": "PRs", "Issues": "issues", "Patches": "patches", "Bugs": "bugs"}
-PR_ICON = {"merged": "✅", "open": "🟡", "closed": "⚪"}
+PR_ICON = {"merged": "✅", "open": "🟡"}
 ISSUE_ICON = {"open": "🟡", "closed": "✅"}
 
 
@@ -35,6 +35,8 @@ def get_json(url, **params):
 def github_projects():
     projects = defaultdict(lambda: {"Pull requests": [], "Issues": []})
     for pr in gh_search("prs"):
+        if pr["state"] == "closed":
+            continue
         projects[pr["repository"]["nameWithOwner"]]["Pull requests"].append(
             (PR_ICON[pr["state"]], f"#{pr['number']}", pr["url"], pr["title"]))
     for issue in gh_search("issues"):
@@ -65,6 +67,13 @@ def landed(sections):
     return sum(1 for icon, *_ in first if icon == "✅")
 
 
+def escape(text):
+    parts = text.split("`")
+    for i in range(0, len(parts), 2):
+        parts[i] = html.escape(parts[i], quote=False).replace("_", "\\_").replace("*", "\\*")
+    return "`".join(parts)
+
+
 def number(item):
     return int("".join(ch for ch in item[1] if ch.isdigit()))
 
@@ -77,8 +86,8 @@ def render_project(name, sections):
     for title, items in sections.items():
         if not items:
             continue
-        lines += [f"**{title}**", ""]
-        lines += [f"- {icon} [{label}]({url}) {html.escape(text, quote=False)}"
+        lines += [f"#### {title}", ""]
+        lines += [f"- {icon} [{label}]({url}) {escape(text)}"
                   for icon, label, url, text in sorted(items, key=number, reverse=True)]
         lines.append("")
     lines.append("</details>")
@@ -86,7 +95,8 @@ def render_project(name, sections):
 
 
 def render_all(projects):
-    ordered = sorted(projects.items(), key=lambda kv: landed(kv[1]), reverse=True)
+    nonempty = {name: sections for name, sections in projects.items() if any(sections.values())}
+    ordered = sorted(nonempty.items(), key=lambda kv: landed(kv[1]), reverse=True)
     return "\n\n".join(render_project(name, sections) for name, sections in ordered)
 
 
