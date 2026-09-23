@@ -554,6 +554,75 @@
   ]
  },
  {
+  "name": "python/typeshed",
+  "summary": "9 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#16426",
+      "url": "https://github.com/python/typeshed/pull/16426",
+      "title": "[PyMySQL] Update to 1.2.3"
+     },
+     {
+      "state": "done",
+      "label": "#14802",
+      "url": "https://github.com/python/typeshed/pull/14802",
+      "title": "fix(types): cr_frame may be None"
+     },
+     {
+      "state": "done",
+      "label": "#14770",
+      "url": "https://github.com/python/typeshed/pull/14770",
+      "title": "cachetools: precise typing for decorators and cached(); expose cache_info/cache_clear and fix keys signatures"
+     },
+     {
+      "state": "done",
+      "label": "#14153",
+      "url": "https://github.com/python/typeshed/pull/14153",
+      "title": "Remove corus stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14142",
+      "url": "https://github.com/python/typeshed/pull/14142",
+      "title": "Remove caldav stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14141",
+      "url": "https://github.com/python/typeshed/pull/14141",
+      "title": "Remove pygit2 stubs"
+     },
+     {
+      "state": "done",
+      "label": "#13493",
+      "url": "https://github.com/python/typeshed/pull/13493",
+      "title": "remove pyOpenSSL stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12596",
+      "url": "https://github.com/python/typeshed/pull/12596",
+      "title": "Improve type annotations in Flask-Cors stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12585",
+      "url": "https://github.com/python/typeshed/pull/12585",
+      "title": "Add missing constants to flask-cors stubs"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
   "name": "open-webui/open-webui",
   "summary": "8 merged PRs · 6 issues",
   "sections": [
@@ -650,69 +719,6 @@
       "title": "Proxy Configuration via Environment Variables and Global Request Sessions"
      }
     ]
-   }
-  ]
- },
- {
-  "name": "python/typeshed",
-  "summary": "8 merged PRs · 0 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": [
-     {
-      "state": "done",
-      "label": "#14802",
-      "url": "https://github.com/python/typeshed/pull/14802",
-      "title": "fix(types): cr_frame may be None"
-     },
-     {
-      "state": "done",
-      "label": "#14770",
-      "url": "https://github.com/python/typeshed/pull/14770",
-      "title": "cachetools: precise typing for decorators and cached(); expose cache_info/cache_clear and fix keys signatures"
-     },
-     {
-      "state": "done",
-      "label": "#14153",
-      "url": "https://github.com/python/typeshed/pull/14153",
-      "title": "Remove corus stubs"
-     },
-     {
-      "state": "done",
-      "label": "#14142",
-      "url": "https://github.com/python/typeshed/pull/14142",
-      "title": "Remove caldav stubs"
-     },
-     {
-      "state": "done",
-      "label": "#14141",
-      "url": "https://github.com/python/typeshed/pull/14141",
-      "title": "Remove pygit2 stubs"
-     },
-     {
-      "state": "done",
-      "label": "#13493",
-      "url": "https://github.com/python/typeshed/pull/13493",
-      "title": "remove pyOpenSSL stubs"
-     },
-     {
-      "state": "done",
-      "label": "#12596",
-      "url": "https://github.com/python/typeshed/pull/12596",
-      "title": "Improve type annotations in Flask-Cors stubs"
-     },
-     {
-      "state": "done",
-      "label": "#12585",
-      "url": "https://github.com/python/typeshed/pull/12585",
-      "title": "Add missing constants to flask-cors stubs"
-     }
-    ]
-   },
-   {
-    "title": "Issues",
-    "items": []
    }
   ]
  },
@@ -979,6 +985,27 @@
    {
     "title": "Issues",
     "items": []
+   }
+  ]
+ },
+ {
+  "name": "anthropics/claude-code",
+  "summary": "0 merged PRs · 1 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": []
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#96014",
+      "url": "https://github.com/anthropics/claude-code/issues/96014",
+      "title": "[Feature Request] Reduce false positive rate in safety guardrails for benign code review requests"
+     }
+    ]
    }
   ]
  },

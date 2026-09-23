@@ -117,6 +117,23 @@ Each project below expands into the full list of my pull requests and issues. �
 </details>
 
 <details>
+<summary><b>python/typeshed</b> — 9 merged PRs · 0 issues</summary>
+
+#### Pull requests
+
+- ✅ [#16426](https://github.com/python/typeshed/pull/16426) [PyMySQL] Update to 1.2.3
+- ✅ [#14802](https://github.com/python/typeshed/pull/14802) fix(types): cr\_frame may be None
+- ✅ [#14770](https://github.com/python/typeshed/pull/14770) cachetools: precise typing for decorators and cached(); expose cache\_info/cache\_clear and fix keys signatures
+- ✅ [#14153](https://github.com/python/typeshed/pull/14153) Remove corus stubs
+- ✅ [#14142](https://github.com/python/typeshed/pull/14142) Remove caldav stubs
+- ✅ [#14141](https://github.com/python/typeshed/pull/14141) Remove pygit2 stubs
+- ✅ [#13493](https://github.com/python/typeshed/pull/13493) remove pyOpenSSL stubs
+- ✅ [#12596](https://github.com/python/typeshed/pull/12596) Improve type annotations in Flask-Cors stubs
+- ✅ [#12585](https://github.com/python/typeshed/pull/12585) Add missing constants to flask-cors stubs
+
+</details>
+
+<details>
 <summary><b>open-webui/open-webui</b> — 8 merged PRs · 6 issues</summary>
 
 #### Pull requests
@@ -138,22 +155,6 @@ Each project below expands into the full list of my pull requests and issues. �
 - ✅ [#21411](https://github.com/open-webui/open-webui/issues/21411) bug: File descriptor leak in audio.py and pipelines.py — open() without close
 - ✅ [#21410](https://github.com/open-webui/open-webui/issues/21410) bug: Memory leak in SESSION\_POOL, USAGE\_POOL and YdocManager (with and without Redis)
 - ✅ [#9491](https://github.com/open-webui/open-webui/issues/9491) Proxy Configuration via Environment Variables and Global Request Sessions
-
-</details>
-
-<details>
-<summary><b>python/typeshed</b> — 8 merged PRs · 0 issues</summary>
-
-#### Pull requests
-
-- ✅ [#14802](https://github.com/python/typeshed/pull/14802) fix(types): cr\_frame may be None
-- ✅ [#14770](https://github.com/python/typeshed/pull/14770) cachetools: precise typing for decorators and cached(); expose cache\_info/cache\_clear and fix keys signatures
-- ✅ [#14153](https://github.com/python/typeshed/pull/14153) Remove corus stubs
-- ✅ [#14142](https://github.com/python/typeshed/pull/14142) Remove caldav stubs
-- ✅ [#14141](https://github.com/python/typeshed/pull/14141) Remove pygit2 stubs
-- ✅ [#13493](https://github.com/python/typeshed/pull/13493) remove pyOpenSSL stubs
-- ✅ [#12596](https://github.com/python/typeshed/pull/12596) Improve type annotations in Flask-Cors stubs
-- ✅ [#12585](https://github.com/python/typeshed/pull/12585) Add missing constants to flask-cors stubs
 
 </details>
 
@@ -237,6 +238,15 @@ Each project below expands into the full list of my pull requests and issues. �
 #### Pull requests
 
 - ✅ [#9173](https://github.com/celery/celery/pull/9173) Add check for soft\_time\_limit and time\_limit values
+
+</details>
+
+<details>
+<summary><b>anthropics/claude-code</b> — 0 merged PRs · 1 issues</summary>
+
+#### Issues
+
+- 🟡 [#96014](https://github.com/anthropics/claude-code/issues/96014) [Feature Request] Reduce false positive rate in safety guardrails for benign code review requests
 
 </details>
 
