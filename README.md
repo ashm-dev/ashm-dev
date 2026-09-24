@@ -121,6 +121,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Pull requests
 
+- 🟡 [#16438](https://github.com/python/typeshed/pull/16438) [untangle] Update to 1.3.\*
 - ✅ [#16426](https://github.com/python/typeshed/pull/16426) [PyMySQL] Update to 1.2.3
 - ✅ [#14802](https://github.com/python/typeshed/pull/14802) fix(types): cr\_frame may be None
 - ✅ [#14770](https://github.com/python/typeshed/pull/14770) cachetools: precise typing for decorators and cached(); expose cache\_info/cache\_clear and fix keys signatures
