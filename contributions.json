@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "33 merged PRs · 40 issues",
+  "summary": "33 merged PRs · 43 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -221,6 +221,24 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#158126",
+      "url": "https://github.com/python/cpython/issues/158126",
+      "title": "pickle.dumps() creates and discards an AttributeError on every call since 3.13.1"
+     },
+     {
+      "state": "open",
+      "label": "#158090",
+      "url": "https://github.com/python/cpython/issues/158090",
+      "title": "Hang at shutdown: take_gil() clears the GIL drop request after releasing gil->mutex"
+     },
+     {
+      "state": "open",
+      "label": "#158086",
+      "url": "https://github.com/python/cpython/issues/158086",
+      "title": "JIT: test_unittest fails with -X lazy_imports=all: unittest.main is a module"
+     },
      {
       "state": "open",
       "label": "#157379",

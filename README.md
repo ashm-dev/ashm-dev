@@ -8,7 +8,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b> — 33 merged PRs · 40 issues</summary>
+<summary><b>python/cpython</b> — 33 merged PRs · 43 issues</summary>
 
 #### Pull requests
 
@@ -50,6 +50,9 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
+- 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
+- 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module
 - 🟡 [#157379](https://github.com/python/cpython/issues/157379) `_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field
 - 🟡 [#157378](https://github.com/python/cpython/issues/157378) Wrong `SyntaxError.offset` for "Non-UTF-8 code starting with ..." when a non-ASCII character precedes the invalid byte
 - 🟡 [#157176](https://github.com/python/cpython/issues/157176) Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance
