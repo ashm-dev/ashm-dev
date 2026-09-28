@@ -1,11 +1,17 @@
 [
  {
   "name": "python/cpython",
-  "summary": "33 merged PRs · 43 issues",
+  "summary": "33 merged PRs · 44 issues",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
+     {
+      "state": "open",
+      "label": "#158315",
+      "url": "https://github.com/python/cpython/pull/158315",
+      "title": "gh-158304: Avoid creating StopIteration for every value yielded by an async generator"
+     },
      {
       "state": "done",
       "label": "#157412",
@@ -221,6 +227,12 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#158304",
+      "url": "https://github.com/python/cpython/issues/158304",
+      "title": "Async generators create and discard a StopIteration exception for every yielded value"
+     },
      {
       "state": "open",
       "label": "#158126",
@@ -484,6 +496,81 @@
   ]
  },
  {
+  "name": "python/typeshed",
+  "summary": "10 merged PRs · 0 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#16438",
+      "url": "https://github.com/python/typeshed/pull/16438",
+      "title": "[untangle] Update to 1.3.*"
+     },
+     {
+      "state": "done",
+      "label": "#16426",
+      "url": "https://github.com/python/typeshed/pull/16426",
+      "title": "[PyMySQL] Update to 1.2.3"
+     },
+     {
+      "state": "done",
+      "label": "#14802",
+      "url": "https://github.com/python/typeshed/pull/14802",
+      "title": "fix(types): cr_frame may be None"
+     },
+     {
+      "state": "done",
+      "label": "#14770",
+      "url": "https://github.com/python/typeshed/pull/14770",
+      "title": "cachetools: precise typing for decorators and cached(); expose cache_info/cache_clear and fix keys signatures"
+     },
+     {
+      "state": "done",
+      "label": "#14153",
+      "url": "https://github.com/python/typeshed/pull/14153",
+      "title": "Remove corus stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14142",
+      "url": "https://github.com/python/typeshed/pull/14142",
+      "title": "Remove caldav stubs"
+     },
+     {
+      "state": "done",
+      "label": "#14141",
+      "url": "https://github.com/python/typeshed/pull/14141",
+      "title": "Remove pygit2 stubs"
+     },
+     {
+      "state": "done",
+      "label": "#13493",
+      "url": "https://github.com/python/typeshed/pull/13493",
+      "title": "remove pyOpenSSL stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12596",
+      "url": "https://github.com/python/typeshed/pull/12596",
+      "title": "Improve type annotations in Flask-Cors stubs"
+     },
+     {
+      "state": "done",
+      "label": "#12585",
+      "url": "https://github.com/python/typeshed/pull/12585",
+      "title": "Add missing constants to flask-cors stubs"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": []
+   }
+  ]
+ },
+ {
   "name": "sqlalchemy/sqlalchemy",
   "summary": "10 merged PRs · 2 issues",
   "sections": [
@@ -568,81 +655,6 @@
       "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
      }
     ]
-   }
-  ]
- },
- {
-  "name": "python/typeshed",
-  "summary": "9 merged PRs · 0 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": [
-     {
-      "state": "open",
-      "label": "#16438",
-      "url": "https://github.com/python/typeshed/pull/16438",
-      "title": "[untangle] Update to 1.3.*"
-     },
-     {
-      "state": "done",
-      "label": "#16426",
-      "url": "https://github.com/python/typeshed/pull/16426",
-      "title": "[PyMySQL] Update to 1.2.3"
-     },
-     {
-      "state": "done",
-      "label": "#14802",
-      "url": "https://github.com/python/typeshed/pull/14802",
-      "title": "fix(types): cr_frame may be None"
-     },
-     {
-      "state": "done",
-      "label": "#14770",
-      "url": "https://github.com/python/typeshed/pull/14770",
-      "title": "cachetools: precise typing for decorators and cached(); expose cache_info/cache_clear and fix keys signatures"
-     },
-     {
-      "state": "done",
-      "label": "#14153",
-      "url": "https://github.com/python/typeshed/pull/14153",
-      "title": "Remove corus stubs"
-     },
-     {
-      "state": "done",
-      "label": "#14142",
-      "url": "https://github.com/python/typeshed/pull/14142",
-      "title": "Remove caldav stubs"
-     },
-     {
-      "state": "done",
-      "label": "#14141",
-      "url": "https://github.com/python/typeshed/pull/14141",
-      "title": "Remove pygit2 stubs"
-     },
-     {
-      "state": "done",
-      "label": "#13493",
-      "url": "https://github.com/python/typeshed/pull/13493",
-      "title": "remove pyOpenSSL stubs"
-     },
-     {
-      "state": "done",
-      "label": "#12596",
-      "url": "https://github.com/python/typeshed/pull/12596",
-      "title": "Improve type annotations in Flask-Cors stubs"
-     },
-     {
-      "state": "done",
-      "label": "#12585",
-      "url": "https://github.com/python/typeshed/pull/12585",
-      "title": "Add missing constants to flask-cors stubs"
-     }
-    ]
-   },
-   {
-    "title": "Issues",
-    "items": []
    }
   ]
  },

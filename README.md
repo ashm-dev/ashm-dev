@@ -8,10 +8,11 @@ Each project below expands into the full list of my pull requests and issues. �
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b> — 33 merged PRs · 43 issues</summary>
+<summary><b>python/cpython</b> — 33 merged PRs · 44 issues</summary>
 
 #### Pull requests
 
+- 🟡 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - ✅ [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
 - 🟡 [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
 - 🟡 [#157179](https://github.com/python/cpython/pull/157179) gh-157176: Fix GC tracking in PyStructSequence\_New
@@ -50,6 +51,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
 - 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
 - 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
 - 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module
@@ -97,6 +99,24 @@ Each project below expands into the full list of my pull requests and issues. �
 </details>
 
 <details>
+<summary><b>python/typeshed</b> — 10 merged PRs · 0 issues</summary>
+
+#### Pull requests
+
+- ✅ [#16438](https://github.com/python/typeshed/pull/16438) [untangle] Update to 1.3.\*
+- ✅ [#16426](https://github.com/python/typeshed/pull/16426) [PyMySQL] Update to 1.2.3
+- ✅ [#14802](https://github.com/python/typeshed/pull/14802) fix(types): cr\_frame may be None
+- ✅ [#14770](https://github.com/python/typeshed/pull/14770) cachetools: precise typing for decorators and cached(); expose cache\_info/cache\_clear and fix keys signatures
+- ✅ [#14153](https://github.com/python/typeshed/pull/14153) Remove corus stubs
+- ✅ [#14142](https://github.com/python/typeshed/pull/14142) Remove caldav stubs
+- ✅ [#14141](https://github.com/python/typeshed/pull/14141) Remove pygit2 stubs
+- ✅ [#13493](https://github.com/python/typeshed/pull/13493) remove pyOpenSSL stubs
+- ✅ [#12596](https://github.com/python/typeshed/pull/12596) Improve type annotations in Flask-Cors stubs
+- ✅ [#12585](https://github.com/python/typeshed/pull/12585) Add missing constants to flask-cors stubs
+
+</details>
+
+<details>
 <summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 2 issues</summary>
 
 #### Pull requests
@@ -116,24 +136,6 @@ Each project below expands into the full list of my pull requests and issues. �
 
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
-
-</details>
-
-<details>
-<summary><b>python/typeshed</b> — 9 merged PRs · 0 issues</summary>
-
-#### Pull requests
-
-- 🟡 [#16438](https://github.com/python/typeshed/pull/16438) [untangle] Update to 1.3.\*
-- ✅ [#16426](https://github.com/python/typeshed/pull/16426) [PyMySQL] Update to 1.2.3
-- ✅ [#14802](https://github.com/python/typeshed/pull/14802) fix(types): cr\_frame may be None
-- ✅ [#14770](https://github.com/python/typeshed/pull/14770) cachetools: precise typing for decorators and cached(); expose cache\_info/cache\_clear and fix keys signatures
-- ✅ [#14153](https://github.com/python/typeshed/pull/14153) Remove corus stubs
-- ✅ [#14142](https://github.com/python/typeshed/pull/14142) Remove caldav stubs
-- ✅ [#14141](https://github.com/python/typeshed/pull/14141) Remove pygit2 stubs
-- ✅ [#13493](https://github.com/python/typeshed/pull/13493) remove pyOpenSSL stubs
-- ✅ [#12596](https://github.com/python/typeshed/pull/12596) Improve type annotations in Flask-Cors stubs
-- ✅ [#12585](https://github.com/python/typeshed/pull/12585) Add missing constants to flask-cors stubs
 
 </details>
 
