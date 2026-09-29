@@ -258,7 +258,7 @@
       "title": "`_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#157378",
       "url": "https://github.com/python/cpython/issues/157378",
       "title": "Wrong `SyntaxError.offset` for \"Non-UTF-8 code starting with ...\" when a non-ASCII character precedes the invalid byte"

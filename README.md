@@ -56,7 +56,7 @@ Each project below expands into the full list of my pull requests and issues. �
 - 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
 - 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module
 - 🟡 [#157379](https://github.com/python/cpython/issues/157379) `_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field
-- 🟡 [#157378](https://github.com/python/cpython/issues/157378) Wrong `SyntaxError.offset` for "Non-UTF-8 code starting with ..." when a non-ASCII character precedes the invalid byte
+- ✅ [#157378](https://github.com/python/cpython/issues/157378) Wrong `SyntaxError.offset` for "Non-UTF-8 code starting with ..." when a non-ASCII character precedes the invalid byte
 - 🟡 [#157176](https://github.com/python/cpython/issues/157176) Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance
 - 🟡 [#157062](https://github.com/python/cpython/issues/157062) Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`
 - ✅ [#156762](https://github.com/python/cpython/issues/156762) `_operator`: `methodcaller_clear` has the wrong signature for the `tp_clear` slot (returns `void`, not `int`)
