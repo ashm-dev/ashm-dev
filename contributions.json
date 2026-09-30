@@ -572,7 +572,7 @@
  },
  {
   "name": "sqlalchemy/sqlalchemy",
-  "summary": "10 merged PRs · 2 issues",
+  "summary": "10 merged PRs · 3 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -642,6 +642,12 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#13617",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13617",
+      "title": "TypeDecorator.comparator_factory creates a new class with type() on every access"
+     },
      {
       "state": "open",
       "label": "#13281",

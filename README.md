@@ -117,7 +117,7 @@ Each project below expands into the full list of my pull requests and issues. �
 </details>
 
 <details>
-<summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 2 issues</summary>
+<summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 3 issues</summary>
 
 #### Pull requests
 
@@ -134,6 +134,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
 
