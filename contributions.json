@@ -643,7 +643,7 @@
     "title": "Issues",
     "items": [
      {
-      "state": "open",
+      "state": "done",
       "label": "#13617",
       "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13617",
       "title": "TypeDecorator.comparator_factory creates a new class with type() on every access"
@@ -771,6 +771,12 @@
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "patch 145006",
+      "url": "https://patchwork.sourceware.org/patch/145006/",
+      "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
+     },
      {
       "state": "open",
       "label": "patch 144254",

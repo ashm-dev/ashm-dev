@@ -134,7 +134,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
-- 🟡 [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
+- ✅ [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
 
@@ -170,6 +170,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Patches
 
+- 🟡 [patch 145006](https://patchwork.sourceware.org/patch/145006/) [v3] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 144254](https://patchwork.sourceware.org/patch/144254/) [v2] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 143415](https://patchwork.sourceware.org/patch/143415/) [v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]
 - ✅ [patch 143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]
