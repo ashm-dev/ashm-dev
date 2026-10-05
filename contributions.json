@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "33 merged PRs · 44 issues",
+  "summary": "33 merged PRs · 45 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -227,6 +227,12 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#158795",
+      "url": "https://github.com/python/cpython/issues/158795",
+      "title": "Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`"
+     },
      {
       "state": "open",
       "label": "#158304",
@@ -572,7 +578,7 @@
  },
  {
   "name": "sqlalchemy/sqlalchemy",
-  "summary": "10 merged PRs · 3 issues",
+  "summary": "10 merged PRs · 7 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -642,6 +648,30 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#13644",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13644",
+      "title": "postgresql.DOMAIN.copy() and to_metadata() drop CHECK, NOT NULL, DEFAULT, constraint_name, and collation"
+     },
+     {
+      "state": "open",
+      "label": "#13643",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13643",
+      "title": "MutableDict |= and MutableList *= do not emit change events; changes are not persisted"
+     },
+     {
+      "state": "open",
+      "label": "#13642",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13642",
+      "title": "str(select(func.aggregate_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)"
+     },
+     {
+      "state": "open",
+      "label": "#13641",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13641",
+      "title": "AttributeError when resetting logging_token or connecting with logging_token=None"
+     },
      {
       "state": "done",
       "label": "#13617",

@@ -8,7 +8,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b> — 33 merged PRs · 44 issues</summary>
+<summary><b>python/cpython</b> — 33 merged PRs · 45 issues</summary>
 
 #### Pull requests
 
@@ -51,6 +51,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
 - 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
 - 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
 - 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
@@ -117,7 +118,7 @@ Each project below expands into the full list of my pull requests and issues. �
 </details>
 
 <details>
-<summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 3 issues</summary>
+<summary><b>sqlalchemy/sqlalchemy</b> — 10 merged PRs · 7 issues</summary>
 
 #### Pull requests
 
@@ -134,6 +135,10 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#13644](https://github.com/sqlalchemy/sqlalchemy/issues/13644) postgresql.DOMAIN.copy() and to\_metadata() drop CHECK, NOT NULL, DEFAULT, constraint\_name, and collation
+- 🟡 [#13643](https://github.com/sqlalchemy/sqlalchemy/issues/13643) MutableDict |= and MutableList \*= do not emit change events; changes are not persisted
+- 🟡 [#13642](https://github.com/sqlalchemy/sqlalchemy/issues/13642) str(select(func.aggregate\_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)
+- 🟡 [#13641](https://github.com/sqlalchemy/sqlalchemy/issues/13641) AttributeError when resetting logging\_token or connecting with logging\_token=None
 - ✅ [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
