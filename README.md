@@ -135,10 +135,10 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
-- 🟡 [#13644](https://github.com/sqlalchemy/sqlalchemy/issues/13644) postgresql.DOMAIN.copy() and to\_metadata() drop CHECK, NOT NULL, DEFAULT, constraint\_name, and collation
-- 🟡 [#13643](https://github.com/sqlalchemy/sqlalchemy/issues/13643) MutableDict |= and MutableList \*= do not emit change events; changes are not persisted
-- 🟡 [#13642](https://github.com/sqlalchemy/sqlalchemy/issues/13642) str(select(func.aggregate\_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)
-- 🟡 [#13641](https://github.com/sqlalchemy/sqlalchemy/issues/13641) AttributeError when resetting logging\_token or connecting with logging\_token=None
+- ✅ [#13644](https://github.com/sqlalchemy/sqlalchemy/issues/13644) postgresql.DOMAIN.copy() and to\_metadata() drop CHECK, NOT NULL, DEFAULT, constraint\_name, and collation
+- ✅ [#13643](https://github.com/sqlalchemy/sqlalchemy/issues/13643) MutableDict |= and MutableList \*= do not emit change events; changes are not persisted
+- ✅ [#13642](https://github.com/sqlalchemy/sqlalchemy/issues/13642) str(select(func.aggregate\_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)
+- ✅ [#13641](https://github.com/sqlalchemy/sqlalchemy/issues/13641) AttributeError when resetting logging\_token or connecting with logging\_token=None
 - ✅ [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - ✅ [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
