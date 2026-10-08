@@ -8,14 +8,14 @@ Each project below expands into the full list of my pull requests and issues. �
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b> — 33 merged PRs · 45 issues</summary>
+<summary><b>python/cpython</b> — 35 merged PRs · 47 issues</summary>
 
 #### Pull requests
 
 - 🟡 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - ✅ [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
-- 🟡 [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
-- 🟡 [#157179](https://github.com/python/cpython/pull/157179) gh-157176: Fix GC tracking in PyStructSequence\_New
+- ✅ [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
+- ✅ [#157179](https://github.com/python/cpython/pull/157179) gh-157176: Make time.struct\_time type immutable
 - ✅ [#156769](https://github.com/python/cpython/pull/156769) gh-156762: Fix tp\_clear slot signature for operator.methodcaller
 - ✅ [#156403](https://github.com/python/cpython/pull/156403) gh-156402: Modernize annotation usage in libregrtest
 - ✅ [#156300](https://github.com/python/cpython/pull/156300) gh-156114: Fix crash in perf trampoline with unencodable code names
@@ -51,6 +51,8 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main
+- ✅ [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
 - 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
 - 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
@@ -58,7 +60,7 @@ Each project below expands into the full list of my pull requests and issues. �
 - 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module
 - 🟡 [#157379](https://github.com/python/cpython/issues/157379) `_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field
 - ✅ [#157378](https://github.com/python/cpython/issues/157378) Wrong `SyntaxError.offset` for "Non-UTF-8 code starting with ..." when a non-ASCII character precedes the invalid byte
-- 🟡 [#157176](https://github.com/python/cpython/issues/157176) Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance
+- ✅ [#157176](https://github.com/python/cpython/issues/157176) Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance
 - 🟡 [#157062](https://github.com/python/cpython/issues/157062) Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`
 - ✅ [#156762](https://github.com/python/cpython/issues/156762) `_operator`: `methodcaller_clear` has the wrong signature for the `tp_clear` slot (returns `void`, not `int`)
 - 🟡 [#156570](https://github.com/python/cpython/issues/156570) test.support.warnings\_helper.check\_warnings() raises KeyError: 'warnings' under -X lazy\_imports=all
@@ -146,36 +148,11 @@ Each project below expands into the full list of my pull requests and issues. �
 </details>
 
 <details>
-<summary><b>open-webui/open-webui</b> — 8 merged PRs · 6 issues</summary>
-
-#### Pull requests
-
-- ✅ [#24118](https://github.com/open-webui/open-webui/pull/24118) style(env): satisfy ruff lint on backend/open\_webui/env.py
-- ✅ [#22987](https://github.com/open-webui/open-webui/pull/22987) refactor: modernize typing 
-- ✅ [#22766](https://github.com/open-webui/open-webui/pull/22766) chore: align black with Ruff backend formatting
-- ✅ [#22594](https://github.com/open-webui/open-webui/pull/22594) refactor: modernize type hints and imports in access\_control module
-- ✅ [#22576](https://github.com/open-webui/open-webui/pull/22576) feat: add ruff linter &amp; formatter
-- ✅ [#22265](https://github.com/open-webui/open-webui/pull/22265) feat: add OpenTelemetry system metrics instrumentation
-- ✅ [#21453](https://github.com/open-webui/open-webui/pull/21453) i18n: Add missing Russian (ru-RU) translations
-- ✅ [#8212](https://github.com/open-webui/open-webui/pull/8212) feat: Small optimization
-
-#### Issues
-
-- ✅ [#23793](https://github.com/open-webui/open-webui/issues/23793) feat: cache get\_user\_by\_id — 25% of all DB queries with zero caching
-- ✅ [#21955](https://github.com/open-webui/open-webui/issues/21955) bug: Duplicate images displayed when model with thinking/reasoning generates an image (e.g., Gemini 3 Pro Image Preview)
-- ✅ [#21641](https://github.com/open-webui/open-webui/issues/21641) feat: Add Ruff linter &amp; formatter for Python code quality
-- ✅ [#21411](https://github.com/open-webui/open-webui/issues/21411) bug: File descriptor leak in audio.py and pipelines.py — open() without close
-- ✅ [#21410](https://github.com/open-webui/open-webui/issues/21410) bug: Memory leak in SESSION\_POOL, USAGE\_POOL and YdocManager (with and without Redis)
-- ✅ [#9491](https://github.com/open-webui/open-webui/issues/9491) Proxy Configuration via Environment Variables and Global Request Sessions
-
-</details>
-
-<details>
-<summary><b>glibc (sourceware)</b> — 8 committed patches · 8 bugs</summary>
+<summary><b>glibc (sourceware)</b> — 9 committed patches · 8 bugs</summary>
 
 #### Patches
 
-- 🟡 [patch 145006](https://patchwork.sourceware.org/patch/145006/) [v3] libio: Use \_\_wunderflow in \_IO\_getwline\_info
+- ✅ [patch 145006](https://patchwork.sourceware.org/patch/145006/) [v3] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 144254](https://patchwork.sourceware.org/patch/144254/) [v2] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 143415](https://patchwork.sourceware.org/patch/143415/) [v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]
 - ✅ [patch 143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]
@@ -197,6 +174,31 @@ Each project below expands into the full list of my pull requests and issues. �
 - 🟡 [BZ #34608](https://sourceware.org/bugzilla/show_bug.cgi?id=34608) wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $\* or $@ with no positional arguments
 - 🟡 [BZ #34607](https://sourceware.org/bugzilla/show_bug.cgi?id=34607) localedef crashes with SIGSEGV in handle\_ellipsis when LC\_COLLATE contains only an ellipsis
 - ✅ [BZ #34600](https://sourceware.org/bugzilla/show_bug.cgi?id=34600) [2.44 regression] ld.so segfaults at startup with an old-format ld.so.cache
+
+</details>
+
+<details>
+<summary><b>open-webui/open-webui</b> — 8 merged PRs · 6 issues</summary>
+
+#### Pull requests
+
+- ✅ [#24118](https://github.com/open-webui/open-webui/pull/24118) style(env): satisfy ruff lint on backend/open\_webui/env.py
+- ✅ [#22987](https://github.com/open-webui/open-webui/pull/22987) refactor: modernize typing 
+- ✅ [#22766](https://github.com/open-webui/open-webui/pull/22766) chore: align black with Ruff backend formatting
+- ✅ [#22594](https://github.com/open-webui/open-webui/pull/22594) refactor: modernize type hints and imports in access\_control module
+- ✅ [#22576](https://github.com/open-webui/open-webui/pull/22576) feat: add ruff linter &amp; formatter
+- ✅ [#22265](https://github.com/open-webui/open-webui/pull/22265) feat: add OpenTelemetry system metrics instrumentation
+- ✅ [#21453](https://github.com/open-webui/open-webui/pull/21453) i18n: Add missing Russian (ru-RU) translations
+- ✅ [#8212](https://github.com/open-webui/open-webui/pull/8212) feat: Small optimization
+
+#### Issues
+
+- ✅ [#23793](https://github.com/open-webui/open-webui/issues/23793) feat: cache get\_user\_by\_id — 25% of all DB queries with zero caching
+- ✅ [#21955](https://github.com/open-webui/open-webui/issues/21955) bug: Duplicate images displayed when model with thinking/reasoning generates an image (e.g., Gemini 3 Pro Image Preview)
+- ✅ [#21641](https://github.com/open-webui/open-webui/issues/21641) feat: Add Ruff linter &amp; formatter for Python code quality
+- ✅ [#21411](https://github.com/open-webui/open-webui/issues/21411) bug: File descriptor leak in audio.py and pipelines.py — open() without close
+- ✅ [#21410](https://github.com/open-webui/open-webui/issues/21410) bug: Memory leak in SESSION\_POOL, USAGE\_POOL and YdocManager (with and without Redis)
+- ✅ [#9491](https://github.com/open-webui/open-webui/issues/9491) Proxy Configuration via Environment Variables and Global Request Sessions
 
 </details>
 

@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "33 merged PRs · 45 issues",
+  "summary": "35 merged PRs · 47 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -19,16 +19,16 @@
       "title": "gh-157378: Fix SyntaxError.offset for \"Non-UTF-8 code\" error"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#157370",
       "url": "https://github.com/python/cpython/pull/157370",
       "title": "gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#157179",
       "url": "https://github.com/python/cpython/pull/157179",
-      "title": "gh-157176: Fix GC tracking in PyStructSequence_New"
+      "title": "gh-157176: Make time.struct_time type immutable"
      },
      {
       "state": "done",
@@ -229,6 +229,18 @@
     "items": [
      {
       "state": "open",
+      "label": "#158963",
+      "url": "https://github.com/python/cpython/issues/158963",
+      "title": "LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main"
+     },
+     {
+      "state": "done",
+      "label": "#158961",
+      "url": "https://github.com/python/cpython/issues/158961",
+      "title": "3.14: ASan SEGV in _TAIL_CALL_JUMP_BACKWARD_JIT during editable build"
+     },
+     {
+      "state": "open",
       "label": "#158795",
       "url": "https://github.com/python/cpython/issues/158795",
       "title": "Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`"
@@ -270,7 +282,7 @@
       "title": "Wrong `SyntaxError.offset` for \"Non-UTF-8 code starting with ...\" when a non-ASCII character precedes the invalid byte"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#157176",
       "url": "https://github.com/python/cpython/issues/157176",
       "title": "Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance"
@@ -695,114 +707,14 @@
   ]
  },
  {
-  "name": "open-webui/open-webui",
-  "summary": "8 merged PRs · 6 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": [
-     {
-      "state": "done",
-      "label": "#24118",
-      "url": "https://github.com/open-webui/open-webui/pull/24118",
-      "title": "style(env): satisfy ruff lint on backend/open_webui/env.py"
-     },
-     {
-      "state": "done",
-      "label": "#22987",
-      "url": "https://github.com/open-webui/open-webui/pull/22987",
-      "title": "refactor: modernize typing "
-     },
-     {
-      "state": "done",
-      "label": "#22766",
-      "url": "https://github.com/open-webui/open-webui/pull/22766",
-      "title": "chore: align black with Ruff backend formatting"
-     },
-     {
-      "state": "done",
-      "label": "#22594",
-      "url": "https://github.com/open-webui/open-webui/pull/22594",
-      "title": "refactor: modernize type hints and imports in access_control module"
-     },
-     {
-      "state": "done",
-      "label": "#22576",
-      "url": "https://github.com/open-webui/open-webui/pull/22576",
-      "title": "feat: add ruff linter & formatter"
-     },
-     {
-      "state": "done",
-      "label": "#22265",
-      "url": "https://github.com/open-webui/open-webui/pull/22265",
-      "title": "feat: add OpenTelemetry system metrics instrumentation"
-     },
-     {
-      "state": "done",
-      "label": "#21453",
-      "url": "https://github.com/open-webui/open-webui/pull/21453",
-      "title": "i18n: Add missing Russian (ru-RU) translations"
-     },
-     {
-      "state": "done",
-      "label": "#8212",
-      "url": "https://github.com/open-webui/open-webui/pull/8212",
-      "title": "feat: Small optimization"
-     }
-    ]
-   },
-   {
-    "title": "Issues",
-    "items": [
-     {
-      "state": "done",
-      "label": "#23793",
-      "url": "https://github.com/open-webui/open-webui/issues/23793",
-      "title": "feat: cache get_user_by_id — 25% of all DB queries with zero caching"
-     },
-     {
-      "state": "done",
-      "label": "#21955",
-      "url": "https://github.com/open-webui/open-webui/issues/21955",
-      "title": "bug: Duplicate images displayed when model with thinking/reasoning generates an image (e.g., Gemini 3 Pro Image Preview)"
-     },
-     {
-      "state": "done",
-      "label": "#21641",
-      "url": "https://github.com/open-webui/open-webui/issues/21641",
-      "title": "feat: Add Ruff linter & formatter for Python code quality"
-     },
-     {
-      "state": "done",
-      "label": "#21411",
-      "url": "https://github.com/open-webui/open-webui/issues/21411",
-      "title": "bug: File descriptor leak in audio.py and pipelines.py — open() without close"
-     },
-     {
-      "state": "done",
-      "label": "#21410",
-      "url": "https://github.com/open-webui/open-webui/issues/21410",
-      "title": "bug: Memory leak in SESSION_POOL, USAGE_POOL and YdocManager (with and without Redis)"
-     },
-     {
-      "state": "done",
-      "label": "#9491",
-      "url": "https://github.com/open-webui/open-webui/issues/9491",
-      "title": "Proxy Configuration via Environment Variables and Global Request Sessions"
-     }
-    ]
-   }
-  ]
- },
- {
   "name": "glibc (sourceware)",
-  "summary": "8 committed patches · 8 bugs",
+  "summary": "9 committed patches · 8 bugs",
   "sections": [
    {
     "title": "Patches",
     "items": [
      {
-      "state": "open",
+      "state": "done",
       "label": "patch 145006",
       "url": "https://patchwork.sourceware.org/patch/145006/",
       "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
@@ -919,6 +831,106 @@
       "label": "BZ #34600",
       "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34600",
       "title": "[2.44 regression] ld.so segfaults at startup with an old-format ld.so.cache"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "open-webui/open-webui",
+  "summary": "8 merged PRs · 6 issues",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#24118",
+      "url": "https://github.com/open-webui/open-webui/pull/24118",
+      "title": "style(env): satisfy ruff lint on backend/open_webui/env.py"
+     },
+     {
+      "state": "done",
+      "label": "#22987",
+      "url": "https://github.com/open-webui/open-webui/pull/22987",
+      "title": "refactor: modernize typing "
+     },
+     {
+      "state": "done",
+      "label": "#22766",
+      "url": "https://github.com/open-webui/open-webui/pull/22766",
+      "title": "chore: align black with Ruff backend formatting"
+     },
+     {
+      "state": "done",
+      "label": "#22594",
+      "url": "https://github.com/open-webui/open-webui/pull/22594",
+      "title": "refactor: modernize type hints and imports in access_control module"
+     },
+     {
+      "state": "done",
+      "label": "#22576",
+      "url": "https://github.com/open-webui/open-webui/pull/22576",
+      "title": "feat: add ruff linter & formatter"
+     },
+     {
+      "state": "done",
+      "label": "#22265",
+      "url": "https://github.com/open-webui/open-webui/pull/22265",
+      "title": "feat: add OpenTelemetry system metrics instrumentation"
+     },
+     {
+      "state": "done",
+      "label": "#21453",
+      "url": "https://github.com/open-webui/open-webui/pull/21453",
+      "title": "i18n: Add missing Russian (ru-RU) translations"
+     },
+     {
+      "state": "done",
+      "label": "#8212",
+      "url": "https://github.com/open-webui/open-webui/pull/8212",
+      "title": "feat: Small optimization"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#23793",
+      "url": "https://github.com/open-webui/open-webui/issues/23793",
+      "title": "feat: cache get_user_by_id — 25% of all DB queries with zero caching"
+     },
+     {
+      "state": "done",
+      "label": "#21955",
+      "url": "https://github.com/open-webui/open-webui/issues/21955",
+      "title": "bug: Duplicate images displayed when model with thinking/reasoning generates an image (e.g., Gemini 3 Pro Image Preview)"
+     },
+     {
+      "state": "done",
+      "label": "#21641",
+      "url": "https://github.com/open-webui/open-webui/issues/21641",
+      "title": "feat: Add Ruff linter & formatter for Python code quality"
+     },
+     {
+      "state": "done",
+      "label": "#21411",
+      "url": "https://github.com/open-webui/open-webui/issues/21411",
+      "title": "bug: File descriptor leak in audio.py and pipelines.py — open() without close"
+     },
+     {
+      "state": "done",
+      "label": "#21410",
+      "url": "https://github.com/open-webui/open-webui/issues/21410",
+      "title": "bug: Memory leak in SESSION_POOL, USAGE_POOL and YdocManager (with and without Redis)"
+     },
+     {
+      "state": "done",
+      "label": "#9491",
+      "url": "https://github.com/open-webui/open-webui/issues/9491",
+      "title": "Proxy Configuration via Environment Variables and Global Request Sessions"
      }
     ]
    }
