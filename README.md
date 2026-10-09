@@ -52,7 +52,7 @@ Each project below expands into the full list of my pull requests and issues. �
 #### Issues
 
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main
-- ✅ [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
+- 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
 - 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
 - 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
