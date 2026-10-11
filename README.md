@@ -12,6 +12,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Pull requests
 
+- 🟡 [#159119](https://github.com/python/cpython/pull/159119) gh-158961: Fix JIT crashes with UBSan
 - 🟡 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - ✅ [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
 - ✅ [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
@@ -64,7 +65,7 @@ Each project below expands into the full list of my pull requests and issues. �
 - 🟡 [#157062](https://github.com/python/cpython/issues/157062) Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`
 - ✅ [#156762](https://github.com/python/cpython/issues/156762) `_operator`: `methodcaller_clear` has the wrong signature for the `tp_clear` slot (returns `void`, not `int`)
 - 🟡 [#156570](https://github.com/python/cpython/issues/156570) test.support.warnings\_helper.check\_warnings() raises KeyError: 'warnings' under -X lazy\_imports=all
-- 🟡 [#156402](https://github.com/python/cpython/issues/156402) Modernize annotation usage in libregrtest
+- ✅ [#156402](https://github.com/python/cpython/issues/156402) Modernize annotation usage in libregrtest
 - ✅ [#151039](https://github.com/python/cpython/issues/151039) Crash: NULL deref in \_datetime when a static type outlives its module
 - ✅ [#148832](https://github.com/python/cpython/issues/148832) Build: BOLT `-icf=1` breaks type-slot function-pointer identity, causes SIGSEGV
 - ✅ [#148775](https://github.com/python/cpython/issues/148775) c-analyzer: bump MAX\_SIZES for Modules/clinic/\_testclinic.c.h
@@ -152,6 +153,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Patches
 
+- 🟡 [patch 145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - ✅ [patch 145006](https://patchwork.sourceware.org/patch/145006/) [v3] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 144254](https://patchwork.sourceware.org/patch/144254/) [v2] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟡 [patch 143415](https://patchwork.sourceware.org/patch/143415/) [v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]

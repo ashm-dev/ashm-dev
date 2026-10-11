@@ -8,6 +8,12 @@
     "items": [
      {
       "state": "open",
+      "label": "#159119",
+      "url": "https://github.com/python/cpython/pull/159119",
+      "title": "gh-158961: Fix JIT crashes with UBSan"
+     },
+     {
+      "state": "open",
       "label": "#158315",
       "url": "https://github.com/python/cpython/pull/158315",
       "title": "gh-158304: Avoid creating StopIteration for every value yielded by an async generator"
@@ -306,7 +312,7 @@
       "title": "test.support.warnings_helper.check_warnings() raises KeyError: 'warnings' under -X lazy_imports=all"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#156402",
       "url": "https://github.com/python/cpython/issues/156402",
       "title": "Modernize annotation usage in libregrtest"
@@ -713,6 +719,12 @@
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "patch 145665",
+      "url": "https://patchwork.sourceware.org/patch/145665/",
+      "title": "libio: Reserve space for large obstack writes"
+     },
      {
       "state": "done",
       "label": "patch 145006",
