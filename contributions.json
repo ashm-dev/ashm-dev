@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "35 merged PRs · 47 issues",
+  "summary": "35 merged PRs · 48 issues",
   "sections": [
    {
     "title": "Pull requests",
@@ -233,6 +233,12 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#159226",
+      "url": "https://github.com/python/cpython/issues/159226",
+      "title": "Avoid redundant reference counting of known Py_None values"
+     },
      {
       "state": "open",
       "label": "#158963",

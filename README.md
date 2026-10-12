@@ -8,7 +8,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b> — 35 merged PRs · 47 issues</summary>
+<summary><b>python/cpython</b> — 35 merged PRs · 48 issues</summary>
 
 #### Pull requests
 
@@ -52,6 +52,7 @@ Each project below expands into the full list of my pull requests and issues. �
 
 #### Issues
 
+- 🟡 [#159226](https://github.com/python/cpython/issues/159226) Avoid redundant reference counting of known Py\_None values
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main
 - 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
