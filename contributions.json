@@ -234,7 +234,7 @@
     "title": "Issues",
     "items": [
      {
-      "state": "open",
+      "state": "done",
       "label": "#159226",
       "url": "https://github.com/python/cpython/issues/159226",
       "title": "Avoid redundant reference counting of known Py_None values"
