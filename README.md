@@ -139,13 +139,12 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 
 <details>
-<summary><b>glibc</b><br>Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open</summary>
+<summary><b>glibc</b><br>Patches: 9 committed, 1 open · Bug reports: 2 fixed, 5 open</summary>
 
 #### Patches
 
 - 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
-- 🟡 [#143415](https://patchwork.sourceware.org/patch/143415/) \[v2\] termios: Add tcgetwinsize and tcsetwinsize \[BZ #32074\]
 - 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]
 - 🟢 [#142924](https://patchwork.sourceware.org/patch/142924/) \[v2\] math: Set errno to ERANGE for logb (+-0) \[BZ #6793\]
 - 🟢 [#142808](https://patchwork.sourceware.org/patch/142808/) \[v2\] libio: Add test for fopen with an empty ", ccs=" value \[BZ #34574\]

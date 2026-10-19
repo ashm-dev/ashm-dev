@@ -638,7 +638,7 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 9 committed, 1 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
@@ -654,12 +654,6 @@
       "label": "#145006",
       "url": "https://patchwork.sourceware.org/patch/145006/",
       "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
-     },
-     {
-      "state": "open",
-      "label": "#143415",
-      "url": "https://patchwork.sourceware.org/patch/143415/",
-      "title": "[v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]"
      },
      {
       "state": "done",
