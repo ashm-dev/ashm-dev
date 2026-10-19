@@ -1,138 +1,87 @@
 #!/usr/bin/env python3
-"""Rewrite the contributions in README.md and contributions.json from GitHub, patchwork and Bugzilla."""
+"""Render profile READMEs and site data from accepted upstream contributions."""
 import html
 import json
-import re
-import subprocess
-import urllib.parse
-import urllib.request
-from collections import defaultdict
 from pathlib import Path
 
-GITHUB_USER = "ashm-dev"
-SOURCEWARE_EMAIL = "ashamil435@gmail.com"
-SKIP_OWNERS = ("ashm-dev/", "kartochka/")
+from github_contributions import github_projects
+from sourceware_contributions import glibc_project
+
 ROOT = Path(__file__).resolve().parent.parent
-README = ROOT / "README.md"
-DATA = ROOT / "contributions.json"
 START = "<!-- contributions:start -->"
 END = "<!-- contributions:end -->"
-
-NOUN = {"Pull requests": "PRs", "Issues": "issues", "Patches": "patches", "Bugs": "bugs"}
-ICON = {"done": "✅", "open": "🟡"}
-ISSUE_STATE = {"open": "open", "closed": "done"}
-
-
-def gh_search(kind):
-    cmd = ["gh", "search", kind, "--author", GITHUB_USER, "--limit", "1000",
-           "--json", "repository,number,title,state,url"]
-    rows = json.loads(subprocess.check_output(cmd, text=True))
-    return [r for r in rows if not r["repository"]["nameWithOwner"].startswith(SKIP_OWNERS)]
-
-
-def landed_titles(repo):
-    cmd = ["gh", "api", "--paginate", f"repos/{repo}/commits?author={GITHUB_USER}&per_page=100",
-           "--jq", '.[].commit.message | split("\\n")[0]']
-    return {normalize(line) for line in subprocess.check_output(cmd, text=True).splitlines()}
+ORDER = ("Commits", "Pull requests", "Patches", "Issues", "Bugs")
+ICON = {"done": "🟢", "open": "🟡"}
+LABELS = {
+    "en": {"Pull requests": "PR", "Issues": "Issues", "Patches": "Patches", "Bugs": "Bug reports", "Commits": "Commits"},
+    "ru": {"Pull requests": "PR", "Issues": "Issues", "Patches": "Патчи", "Bugs": "Баги", "Commits": "Коммиты"},
+}
+DONE = {
+    "en": {"Pull requests": "merged", "Issues": "completed", "Patches": "committed", "Bugs": "fixed", "Commits": "committed"},
+    "ru": {"Pull requests": "принято", "Issues": "выполнено", "Patches": "принято", "Bugs": "исправлено", "Commits": "принято"},
+}
 
 
-def normalize(title):
-    return re.sub(r"\s*\(#\d+\)\s*$", "", title).strip().casefold()
+def sections_in_order(sections):
+    return [(title, sections[title]) for title in ORDER if sections.get(title)]
 
 
-def get_json(url, **params):
-    with urllib.request.urlopen(url + "?" + urllib.parse.urlencode(params), timeout=60) as resp:
-        return json.load(resp)
-
-
-def github_projects():
-    projects = defaultdict(lambda: {"Pull requests": [], "Issues": []})
-    prs = gh_search("prs")
-    # Gerrit-based projects (SQLAlchemy) close the GitHub PR and land the same commit by hand.
-    landed = {repo: landed_titles(repo)
-              for repo in {pr["repository"]["nameWithOwner"] for pr in prs if pr["state"] == "closed"}}
-    for pr in prs:
-        repo = pr["repository"]["nameWithOwner"]
-        if pr["state"] == "closed" and normalize(pr["title"]) not in landed[repo]:
-            continue
-        projects[repo]["Pull requests"].append(
-            ("open" if pr["state"] == "open" else "done", f"#{pr['number']}", pr["url"], pr["title"]))
-    for issue in gh_search("issues"):
-        projects[issue["repository"]["nameWithOwner"]]["Issues"].append(
-            (ISSUE_STATE[issue["state"]], f"#{issue['number']}", issue["url"], issue["title"]))
-    return projects
-
-
-def glibc_project():
-    # ponytail: single page of 250 patches, add pagination when the series count passes that
-    patches = get_json("https://patchwork.sourceware.org/api/1.2/patches/",
-                       project="glibc", submitter=SOURCEWARE_EMAIL, per_page=250)
-    bugs = get_json("https://sourceware.org/bugzilla/rest/bug", product="glibc",
-                    reporter=SOURCEWARE_EMAIL, limit=0,
-                    include_fields="id,summary,status")["bugs"]
-    return {
-        "Patches": [("done" if p["state"] == "committed" else "open", f"patch {p['id']}",
-                     f"https://patchwork.sourceware.org/patch/{p['id']}/", p["name"])
-                    for p in patches if p["state"] not in ("superseded", "dropped", "rejected")],
-        "Bugs": [("done" if b["status"] == "RESOLVED" else "open", f"BZ #{b['id']}",
-                  f"https://sourceware.org/bugzilla/show_bug.cgi?id={b['id']}", b["summary"])
-                 for b in bugs],
-    }
-
-
-def landed(sections):
-    first = next(iter(sections.values()))
-    return sum(1 for state, *_ in first if state == "done")
-
-
-def summary(sections):
-    (first_name, _), (second_name, second) = sections.items()
-    verb = "committed" if first_name == "Patches" else "merged"
-    return f"{landed(sections)} {verb} {NOUN[first_name]} · {len(second)} {NOUN[second_name]}"
-
-
-def number(item):
-    return int("".join(ch for ch in item[1] if ch.isdigit()))
+def summary(sections, lang="en"):
+    parts = []
+    for title, items in sections_in_order(sections):
+        counts = []
+        for state, label in (("done", DONE[lang][title]), ("open", "открыто" if lang == "ru" else "open")):
+            count = sum(item[0] == state for item in items)
+            if count:
+                counts.append(f"{count} {label}")
+        parts.append(f"{LABELS[lang][title]}: {', '.join(counts)}")
+    return " · ".join(parts)
 
 
 def ordered(projects):
-    nonempty = {name: sections for name, sections in projects.items() if any(sections.values())}
-    return sorted(nonempty.items(), key=lambda kv: landed(kv[1]), reverse=True)
+    def rank(project):
+        name, sections = project
+        done = sum(item[0] == "done" for title, items in sections.items()
+                   if title in ("Pull requests", "Patches", "Commits") for item in items)
+        return -done, name
+    return sorted(((name, sections) for name, sections in projects.items() if any(sections.values())), key=rank)
+
+
+def ordered_items(title, items):
+    if title == "Commits":
+        return items
+    return sorted(items, key=lambda item: int("".join(ch for ch in item[1] if ch.isdigit())), reverse=True)
 
 
 def escape(text):
     parts = text.split("`")
-    for i in range(0, len(parts), 2):
-        parts[i] = html.escape(parts[i], quote=False).replace("_", "\\_").replace("*", "\\*")
-    return "`".join(parts)
+    for index in range(0, len(parts), 2):
+        parts[index] = html.escape(parts[index], quote=False).replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("]", "\\]")
+    return "`".join(parts).rstrip()
 
 
-def render_project(name, sections):
-    lines = ["<details>", f"<summary><b>{name}</b> — {summary(sections)}</summary>", ""]
-    for title, items in sections.items():
-        if not items:
-            continue
-        lines += [f"#### {title}", ""]
+def render_project(name, sections, lang):
+    lines = ["<details>", f"<summary><b>{html.escape(name)}</b><br>{html.escape(summary(sections, lang))}</summary>", ""]
+    for title, items in sections_in_order(sections):
+        lines += [f"#### {LABELS[lang][title]}", ""]
         lines += [f"- {ICON[state]} [{label}]({url}) {escape(text)}"
-                  for state, label, url, text in sorted(items, key=number, reverse=True)]
+                  for state, label, url, text in ordered_items(title, items)]
         lines.append("")
-    lines.append("</details>")
-    return "\n".join(lines)
+    return "\n".join([*lines, "</details>"])
 
 
-def render_all(projects):
-    return "\n\n".join(render_project(name, sections) for name, sections in ordered(projects))
+def render_all(projects, lang="en"):
+    return "\n\n".join(render_project(name, sections, lang) for name, sections in ordered(projects))
 
 
 def to_data(projects):
     return [{
-        "name": name,
-        "summary": summary(sections),
+        "name": name, "summary": summary(sections),
         "sections": [{
             "title": title,
             "items": [{"state": state, "label": label, "url": url, "title": text}
-                      for state, label, url, text in sorted(items, key=number, reverse=True)],
-        } for title, items in sections.items()],
+                      for state, label, url, text in ordered_items(title, items)],
+        } for title, items in sections_in_order(sections)],
     } for name, sections in ordered(projects)]
 
 
@@ -144,9 +93,13 @@ def splice(text, body):
 
 def main():
     projects = github_projects()
-    projects["glibc (sourceware)"] = glibc_project()
-    README.write_text(splice(README.read_text(), render_all(projects)))
-    DATA.write_text(json.dumps(to_data(projects), ensure_ascii=False, indent=1) + "\n")
+    projects["glibc"] = glibc_project()
+    files = {ROOT / "contributions.json": json.dumps(to_data(projects), ensure_ascii=False, indent=1) + "\n"}
+    for lang, filename in (("en", "README.md"), ("ru", "README.ru.md")):
+        path = ROOT / filename
+        files[path] = splice(path.read_text(), render_all(projects, lang))
+    for path, text in files.items():
+        path.write_text(text)
 
 
 if __name__ == "__main__":

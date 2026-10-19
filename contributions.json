@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "35 merged PRs · 48 issues",
+  "summary": "PR: 31 merged, 2 open · Issues: 25 completed, 14 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -59,18 +59,6 @@
       "label": "#156130",
       "url": "https://github.com/python/cpython/pull/156130",
       "title": "gh-155911: Fix curses detection with libraries in LIBS"
-     },
-     {
-      "state": "done",
-      "label": "#150079",
-      "url": "https://github.com/python/cpython/pull/150079",
-      "title": "[3.13] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
-     },
-     {
-      "state": "done",
-      "label": "#150078",
-      "url": "https://github.com/python/cpython/pull/150078",
-      "title": "[3.14] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
      },
      {
       "state": "done",
@@ -152,12 +140,6 @@
      },
      {
       "state": "done",
-      "label": "#140684",
-      "url": "https://github.com/python/cpython/pull/140684",
-      "title": "[3.13] gh-140301: Fix memory leak in subinterpreter PyConfig cleanup (GH-140303)"
-     },
-     {
-      "state": "done",
       "label": "#140637",
       "url": "https://github.com/python/cpython/pull/140637",
       "title": "Remove dead stores to 'size' in UTF-8 decoder (unicodeobject.c)"
@@ -173,12 +155,6 @@
       "label": "#140400",
       "url": "https://github.com/python/cpython/pull/140400",
       "title": "gh-140398: Fix memory leaks in readline module when PySys_Audit fails"
-     },
-     {
-      "state": "done",
-      "label": "#140397",
-      "url": "https://github.com/python/cpython/pull/140397",
-      "title": "[3.13] gh-140306: Fix memory leaks in cross-interpreter data handling"
      },
      {
       "state": "done",
@@ -233,12 +209,6 @@
    {
     "title": "Issues",
     "items": [
-     {
-      "state": "done",
-      "label": "#159226",
-      "url": "https://github.com/python/cpython/issues/159226",
-      "title": "Avoid redundant reference counting of known Py_None values"
-     },
      {
       "state": "open",
       "label": "#158963",
@@ -337,39 +307,15 @@
      },
      {
       "state": "done",
-      "label": "#148775",
-      "url": "https://github.com/python/cpython/issues/148775",
-      "title": "c-analyzer: bump MAX_SIZES for Modules/clinic/_testclinic.c.h"
-     },
-     {
-      "state": "done",
       "label": "#148701",
       "url": "https://github.com/python/cpython/issues/148701",
       "title": "Add missing test coverage for asyncio.graph"
      },
      {
       "state": "done",
-      "label": "#148443",
-      "url": "https://github.com/python/cpython/issues/148443",
-      "title": "Recursive _testcapi.pyobject_vectorcall() aborts with fatal stack overflow instead of raising RecursionError in a small-stack thread"
-     },
-     {
-      "state": "done",
-      "label": "#146429",
-      "url": "https://github.com/python/cpython/issues/146429",
-      "title": "Uninitialized variable replace usage in charmapencode_output (Objects/unicodeobject.c) discovered by scan-build"
-     },
-     {
-      "state": "done",
       "label": "#146196",
       "url": "https://github.com/python/cpython/issues/146196",
       "title": "Undefined Behavior in _PyUnicodeWriter_WriteASCIIString: NULL pointer passed to memcpy when len is 0"
-     },
-     {
-      "state": "done",
-      "label": "#145953",
-      "url": "https://github.com/python/cpython/issues/145953",
-      "title": "Segmentation fault in `test_call.py` (`c_recurse`) on Linux with Clang (LTO+PGO)"
      },
      {
       "state": "done",
@@ -427,12 +373,6 @@
      },
      {
       "state": "done",
-      "label": "#140332",
-      "url": "https://github.com/python/cpython/issues/140332",
-      "title": "MemorySanitizer: use-of-uninitialized-value in _ssl.txt2obj via OpenSSL's OBJ_txt2obj"
-     },
-     {
-      "state": "done",
       "label": "#140306",
       "url": "https://github.com/python/cpython/issues/140306",
       "title": "Memory leak in test__interpchannels: _PyXIData_New not freed in channel_send"
@@ -475,12 +415,6 @@
      },
      {
       "state": "done",
-      "label": "#140159",
-      "url": "https://github.com/python/cpython/issues/140159",
-      "title": "Build Failure in posixmodule.c with Clang, ThreadSanitizer, and free-threaded build enabled"
-     },
-     {
-      "state": "done",
       "label": "#140120",
       "url": "https://github.com/python/cpython/issues/140120",
       "title": "Memory leak in `hmac` module with HACL* backend detected by AddressSanitizer"
@@ -505,21 +439,9 @@
      },
      {
       "state": "done",
-      "label": "#139288",
-      "url": "https://github.com/python/cpython/issues/139288",
-      "title": "JIT: Segmentation fault in _Py_LazyJitTrampoline when running test_asyncio after gh-139269 fix"
-     },
-     {
-      "state": "done",
       "label": "#139269",
       "url": "https://github.com/python/cpython/issues/139269",
       "title": "JIT: UB: unaligned store in `patch_*` functions"
-     },
-     {
-      "state": "done",
-      "label": "#127685",
-      "url": "https://github.com/python/cpython/issues/127685",
-      "title": "Performance Overhead in Ternary Operator Due to Value Loading vs Constant Loading"
      }
     ]
    }
@@ -527,7 +449,7 @@
  },
  {
   "name": "python/typeshed",
-  "summary": "10 merged PRs · 0 issues",
+  "summary": "PR: 10 merged",
   "sections": [
    {
     "title": "Pull requests",
@@ -593,78 +515,74 @@
       "title": "Add missing constants to flask-cors stubs"
      }
     ]
-   },
-   {
-    "title": "Issues",
-    "items": []
    }
   ]
  },
  {
   "name": "sqlalchemy/sqlalchemy",
-  "summary": "10 merged PRs · 7 issues",
+  "summary": "Commits: 10 committed · Issues: 6 completed, 1 open",
   "sections": [
    {
-    "title": "Pull requests",
+    "title": "Commits",
     "items": [
      {
       "state": "done",
-      "label": "#13261",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13261",
+      "label": "0aa47f8082",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/0aa47f8082513ecccc1638558f46b9fe8e610ad2",
       "title": "Add sqlite.JSONB type for binary JSON storage (SQLite >= 3.45.0)"
      },
      {
       "state": "done",
-      "label": "#13244",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13244",
+      "label": "15f1d6dce6",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/15f1d6dce6870c6ca9b5ad72d79e5a3cdc3a47bd",
       "title": "Remove unused TypeVars and compat import from typing modules"
      },
      {
       "state": "done",
-      "label": "#13239",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/13239",
+      "label": "77c91b8df5",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/77c91b8df51c5a00d6940a9b63b2ba5bd01d9ceb",
       "title": "Add mypy ignore comments for Python 3.14 module imports"
      },
      {
       "state": "done",
-      "label": "#12989",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12989",
+      "label": "6ee4d884f0",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/6ee4d884f04aa6bad21ad280a02441262863394c",
       "title": "Fix parameter mutation in orm_pre_session_exec()"
      },
      {
       "state": "done",
-      "label": "#12988",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12988",
+      "label": "a057c474bf",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/a057c474bf84ccd0508b89aa5428f45c9a644ee3",
       "title": "Fix type hint for with_for_update() to support tuples of table classes"
      },
      {
       "state": "done",
-      "label": "#12568",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12568",
-      "title": "Remove unused typing imports"
+      "label": "37c5b2e3e2",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/37c5b2e3e2cea552b5000df9281285b9f74c8166",
+      "title": "Remove unused typing imports (#12568)"
      },
      {
       "state": "done",
-      "label": "#12539",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12539",
-      "title": "refactor(testing-and-utils): Remove unused code and fix style issues"
-     },
-     {
-      "state": "done",
-      "label": "#12538",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12538",
+      "label": "93b0be7009",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/93b0be7009b4f6efd091fda31229353f929f4cc9",
       "title": "refactor (sql): simplify and optimize internal SQL handling"
      },
      {
       "state": "done",
-      "label": "#12535",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12535",
+      "label": "64f45d0a6b",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/64f45d0a6b4ad41cf570a8f0e09b86fba0ebb043",
+      "title": "refactor(testing-and-utils): Remove unused code and fix style issues"
+     },
+     {
+      "state": "done",
+      "label": "d1d81f80a3",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/d1d81f80a3764e3ebc38481fb6fd82cf6295dcf9",
       "title": "refactor: clean up unused variables in engine module"
      },
      {
       "state": "done",
-      "label": "#12534",
-      "url": "https://github.com/sqlalchemy/sqlalchemy/pull/12534",
+      "label": "bb5bfb4beb",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/bb5bfb4beb35450ee8db7a173b9b438e065a90a9",
       "title": "refactor: simplify and clean up dialect-specific code"
      }
     ]
@@ -719,81 +637,75 @@
   ]
  },
  {
-  "name": "glibc (sourceware)",
-  "summary": "9 committed patches · 8 bugs",
+  "name": "glibc",
+  "summary": "Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
     "items": [
      {
       "state": "open",
-      "label": "patch 145665",
+      "label": "#145665",
       "url": "https://patchwork.sourceware.org/patch/145665/",
       "title": "libio: Reserve space for large obstack writes"
      },
      {
       "state": "done",
-      "label": "patch 145006",
+      "label": "#145006",
       "url": "https://patchwork.sourceware.org/patch/145006/",
       "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
      },
      {
       "state": "open",
-      "label": "patch 144254",
-      "url": "https://patchwork.sourceware.org/patch/144254/",
-      "title": "[v2] libio: Use __wunderflow in _IO_getwline_info"
-     },
-     {
-      "state": "open",
-      "label": "patch 143415",
+      "label": "#143415",
       "url": "https://patchwork.sourceware.org/patch/143415/",
       "title": "[v2] termios: Add tcgetwinsize and tcsetwinsize [BZ #32074]"
      },
      {
       "state": "done",
-      "label": "patch 143055",
+      "label": "#143055",
       "url": "https://patchwork.sourceware.org/patch/143055/",
       "title": "elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]"
      },
      {
       "state": "done",
-      "label": "patch 142924",
+      "label": "#142924",
       "url": "https://patchwork.sourceware.org/patch/142924/",
       "title": "[v2] math: Set errno to ERANGE for logb (+-0) [BZ #6793]"
      },
      {
       "state": "done",
-      "label": "patch 142808",
+      "label": "#142808",
       "url": "https://patchwork.sourceware.org/patch/142808/",
       "title": "[v2] libio: Add test for fopen with an empty \", ccs=\" value [BZ #34574]"
      },
      {
       "state": "done",
-      "label": "patch 142193",
+      "label": "#142193",
       "url": "https://patchwork.sourceware.org/patch/142193/",
       "title": "stdlib, wcsmbs: Add missing __nonnull to strto*/wcsto* [BZ #33053]"
      },
      {
       "state": "done",
-      "label": "patch 134886",
+      "label": "#134886",
       "url": "https://patchwork.sourceware.org/patch/134886/",
       "title": "[v3] libio: Fix race in _IO_new_file_init_internal initialization order [BZ #33785]"
      },
      {
       "state": "done",
-      "label": "patch 134231",
+      "label": "#134231",
       "url": "https://patchwork.sourceware.org/patch/134231/",
       "title": "hugepages: close fd on error path in __get_thp_mode"
      },
      {
       "state": "done",
-      "label": "patch 133861",
+      "label": "#133861",
       "url": "https://patchwork.sourceware.org/patch/133861/",
       "title": "[v2] manual: clarify _FILE_OFFSET_BITS Y2038 implications [BZ #34095]"
      },
      {
       "state": "done",
-      "label": "patch 133858",
+      "label": "#133858",
       "url": "https://patchwork.sourceware.org/patch/133858/",
       "title": "README: fix stale bug-reporting URL [BZ #34094]"
      }
@@ -819,12 +731,6 @@
       "label": "BZ #34611",
       "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34611",
       "title": "wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)"
-     },
-     {
-      "state": "done",
-      "label": "BZ #34610",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34610",
-      "title": "fts_open: invalid free on NULL parent with empty argv on allocation failure"
      },
      {
       "state": "open",
@@ -856,7 +762,7 @@
  },
  {
   "name": "open-webui/open-webui",
-  "summary": "8 merged PRs · 6 issues",
+  "summary": "PR: 8 merged · Issues: 6 completed",
   "sections": [
    {
     "title": "Pull requests",
@@ -956,7 +862,7 @@
  },
  {
   "name": "streamlit/streamlit",
-  "summary": "4 merged PRs · 0 issues",
+  "summary": "PR: 4 merged",
   "sections": [
    {
     "title": "Pull requests",
@@ -986,16 +892,12 @@
       "title": "Extend st.navigation functionality to support various page input types"
      }
     ]
-   },
-   {
-    "title": "Issues",
-    "items": []
    }
   ]
  },
  {
   "name": "typeddjango/django-stubs",
-  "summary": "3 merged PRs · 0 issues",
+  "summary": "PR: 3 merged",
   "sections": [
    {
     "title": "Pull requests",
@@ -1019,16 +921,12 @@
       "title": "Fixed bugs with RawQuerySet"
      }
     ]
-   },
-   {
-    "title": "Issues",
-    "items": []
    }
   ]
  },
  {
   "name": "ag2ai/ag2",
-  "summary": "1 merged PRs · 1 issues",
+  "summary": "PR: 1 merged · Issues: 1 completed",
   "sections": [
    {
     "title": "Pull requests",
@@ -1055,29 +953,8 @@
   ]
  },
  {
-  "name": "elastic/elasticsearch",
-  "summary": "1 merged PRs · 0 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": [
-     {
-      "state": "done",
-      "label": "#117235",
-      "url": "https://github.com/elastic/elasticsearch/pull/117235",
-      "title": "Deprecate ChunkingOptions parameter"
-     }
-    ]
-   },
-   {
-    "title": "Issues",
-    "items": []
-   }
-  ]
- },
- {
   "name": "celery/celery",
-  "summary": "1 merged PRs · 0 issues",
+  "summary": "PR: 1 merged",
   "sections": [
    {
     "title": "Pull requests",
@@ -1089,21 +966,30 @@
       "title": "Add check for soft_time_limit and time_limit values"
      }
     ]
-   },
+   }
+  ]
+ },
+ {
+  "name": "elastic/elasticsearch",
+  "summary": "PR: 1 merged",
+  "sections": [
    {
-    "title": "Issues",
-    "items": []
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "done",
+      "label": "#117235",
+      "url": "https://github.com/elastic/elasticsearch/pull/117235",
+      "title": "Deprecate ChunkingOptions parameter"
+     }
+    ]
    }
   ]
  },
  {
   "name": "anthropics/claude-code",
-  "summary": "0 merged PRs · 1 issues",
+  "summary": "Issues: 1 open",
   "sections": [
-   {
-    "title": "Pull requests",
-    "items": []
-   },
    {
     "title": "Issues",
     "items": [
@@ -1119,12 +1005,8 @@
  },
  {
   "name": "c3lang/c3c",
-  "summary": "0 merged PRs · 1 issues",
+  "summary": "Issues: 1 completed",
   "sections": [
-   {
-    "title": "Pull requests",
-    "items": []
-   },
    {
     "title": "Issues",
     "items": [
@@ -1139,55 +1021,9 @@
   ]
  },
  {
-  "name": "llvm/llvm-project",
-  "summary": "0 merged PRs · 1 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": []
-   },
-   {
-    "title": "Issues",
-    "items": [
-     {
-      "state": "open",
-      "label": "#163263",
-      "url": "https://github.com/llvm/llvm-project/issues/163263",
-      "title": "[BOLT] llvm-bolt segmentation fault during Python optimization with -frame-opt=hot after allocation combiner pass"
-     }
-    ]
-   }
-  ]
- },
- {
-  "name": "pgadmin-org/pgadmin4",
-  "summary": "0 merged PRs · 1 issues",
-  "sections": [
-   {
-    "title": "Pull requests",
-    "items": []
-   },
-   {
-    "title": "Issues",
-    "items": [
-     {
-      "state": "done",
-      "label": "#8500",
-      "url": "https://github.com/pgadmin-org/pgadmin4/issues/8500",
-      "title": "Upgrade Dependencies and Base Systems to Latest Versions"
-     }
-    ]
-   }
-  ]
- },
- {
   "name": "litestar-org/litestar",
-  "summary": "0 merged PRs · 1 issues",
+  "summary": "Issues: 1 completed",
   "sections": [
-   {
-    "title": "Pull requests",
-    "items": []
-   },
    {
     "title": "Issues",
     "items": [
@@ -1196,6 +1032,23 @@
       "label": "#3848",
       "url": "https://github.com/litestar-org/litestar/issues/3848",
       "title": "Bug: Missing WebSocket Connection State Validation on Close and Message Send Operations"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "llvm/llvm-project",
+  "summary": "Issues: 1 open",
+  "sections": [
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "open",
+      "label": "#163263",
+      "url": "https://github.com/llvm/llvm-project/issues/163263",
+      "title": "[BOLT] llvm-bolt segmentation fault during Python optimization with -frame-opt=hot after allocation combiner pass"
      }
     ]
    }
