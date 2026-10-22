@@ -10,13 +10,14 @@ Python backend developer. I build services and integrations, work with legacy co
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 31 merged, 3 open · Issues: 26 completed, 14 open</summary>
+<summary><b>python/cpython</b><br>PR: 33 merged, 2 open · Issues: 28 completed, 15 open</summary>
 
 #### PR
 
+- 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
+- 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
 - 🟡 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
-- 🟡 [#159119](https://github.com/python/cpython/pull/159119) gh-158961: Fix JIT crashes with UBSan
-- 🟡 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
+- 🟢 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - 🟢 [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
 - 🟢 [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
 - 🟢 [#157179](https://github.com/python/cpython/pull/157179) gh-157176: Make time.struct\_time type immutable
@@ -51,12 +52,15 @@ Python backend developer. I build services and integrations, work with legacy co
 
 #### Issues
 
+- 🟡 [#160248](https://github.com/python/cpython/issues/160248) Reduce padding in the TextIOWrapper structure
+- 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
+- 🟢 [#160245](https://github.com/python/cpython/issues/160245) Reduce padding in parser memo entries
 - 🟡 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object when running Cython
 - 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
 - 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
-- 🟡 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
+- 🟢 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
 - 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
 - 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module
 - 🟡 [#157379](https://github.com/python/cpython/issues/157379) `_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field
@@ -141,10 +145,11 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 
 <details>
-<summary><b>glibc</b><br>Patches: 9 committed, 1 open · Bug reports: 2 fixed, 5 open</summary>
+<summary><b>glibc</b><br>Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open</summary>
 
 #### Patches
 
+- 🟡 [#146652](https://patchwork.sourceware.org/patch/146652/) locale: Reduce \_\_locale\_data padding
 - 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]

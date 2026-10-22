@@ -1,11 +1,23 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 31 merged, 3 open · Issues: 26 completed, 14 open",
+  "summary": "PR: 33 merged, 2 open · Issues: 28 completed, 15 open",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
+     {
+      "state": "open",
+      "label": "#160271",
+      "url": "https://github.com/python/cpython/pull/160271",
+      "title": "gh-160247: Reduce padding in _PyInstructionSequence"
+     },
+     {
+      "state": "done",
+      "label": "#160266",
+      "url": "https://github.com/python/cpython/pull/160266",
+      "title": "gh-160245: Reduce padding in Memo"
+     },
      {
       "state": "open",
       "label": "#160149",
@@ -13,13 +25,7 @@
       "title": "gh-160132: Reduce padding in _PyCfgBasicblock"
      },
      {
-      "state": "open",
-      "label": "#159119",
-      "url": "https://github.com/python/cpython/pull/159119",
-      "title": "gh-158961: Fix JIT crashes with UBSan"
-     },
-     {
-      "state": "open",
+      "state": "done",
       "label": "#158315",
       "url": "https://github.com/python/cpython/pull/158315",
       "title": "gh-158304: Avoid creating StopIteration for every value yielded by an async generator"
@@ -217,6 +223,24 @@
     "items": [
      {
       "state": "open",
+      "label": "#160248",
+      "url": "https://github.com/python/cpython/issues/160248",
+      "title": "Reduce padding in the TextIOWrapper structure"
+     },
+     {
+      "state": "open",
+      "label": "#160247",
+      "url": "https://github.com/python/cpython/issues/160247",
+      "title": "Reduce padding in the instruction sequence structure"
+     },
+     {
+      "state": "done",
+      "label": "#160245",
+      "url": "https://github.com/python/cpython/issues/160245",
+      "title": "Reduce padding in parser memo entries"
+     },
+     {
+      "state": "open",
       "label": "#160132",
       "url": "https://github.com/python/cpython/issues/160132",
       "title": "Reduce padding in `_PyCfgBasicblock`"
@@ -246,7 +270,7 @@
       "title": "Async generators create and discard a StopIteration exception for every yielded value"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#158126",
       "url": "https://github.com/python/cpython/issues/158126",
       "title": "pickle.dumps() creates and discards an AttributeError on every call since 3.13.1"
@@ -650,11 +674,17 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 9 committed, 1 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "#146652",
+      "url": "https://patchwork.sourceware.org/patch/146652/",
+      "title": "locale: Reduce __locale_data padding"
+     },
      {
       "state": "open",
       "label": "#145665",
