@@ -10,10 +10,11 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 33 принято, 2 открыто · Issues: 28 выполнено, 15 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 33 принято, 3 открыто · Issues: 28 выполнено, 16 открыто</summary>
 
 #### PR
 
+- 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
 - 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
 - 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
 - 🟡 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
@@ -52,7 +53,8 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
-- 🟡 [#160248](https://github.com/python/cpython/issues/160248) Reduce padding in the TextIOWrapper structure
+- 🟡 [#160358](https://github.com/python/cpython/issues/160358) Crash (SIGABRT): Assertion `year >= 1' failed in `days\_before\_year` when unpickling datetime with year 0
+- 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import
 - 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
 - 🟢 [#160245](https://github.com/python/cpython/issues/160245) Reduce padding in parser memo entries
 - 🟡 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
@@ -149,11 +151,11 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Патчи
 
+- 🟡 [#146669](https://patchwork.sourceware.org/patch/146669/) \[v2\] intl: Reduce known\_translation\_t padding
+- 🟡 [#146668](https://patchwork.sourceware.org/patch/146668/) \[v2\] locale: Reduce \_\_locale\_data padding
 - 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
 - 🟡 [#146655](https://patchwork.sourceware.org/patch/146655/) io: Reduce ftw\_frame padding
-- 🟡 [#146654](https://patchwork.sourceware.org/patch/146654/) intl: Reduce known\_translation\_t padding
 - 🟡 [#146653](https://patchwork.sourceware.org/patch/146653/) stdio-common: Reduce printf\_spec padding
-- 🟡 [#146652](https://patchwork.sourceware.org/patch/146652/) locale: Reduce \_\_locale\_data padding
 - 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]

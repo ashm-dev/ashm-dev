@@ -1,11 +1,17 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 33 merged, 2 open · Issues: 28 completed, 15 open",
+  "summary": "PR: 33 merged, 3 open · Issues: 28 completed, 16 open",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
+     {
+      "state": "open",
+      "label": "#160379",
+      "url": "https://github.com/python/cpython/pull/160379",
+      "title": "gh-160353: Fix readline memory leak on re-import"
+     },
      {
       "state": "open",
       "label": "#160271",
@@ -223,9 +229,15 @@
     "items": [
      {
       "state": "open",
-      "label": "#160248",
-      "url": "https://github.com/python/cpython/issues/160248",
-      "title": "Reduce padding in the TextIOWrapper structure"
+      "label": "#160358",
+      "url": "https://github.com/python/cpython/issues/160358",
+      "title": "Crash (SIGABRT): Assertion `year >= 1' failed in `days_before_year` when unpickling datetime with year 0"
+     },
+     {
+      "state": "open",
+      "label": "#160353",
+      "url": "https://github.com/python/cpython/issues/160353",
+      "title": "readline leaks the completer delimiters buffer on re-import"
      },
      {
       "state": "open",
@@ -681,6 +693,18 @@
     "items": [
      {
       "state": "open",
+      "label": "#146669",
+      "url": "https://patchwork.sourceware.org/patch/146669/",
+      "title": "[v2] intl: Reduce known_translation_t padding"
+     },
+     {
+      "state": "open",
+      "label": "#146668",
+      "url": "https://patchwork.sourceware.org/patch/146668/",
+      "title": "[v2] locale: Reduce __locale_data padding"
+     },
+     {
+      "state": "open",
       "label": "#146656",
       "url": "https://patchwork.sourceware.org/patch/146656/",
       "title": "intl: Reduce loaded_domain padding"
@@ -693,21 +717,9 @@
      },
      {
       "state": "open",
-      "label": "#146654",
-      "url": "https://patchwork.sourceware.org/patch/146654/",
-      "title": "intl: Reduce known_translation_t padding"
-     },
-     {
-      "state": "open",
       "label": "#146653",
       "url": "https://patchwork.sourceware.org/patch/146653/",
       "title": "stdio-common: Reduce printf_spec padding"
-     },
-     {
-      "state": "open",
-      "label": "#146652",
-      "url": "https://patchwork.sourceware.org/patch/146652/",
-      "title": "locale: Reduce __locale_data padding"
      },
      {
       "state": "open",
