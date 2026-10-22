@@ -145,10 +145,14 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 </details>
 
 <details>
-<summary><b>glibc</b><br>Патчи: 9 принято, 2 открыто · Баги: 2 исправлено, 5 открыто</summary>
+<summary><b>glibc</b><br>Патчи: 9 принято, 6 открыто · Баги: 2 исправлено, 5 открыто</summary>
 
 #### Патчи
 
+- 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
+- 🟡 [#146655](https://patchwork.sourceware.org/patch/146655/) io: Reduce ftw\_frame padding
+- 🟡 [#146654](https://patchwork.sourceware.org/patch/146654/) intl: Reduce known\_translation\_t padding
+- 🟡 [#146653](https://patchwork.sourceware.org/patch/146653/) stdio-common: Reduce printf\_spec padding
 - 🟡 [#146652](https://patchwork.sourceware.org/patch/146652/) locale: Reduce \_\_locale\_data padding
 - 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info

@@ -674,11 +674,35 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 9 committed, 2 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 9 committed, 6 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "#146656",
+      "url": "https://patchwork.sourceware.org/patch/146656/",
+      "title": "intl: Reduce loaded_domain padding"
+     },
+     {
+      "state": "open",
+      "label": "#146655",
+      "url": "https://patchwork.sourceware.org/patch/146655/",
+      "title": "io: Reduce ftw_frame padding"
+     },
+     {
+      "state": "open",
+      "label": "#146654",
+      "url": "https://patchwork.sourceware.org/patch/146654/",
+      "title": "intl: Reduce known_translation_t padding"
+     },
+     {
+      "state": "open",
+      "label": "#146653",
+      "url": "https://patchwork.sourceware.org/patch/146653/",
+      "title": "stdio-common: Reduce printf_spec padding"
+     },
      {
       "state": "open",
       "label": "#146652",
