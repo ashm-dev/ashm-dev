@@ -10,10 +10,11 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 31 принято, 2 открыто · Issues: 25 выполнено, 14 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 31 принято, 3 открыто · Issues: 26 выполнено, 14 открыто</summary>
 
 #### PR
 
+- 🟡 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
 - 🟡 [#159119](https://github.com/python/cpython/pull/159119) gh-158961: Fix JIT crashes with UBSan
 - 🟡 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - 🟢 [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
@@ -50,7 +51,8 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
-- 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main
+- 🟡 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
+- 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object when running Cython
 - 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
 - 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
@@ -60,7 +62,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 - 🟡 [#157379](https://github.com/python/cpython/issues/157379) `_csv.reader`: NULL deref via re-entrant iterator that reaches EOF with an open quoted field
 - 🟢 [#157378](https://github.com/python/cpython/issues/157378) Wrong `SyntaxError.offset` for "Non-UTF-8 code starting with ..." when a non-ASCII character precedes the invalid byte
 - 🟢 [#157176](https://github.com/python/cpython/issues/157176) Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance
-- 🟡 [#157062](https://github.com/python/cpython/issues/157062) Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`
+- 🟢 [#157062](https://github.com/python/cpython/issues/157062) Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`
 - 🟢 [#156762](https://github.com/python/cpython/issues/156762) `_operator`: `methodcaller_clear` has the wrong signature for the `tp_clear` slot (returns `void`, not `int`)
 - 🟡 [#156570](https://github.com/python/cpython/issues/156570) test.support.warnings\_helper.check\_warnings() raises KeyError: 'warnings' under -X lazy\_imports=all
 - 🟢 [#156402](https://github.com/python/cpython/issues/156402) Modernize annotation usage in libregrtest
@@ -278,6 +280,15 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 #### Issues
 
 - 🟡 [#163263](https://github.com/llvm/llvm-project/issues/163263) \[BOLT\] llvm-bolt segmentation fault during Python optimization with -frame-opt=hot after allocation combiner pass
+
+</details>
+
+<details>
+<summary><b>tarantool/tarantool</b><br>PR: 1 открыто</summary>
+
+#### PR
+
+- 🟡 [#13506](https://github.com/tarantool/tarantool/pull/13506) yaml: fix memory leaks on decode errors
 
 </details>
 <!-- contributions:end -->

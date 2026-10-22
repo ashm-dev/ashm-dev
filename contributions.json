@@ -1,11 +1,17 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 31 merged, 2 open · Issues: 25 completed, 14 open",
+  "summary": "PR: 31 merged, 3 open · Issues: 26 completed, 14 open",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
+     {
+      "state": "open",
+      "label": "#160149",
+      "url": "https://github.com/python/cpython/pull/160149",
+      "title": "gh-160132: Reduce padding in _PyCfgBasicblock"
+     },
      {
       "state": "open",
       "label": "#159119",
@@ -211,9 +217,15 @@
     "items": [
      {
       "state": "open",
+      "label": "#160132",
+      "url": "https://github.com/python/cpython/issues/160132",
+      "title": "Reduce padding in `_PyCfgBasicblock`"
+     },
+     {
+      "state": "open",
       "label": "#158963",
       "url": "https://github.com/python/cpython/issues/158963",
-      "title": "LeakSanitizer reports leaked code object during SQLAlchemy editable build on 3.15 and main"
+      "title": "LeakSanitizer reports leaked code object when running Cython"
      },
      {
       "state": "open",
@@ -270,7 +282,7 @@
       "title": "Memory leak on interpreter shutdown when reference cycle exists between `structseq` type and its instance"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#157062",
       "url": "https://github.com/python/cpython/issues/157062",
       "title": "Segfault during BOLT profile collection in `test_functools` (`fib`) when building with `--enable-bolt --enable-optimizations`"
@@ -1043,6 +1055,23 @@
       "label": "#163263",
       "url": "https://github.com/llvm/llvm-project/issues/163263",
       "title": "[BOLT] llvm-bolt segmentation fault during Python optimization with -frame-opt=hot after allocation combiner pass"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "tarantool/tarantool",
+  "summary": "PR: 1 open",
+  "sections": [
+   {
+    "title": "Pull requests",
+    "items": [
+     {
+      "state": "open",
+      "label": "#13506",
+      "url": "https://github.com/tarantool/tarantool/pull/13506",
+      "title": "yaml: fix memory leaks on decode errors"
      }
     ]
    }
