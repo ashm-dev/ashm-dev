@@ -1,9 +1,8 @@
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
-
-from update_readme import update
 
 
 class UpdateTest(unittest.TestCase):
@@ -52,6 +51,15 @@ class UpdateTest(unittest.TestCase):
             "    (root / name).write_text(value)\n"
         )
 
+    def run_update(self, succeeds=True):
+        result = subprocess.run(
+            [sys.executable, "-B", "-c",
+             "import sys; from update_readme import update; update(sys.argv[1], delay=0)",
+             str(self.checkout)],
+            cwd=Path(__file__).parent, capture_output=True, text=True, timeout=30,
+        )
+        self.assertEqual(result.returncode == 0, succeeds, result.stdout + result.stderr)
+
     def assert_checkout_preserved(self):
         self.assertEqual(self.git(self.checkout, "rev-parse", "HEAD"), self.original)
         self.assertEqual((self.checkout / "notes.txt").read_text(), "Keep this file\n")
@@ -68,7 +76,7 @@ class UpdateTest(unittest.TestCase):
         (self.author / "unrelated.txt").write_text("Keep upstream changes\n")
         self.commit("Update source")
         parent = self.git(self.remote, "rev-parse", "main")
-        update(self.checkout, delay=0)
+        self.run_update()
         self.assert_published("fresh")
         self.assertEqual(self.git(self.remote, "rev-parse", "main^"), parent)
         self.assertEqual(self.git(self.remote, "show", "main:unrelated.txt"), "Keep upstream changes")
@@ -92,7 +100,7 @@ class UpdateTest(unittest.TestCase):
             "        subprocess.run(['git', '-C', str(peer), *args], check=True)\n"
         ))
         self.commit("Add concurrent publisher")
-        update(self.checkout, delay=0)
+        self.run_update()
         self.assert_published("concurrent")
         self.assertEqual(self.attempts.read_text().splitlines(), ["attempt", "attempt"])
 
@@ -107,7 +115,7 @@ class UpdateTest(unittest.TestCase):
         ))
         (self.author / "source.txt").write_text("recovered\n")
         self.commit("Add transient failure")
-        update(self.checkout, delay=0)
+        self.run_update()
         self.assert_published("recovered")
         self.assertEqual(self.attempts.read_text().splitlines(), ["attempt", "attempt"])
 
@@ -115,14 +123,13 @@ class UpdateTest(unittest.TestCase):
         self.generator(before="(root / 'README.md').write_text('partial')\nraise RuntimeError('Source unavailable')\n")
         self.commit("Add unavailable source")
         parent = self.git(self.remote, "rev-parse", "main")
-        with self.assertRaises(subprocess.CalledProcessError):
-            update(self.checkout, delay=0)
+        self.run_update(succeeds=False)
         self.assertEqual(self.git(self.remote, "rev-parse", "main"), parent)
         self.assertEqual(self.attempts.read_text().splitlines(), ["attempt"] * 3)
         self.assert_published("old")
 
     def test_unchanged_data_does_not_create_a_commit(self):
-        update(self.checkout, delay=0)
+        self.run_update()
         self.assertEqual(self.git(self.remote, "rev-parse", "main"), self.original)
         self.assert_published("old")
 
@@ -133,7 +140,7 @@ class UpdateTest(unittest.TestCase):
         self.commit("Update source")
         hook.write_text(f'#!/bin/sh\nif [ ! -f "{marker}" ]; then touch "{marker}"; exit 1; fi\n')
         hook.chmod(0o755)
-        update(self.checkout, delay=0)
+        self.run_update()
         self.assert_published("fresh")
         self.assertEqual(self.attempts.read_text().splitlines(), ["attempt", "attempt"])
 
@@ -144,8 +151,7 @@ class UpdateTest(unittest.TestCase):
         hook = self.remote / "hooks/pre-receive"
         hook.write_text("#!/bin/sh\nexit 1\n")
         hook.chmod(0o755)
-        with self.assertRaises(subprocess.CalledProcessError):
-            update(self.checkout, delay=0)
+        self.run_update(succeeds=False)
         self.assertEqual(self.git(self.remote, "rev-parse", "main"), parent)
         self.assertEqual(self.attempts.read_text().splitlines(), ["attempt"] * 3)
         self.assert_published("old")
