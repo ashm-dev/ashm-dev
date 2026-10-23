@@ -686,11 +686,17 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 9 committed, 6 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 9 committed, 7 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "#146769",
+      "url": "https://patchwork.sourceware.org/patch/146769/",
+      "title": "nss: Remove redundant seeks in fget*ent [BZ #31936]"
+     },
      {
       "state": "open",
       "label": "#146669",
