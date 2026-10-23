@@ -53,7 +53,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
-- 🟡 [#160358](https://github.com/python/cpython/issues/160358) Crash (SIGABRT): Assertion `year >= 1' failed in `days\_before\_year` when unpickling datetime with year 0
+- 🟡 [#160358](https://github.com/python/cpython/issues/160358) Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0
 - 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import
 - 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
 - 🟢 [#160245](https://github.com/python/cpython/issues/160245) Reduce padding in parser memo entries

@@ -231,7 +231,7 @@
       "state": "open",
       "label": "#160358",
       "url": "https://github.com/python/cpython/issues/160358",
-      "title": "Crash (SIGABRT): Assertion `year >= 1' failed in `days_before_year` when unpickling datetime with year 0"
+      "title": "Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0"
      },
      {
       "state": "open",
