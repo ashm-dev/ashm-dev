@@ -10,7 +10,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 33 принято, 3 открыто · Issues: 28 выполнено, 16 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 33 принято, 3 открыто · Issues: 28 выполнено, 18 открыто</summary>
 
 #### PR
 
@@ -53,6 +53,8 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
+- 🟡 [#160679](https://github.com/python/cpython/issues/160679) Combining the argument-conversion loops in \_PyEval\_Vector
+- 🟡 [#160676](https://github.com/python/cpython/issues/160676) `for` loop swallows exceptions raised by a `sys.monitoring` callback for `StopIteration`
 - 🟡 [#160358](https://github.com/python/cpython/issues/160358) Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0
 - 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import
 - 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure

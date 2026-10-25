@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 33 merged, 3 open · Issues: 28 completed, 16 open",
+  "summary": "PR: 33 merged, 3 open · Issues: 28 completed, 18 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -227,6 +227,18 @@
    {
     "title": "Issues",
     "items": [
+     {
+      "state": "open",
+      "label": "#160679",
+      "url": "https://github.com/python/cpython/issues/160679",
+      "title": "Combining the argument-conversion loops in _PyEval_Vector"
+     },
+     {
+      "state": "open",
+      "label": "#160676",
+      "url": "https://github.com/python/cpython/issues/160676",
+      "title": "`for` loop swallows exceptions raised by a `sys.monitoring` callback for `StopIteration`"
+     },
      {
       "state": "open",
       "label": "#160358",
