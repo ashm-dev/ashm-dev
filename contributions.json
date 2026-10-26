@@ -516,9 +516,9 @@
     "items": [
      {
       "state": "open",
-      "label": "#146769",
-      "url": "https://patchwork.sourceware.org/patch/146769/",
-      "title": "nss: Remove redundant seeks in fget*ent [BZ #31936]"
+      "label": "#146961",
+      "url": "https://patchwork.sourceware.org/patch/146961/",
+      "title": "[v2] nss: Remove redundant seeks in fget*ent [BZ #31936]"
      },
      {
       "state": "open",
