@@ -508,6 +508,160 @@
   ]
  },
  {
+  "name": "glibc",
+  "summary": "Patches: 11 committed, 5 open · Bug reports: 2 fixed, 5 open",
+  "sections": [
+   {
+    "title": "Patches",
+    "items": [
+     {
+      "state": "open",
+      "label": "#146769",
+      "url": "https://patchwork.sourceware.org/patch/146769/",
+      "title": "nss: Remove redundant seeks in fget*ent [BZ #31936]"
+     },
+     {
+      "state": "open",
+      "label": "#146669",
+      "url": "https://patchwork.sourceware.org/patch/146669/",
+      "title": "[v2] intl: Reduce known_translation_t padding"
+     },
+     {
+      "state": "open",
+      "label": "#146668",
+      "url": "https://patchwork.sourceware.org/patch/146668/",
+      "title": "[v2] locale: Reduce __locale_data padding"
+     },
+     {
+      "state": "open",
+      "label": "#146656",
+      "url": "https://patchwork.sourceware.org/patch/146656/",
+      "title": "intl: Reduce loaded_domain padding"
+     },
+     {
+      "state": "done",
+      "label": "#146655",
+      "url": "https://patchwork.sourceware.org/patch/146655/",
+      "title": "io: Reduce ftw_frame padding"
+     },
+     {
+      "state": "done",
+      "label": "#146653",
+      "url": "https://patchwork.sourceware.org/patch/146653/",
+      "title": "stdio-common: Reduce printf_spec padding"
+     },
+     {
+      "state": "open",
+      "label": "#145665",
+      "url": "https://patchwork.sourceware.org/patch/145665/",
+      "title": "libio: Reserve space for large obstack writes"
+     },
+     {
+      "state": "done",
+      "label": "#145006",
+      "url": "https://patchwork.sourceware.org/patch/145006/",
+      "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
+     },
+     {
+      "state": "done",
+      "label": "#143055",
+      "url": "https://patchwork.sourceware.org/patch/143055/",
+      "title": "elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]"
+     },
+     {
+      "state": "done",
+      "label": "#142924",
+      "url": "https://patchwork.sourceware.org/patch/142924/",
+      "title": "[v2] math: Set errno to ERANGE for logb (+-0) [BZ #6793]"
+     },
+     {
+      "state": "done",
+      "label": "#142808",
+      "url": "https://patchwork.sourceware.org/patch/142808/",
+      "title": "[v2] libio: Add test for fopen with an empty \", ccs=\" value [BZ #34574]"
+     },
+     {
+      "state": "done",
+      "label": "#142193",
+      "url": "https://patchwork.sourceware.org/patch/142193/",
+      "title": "stdlib, wcsmbs: Add missing __nonnull to strto*/wcsto* [BZ #33053]"
+     },
+     {
+      "state": "done",
+      "label": "#134886",
+      "url": "https://patchwork.sourceware.org/patch/134886/",
+      "title": "[v3] libio: Fix race in _IO_new_file_init_internal initialization order [BZ #33785]"
+     },
+     {
+      "state": "done",
+      "label": "#134231",
+      "url": "https://patchwork.sourceware.org/patch/134231/",
+      "title": "hugepages: close fd on error path in __get_thp_mode"
+     },
+     {
+      "state": "done",
+      "label": "#133861",
+      "url": "https://patchwork.sourceware.org/patch/133861/",
+      "title": "[v2] manual: clarify _FILE_OFFSET_BITS Y2038 implications [BZ #34095]"
+     },
+     {
+      "state": "done",
+      "label": "#133858",
+      "url": "https://patchwork.sourceware.org/patch/133858/",
+      "title": "README: fix stale bug-reporting URL [BZ #34094]"
+     }
+    ]
+   },
+   {
+    "title": "Bugs",
+    "items": [
+     {
+      "state": "open",
+      "label": "BZ #34613",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34613",
+      "title": "sem_open with O_CREAT|O_EXCL returns uninitialized pointer if write fails"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34612",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34612",
+      "title": "localedef: charmap ..(2).. ellipsis incorrectly treated as decimal range"
+     },
+     {
+      "state": "done",
+      "label": "BZ #34611",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34611",
+      "title": "wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34609",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34609",
+      "title": "authdes_pk_create: free() called on uninitialized pointer on memory allocation failure"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34608",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34608",
+      "title": "wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $* or $@ with no positional arguments"
+     },
+     {
+      "state": "open",
+      "label": "BZ #34607",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34607",
+      "title": "localedef crashes with SIGSEGV in handle_ellipsis when LC_COLLATE contains only an ellipsis"
+     },
+     {
+      "state": "done",
+      "label": "BZ #34600",
+      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34600",
+      "title": "[2.44 regression] ld.so segfaults at startup with an old-format ld.so.cache"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name": "python/typeshed",
   "summary": "PR: 10 merged",
   "sections": [
@@ -691,160 +845,6 @@
       "label": "#13240",
       "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13240",
       "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
-     }
-    ]
-   }
-  ]
- },
- {
-  "name": "glibc",
-  "summary": "Patches: 9 committed, 7 open · Bug reports: 2 fixed, 5 open",
-  "sections": [
-   {
-    "title": "Patches",
-    "items": [
-     {
-      "state": "open",
-      "label": "#146769",
-      "url": "https://patchwork.sourceware.org/patch/146769/",
-      "title": "nss: Remove redundant seeks in fget*ent [BZ #31936]"
-     },
-     {
-      "state": "open",
-      "label": "#146669",
-      "url": "https://patchwork.sourceware.org/patch/146669/",
-      "title": "[v2] intl: Reduce known_translation_t padding"
-     },
-     {
-      "state": "open",
-      "label": "#146668",
-      "url": "https://patchwork.sourceware.org/patch/146668/",
-      "title": "[v2] locale: Reduce __locale_data padding"
-     },
-     {
-      "state": "open",
-      "label": "#146656",
-      "url": "https://patchwork.sourceware.org/patch/146656/",
-      "title": "intl: Reduce loaded_domain padding"
-     },
-     {
-      "state": "open",
-      "label": "#146655",
-      "url": "https://patchwork.sourceware.org/patch/146655/",
-      "title": "io: Reduce ftw_frame padding"
-     },
-     {
-      "state": "open",
-      "label": "#146653",
-      "url": "https://patchwork.sourceware.org/patch/146653/",
-      "title": "stdio-common: Reduce printf_spec padding"
-     },
-     {
-      "state": "open",
-      "label": "#145665",
-      "url": "https://patchwork.sourceware.org/patch/145665/",
-      "title": "libio: Reserve space for large obstack writes"
-     },
-     {
-      "state": "done",
-      "label": "#145006",
-      "url": "https://patchwork.sourceware.org/patch/145006/",
-      "title": "[v3] libio: Use __wunderflow in _IO_getwline_info"
-     },
-     {
-      "state": "done",
-      "label": "#143055",
-      "url": "https://patchwork.sourceware.org/patch/143055/",
-      "title": "elf: Do not load cache extensions from an old-format ld.so.cache [BZ #34600]"
-     },
-     {
-      "state": "done",
-      "label": "#142924",
-      "url": "https://patchwork.sourceware.org/patch/142924/",
-      "title": "[v2] math: Set errno to ERANGE for logb (+-0) [BZ #6793]"
-     },
-     {
-      "state": "done",
-      "label": "#142808",
-      "url": "https://patchwork.sourceware.org/patch/142808/",
-      "title": "[v2] libio: Add test for fopen with an empty \", ccs=\" value [BZ #34574]"
-     },
-     {
-      "state": "done",
-      "label": "#142193",
-      "url": "https://patchwork.sourceware.org/patch/142193/",
-      "title": "stdlib, wcsmbs: Add missing __nonnull to strto*/wcsto* [BZ #33053]"
-     },
-     {
-      "state": "done",
-      "label": "#134886",
-      "url": "https://patchwork.sourceware.org/patch/134886/",
-      "title": "[v3] libio: Fix race in _IO_new_file_init_internal initialization order [BZ #33785]"
-     },
-     {
-      "state": "done",
-      "label": "#134231",
-      "url": "https://patchwork.sourceware.org/patch/134231/",
-      "title": "hugepages: close fd on error path in __get_thp_mode"
-     },
-     {
-      "state": "done",
-      "label": "#133861",
-      "url": "https://patchwork.sourceware.org/patch/133861/",
-      "title": "[v2] manual: clarify _FILE_OFFSET_BITS Y2038 implications [BZ #34095]"
-     },
-     {
-      "state": "done",
-      "label": "#133858",
-      "url": "https://patchwork.sourceware.org/patch/133858/",
-      "title": "README: fix stale bug-reporting URL [BZ #34094]"
-     }
-    ]
-   },
-   {
-    "title": "Bugs",
-    "items": [
-     {
-      "state": "open",
-      "label": "BZ #34613",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34613",
-      "title": "sem_open with O_CREAT|O_EXCL returns uninitialized pointer if write fails"
-     },
-     {
-      "state": "open",
-      "label": "BZ #34612",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34612",
-      "title": "localedef: charmap ..(2).. ellipsis incorrectly treated as decimal range"
-     },
-     {
-      "state": "done",
-      "label": "BZ #34611",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34611",
-      "title": "wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)"
-     },
-     {
-      "state": "open",
-      "label": "BZ #34609",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34609",
-      "title": "authdes_pk_create: free() called on uninitialized pointer on memory allocation failure"
-     },
-     {
-      "state": "open",
-      "label": "BZ #34608",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34608",
-      "title": "wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $* or $@ with no positional arguments"
-     },
-     {
-      "state": "open",
-      "label": "BZ #34607",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34607",
-      "title": "localedef crashes with SIGSEGV in handle_ellipsis when LC_COLLATE contains only an ellipsis"
-     },
-     {
-      "state": "done",
-      "label": "BZ #34600",
-      "url": "https://sourceware.org/bugzilla/show_bug.cgi?id=34600",
-      "title": "[2.44 regression] ld.so segfaults at startup with an old-format ld.so.cache"
      }
     ]
    }

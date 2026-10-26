@@ -103,6 +103,40 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 
 <details>
+<summary><b>glibc</b><br>Patches: 11 committed, 5 open · Bug reports: 2 fixed, 5 open</summary>
+
+#### Patches
+
+- 🟡 [#146769](https://patchwork.sourceware.org/patch/146769/) nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
+- 🟡 [#146669](https://patchwork.sourceware.org/patch/146669/) \[v2\] intl: Reduce known\_translation\_t padding
+- 🟡 [#146668](https://patchwork.sourceware.org/patch/146668/) \[v2\] locale: Reduce \_\_locale\_data padding
+- 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
+- 🟢 [#146655](https://patchwork.sourceware.org/patch/146655/) io: Reduce ftw\_frame padding
+- 🟢 [#146653](https://patchwork.sourceware.org/patch/146653/) stdio-common: Reduce printf\_spec padding
+- 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
+- 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
+- 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]
+- 🟢 [#142924](https://patchwork.sourceware.org/patch/142924/) \[v2\] math: Set errno to ERANGE for logb (+-0) \[BZ #6793\]
+- 🟢 [#142808](https://patchwork.sourceware.org/patch/142808/) \[v2\] libio: Add test for fopen with an empty ", ccs=" value \[BZ #34574\]
+- 🟢 [#142193](https://patchwork.sourceware.org/patch/142193/) stdlib, wcsmbs: Add missing \_\_nonnull to strto\*/wcsto\* \[BZ #33053\]
+- 🟢 [#134886](https://patchwork.sourceware.org/patch/134886/) \[v3\] libio: Fix race in \_IO\_new\_file\_init\_internal initialization order \[BZ #33785\]
+- 🟢 [#134231](https://patchwork.sourceware.org/patch/134231/) hugepages: close fd on error path in \_\_get\_thp\_mode
+- 🟢 [#133861](https://patchwork.sourceware.org/patch/133861/) \[v2\] manual: clarify \_FILE\_OFFSET\_BITS Y2038 implications \[BZ #34095\]
+- 🟢 [#133858](https://patchwork.sourceware.org/patch/133858/) README: fix stale bug-reporting URL \[BZ #34094\]
+
+#### Bug reports
+
+- 🟡 [BZ #34613](https://sourceware.org/bugzilla/show_bug.cgi?id=34613) sem\_open with O\_CREAT|O\_EXCL returns uninitialized pointer if write fails
+- 🟡 [BZ #34612](https://sourceware.org/bugzilla/show_bug.cgi?id=34612) localedef: charmap ..(2).. ellipsis incorrectly treated as decimal range
+- 🟢 [BZ #34611](https://sourceware.org/bugzilla/show_bug.cgi?id=34611) wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)
+- 🟡 [BZ #34609](https://sourceware.org/bugzilla/show_bug.cgi?id=34609) authdes\_pk\_create: free() called on uninitialized pointer on memory allocation failure
+- 🟡 [BZ #34608](https://sourceware.org/bugzilla/show_bug.cgi?id=34608) wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $\* or $@ with no positional arguments
+- 🟡 [BZ #34607](https://sourceware.org/bugzilla/show_bug.cgi?id=34607) localedef crashes with SIGSEGV in handle\_ellipsis when LC\_COLLATE contains only an ellipsis
+- 🟢 [BZ #34600](https://sourceware.org/bugzilla/show_bug.cgi?id=34600) \[2.44 regression\] ld.so segfaults at startup with an old-format ld.so.cache
+
+</details>
+
+<details>
 <summary><b>python/typeshed</b><br>PR: 10 merged</summary>
 
 #### PR
@@ -145,40 +179,6 @@ Python backend developer. I build services and integrations, work with legacy co
 - 🟢 [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
 - 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
 - 🟢 [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
-
-</details>
-
-<details>
-<summary><b>glibc</b><br>Patches: 9 committed, 7 open · Bug reports: 2 fixed, 5 open</summary>
-
-#### Patches
-
-- 🟡 [#146769](https://patchwork.sourceware.org/patch/146769/) nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
-- 🟡 [#146669](https://patchwork.sourceware.org/patch/146669/) \[v2\] intl: Reduce known\_translation\_t padding
-- 🟡 [#146668](https://patchwork.sourceware.org/patch/146668/) \[v2\] locale: Reduce \_\_locale\_data padding
-- 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
-- 🟡 [#146655](https://patchwork.sourceware.org/patch/146655/) io: Reduce ftw\_frame padding
-- 🟡 [#146653](https://patchwork.sourceware.org/patch/146653/) stdio-common: Reduce printf\_spec padding
-- 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
-- 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
-- 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]
-- 🟢 [#142924](https://patchwork.sourceware.org/patch/142924/) \[v2\] math: Set errno to ERANGE for logb (+-0) \[BZ #6793\]
-- 🟢 [#142808](https://patchwork.sourceware.org/patch/142808/) \[v2\] libio: Add test for fopen with an empty ", ccs=" value \[BZ #34574\]
-- 🟢 [#142193](https://patchwork.sourceware.org/patch/142193/) stdlib, wcsmbs: Add missing \_\_nonnull to strto\*/wcsto\* \[BZ #33053\]
-- 🟢 [#134886](https://patchwork.sourceware.org/patch/134886/) \[v3\] libio: Fix race in \_IO\_new\_file\_init\_internal initialization order \[BZ #33785\]
-- 🟢 [#134231](https://patchwork.sourceware.org/patch/134231/) hugepages: close fd on error path in \_\_get\_thp\_mode
-- 🟢 [#133861](https://patchwork.sourceware.org/patch/133861/) \[v2\] manual: clarify \_FILE\_OFFSET\_BITS Y2038 implications \[BZ #34095\]
-- 🟢 [#133858](https://patchwork.sourceware.org/patch/133858/) README: fix stale bug-reporting URL \[BZ #34094\]
-
-#### Bug reports
-
-- 🟡 [BZ #34613](https://sourceware.org/bugzilla/show_bug.cgi?id=34613) sem\_open with O\_CREAT|O\_EXCL returns uninitialized pointer if write fails
-- 🟡 [BZ #34612](https://sourceware.org/bugzilla/show_bug.cgi?id=34612) localedef: charmap ..(2).. ellipsis incorrectly treated as decimal range
-- 🟢 [BZ #34611](https://sourceware.org/bugzilla/show_bug.cgi?id=34611) wcsftime ignores '#' and '^' flags for %Z (regression introduced in 79b2667d1e)
-- 🟡 [BZ #34609](https://sourceware.org/bugzilla/show_bug.cgi?id=34609) authdes\_pk\_create: free() called on uninitialized pointer on memory allocation failure
-- 🟡 [BZ #34608](https://sourceware.org/bugzilla/show_bug.cgi?id=34608) wordexp: heap buffer overflow (write of size 1 to malloc(0)) expanding $\* or $@ with no positional arguments
-- 🟡 [BZ #34607](https://sourceware.org/bugzilla/show_bug.cgi?id=34607) localedef crashes with SIGSEGV in handle\_ellipsis when LC\_COLLATE contains only an ellipsis
-- 🟢 [BZ #34600](https://sourceware.org/bugzilla/show_bug.cgi?id=34600) \[2.44 regression\] ld.so segfaults at startup with an old-format ld.so.cache
 
 </details>
 
