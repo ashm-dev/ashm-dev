@@ -10,7 +10,7 @@ Python backend developer. I build services and integrations, work with legacy co
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 33 merged, 3 open · Issues: 28 completed, 18 open</summary>
+<summary><b>python/cpython</b><br>PR: 33 merged, 3 open · Issues: 29 completed, 17 open</summary>
 
 #### PR
 
@@ -63,7 +63,7 @@ Python backend developer. I build services and integrations, work with legacy co
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object when running Cython
 - 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
-- 🟡 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
+- 🟢 [#158304](https://github.com/python/cpython/issues/158304) Async generators create and discard a StopIteration exception for every yielded value
 - 🟢 [#158126](https://github.com/python/cpython/issues/158126) pickle.dumps() creates and discards an AttributeError on every call since 3.13.1
 - 🟡 [#158090](https://github.com/python/cpython/issues/158090) Hang at shutdown: take\_gil() clears the GIL drop request after releasing gil-&gt;mutex
 - 🟡 [#158086](https://github.com/python/cpython/issues/158086) JIT: test\_unittest fails with -X lazy\_imports=all: unittest.main is a module

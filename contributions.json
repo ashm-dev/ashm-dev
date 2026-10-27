@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 33 merged, 3 open · Issues: 28 completed, 18 open",
+  "summary": "PR: 33 merged, 3 open · Issues: 29 completed, 17 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -288,7 +288,7 @@
       "title": "Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#158304",
       "url": "https://github.com/python/cpython/issues/158304",
       "title": "Async generators create and discard a StopIteration exception for every yielded value"
