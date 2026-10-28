@@ -509,11 +509,17 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 11 committed, 5 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 11 committed, 6 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
     "items": [
+     {
+      "state": "open",
+      "label": "#147074",
+      "url": "https://patchwork.sourceware.org/patch/147074/",
+      "title": "Remove redundant includes"
+     },
      {
       "state": "open",
       "label": "#146961",
