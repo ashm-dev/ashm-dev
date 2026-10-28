@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 33 merged, 3 open · Issues: 29 completed, 17 open",
+  "summary": "PR: 34 merged, 2 open · Issues: 30 completed, 16 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -25,7 +25,7 @@
       "title": "gh-160245: Reduce padding in Memo"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#160149",
       "url": "https://github.com/python/cpython/pull/160149",
       "title": "gh-160132: Reduce padding in _PyCfgBasicblock"
@@ -264,7 +264,7 @@
       "title": "Reduce padding in parser memo entries"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#160132",
       "url": "https://github.com/python/cpython/issues/160132",
       "title": "Reduce padding in `_PyCfgBasicblock`"

@@ -10,14 +10,14 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 33 принято, 3 открыто · Issues: 29 выполнено, 17 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 34 принято, 2 открыто · Issues: 30 выполнено, 16 открыто</summary>
 
 #### PR
 
 - 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
 - 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
 - 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
-- 🟡 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
+- 🟢 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
 - 🟢 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
 - 🟢 [#157412](https://github.com/python/cpython/pull/157412) gh-157378: Fix SyntaxError.offset for "Non-UTF-8 code" error
 - 🟢 [#157370](https://github.com/python/cpython/pull/157370) gh-157364: Fix use-after-free in TextIOWrapper during reentrant detach
@@ -59,7 +59,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 - 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import
 - 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
 - 🟢 [#160245](https://github.com/python/cpython/issues/160245) Reduce padding in parser memo entries
-- 🟡 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
+- 🟢 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object when running Cython
 - 🟡 [#158961](https://github.com/python/cpython/issues/158961) 3.14: ASan SEGV in \_TAIL\_CALL\_JUMP\_BACKWARD\_JIT during editable build
 - 🟡 [#158795](https://github.com/python/cpython/issues/158795) Compiler warning: `instruction_funcptr_tracing_table` defined but not used with `--with-tail-call-interp`
