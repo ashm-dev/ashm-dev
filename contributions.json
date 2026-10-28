@@ -1,11 +1,17 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 34 merged, 2 open · Issues: 30 completed, 16 open",
+  "summary": "PR: 34 merged, 3 open · Issues: 30 completed, 16 open",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
+     {
+      "state": "open",
+      "label": "#160838",
+      "url": "https://github.com/python/cpython/pull/160838",
+      "title": "gh-160679: combine argument conversion loops"
+     },
      {
       "state": "open",
       "label": "#160379",
