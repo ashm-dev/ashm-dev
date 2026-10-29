@@ -14,7 +14,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### PR
 
-- 🟡 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: combine argument conversion loops
+- 🟡 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: Сombine argument conversion loops
 - 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
 - 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
 - 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
