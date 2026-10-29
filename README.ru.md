@@ -10,11 +10,11 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 34 принято, 3 открыто · Issues: 30 выполнено, 16 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 35 принято, 2 открыто · Issues: 31 выполнено, 15 открыто</summary>
 
 #### PR
 
-- 🟡 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: Сombine argument conversion loops
+- 🟢 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: Сombine argument conversion loops
 - 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
 - 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
 - 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
@@ -54,7 +54,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
-- 🟡 [#160679](https://github.com/python/cpython/issues/160679) Combining the argument-conversion loops in \_PyEval\_Vector
+- 🟢 [#160679](https://github.com/python/cpython/issues/160679) Combining the argument-conversion loops in \_PyEval\_Vector
 - 🟡 [#160676](https://github.com/python/cpython/issues/160676) `for` loop swallows exceptions raised by a `sys.monitoring` callback for `StopIteration`
 - 🟡 [#160358](https://github.com/python/cpython/issues/160358) Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0
 - 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import

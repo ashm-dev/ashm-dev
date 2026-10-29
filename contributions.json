@@ -1,13 +1,13 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 34 merged, 3 open · Issues: 30 completed, 16 open",
+  "summary": "PR: 35 merged, 2 open · Issues: 31 completed, 15 open",
   "sections": [
    {
     "title": "Pull requests",
     "items": [
      {
-      "state": "open",
+      "state": "done",
       "label": "#160838",
       "url": "https://github.com/python/cpython/pull/160838",
       "title": "gh-160679: Сombine argument conversion loops"
@@ -234,7 +234,7 @@
     "title": "Issues",
     "items": [
      {
-      "state": "open",
+      "state": "done",
       "label": "#160679",
       "url": "https://github.com/python/cpython/issues/160679",
       "title": "Combining the argument-conversion loops in _PyEval_Vector"
