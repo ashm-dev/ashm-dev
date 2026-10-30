@@ -515,7 +515,7 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 11 committed, 6 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 12 committed, 5 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
@@ -527,7 +527,7 @@
       "title": "Remove redundant includes"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#146961",
       "url": "https://patchwork.sourceware.org/patch/146961/",
       "title": "[v2] nss: Remove redundant seeks in fget*ent [BZ #31936]"

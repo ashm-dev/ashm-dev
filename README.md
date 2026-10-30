@@ -104,12 +104,12 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 
 <details>
-<summary><b>glibc</b><br>Patches: 11 committed, 6 open · Bug reports: 2 fixed, 5 open</summary>
+<summary><b>glibc</b><br>Patches: 12 committed, 5 open · Bug reports: 2 fixed, 5 open</summary>
 
 #### Patches
 
 - 🟡 [#147074](https://patchwork.sourceware.org/patch/147074/) Remove redundant includes
-- 🟡 [#146961](https://patchwork.sourceware.org/patch/146961/) \[v2\] nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
+- 🟢 [#146961](https://patchwork.sourceware.org/patch/146961/) \[v2\] nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
 - 🟡 [#146669](https://patchwork.sourceware.org/patch/146669/) \[v2\] intl: Reduce known\_translation\_t padding
 - 🟡 [#146668](https://patchwork.sourceware.org/patch/146668/) \[v2\] locale: Reduce \_\_locale\_data padding
 - 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding

@@ -104,12 +104,12 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 </details>
 
 <details>
-<summary><b>glibc</b><br>Патчи: 11 принято, 6 открыто · Баги: 2 исправлено, 5 открыто</summary>
+<summary><b>glibc</b><br>Патчи: 12 принято, 5 открыто · Баги: 2 исправлено, 5 открыто</summary>
 
 #### Патчи
 
 - 🟡 [#147074](https://patchwork.sourceware.org/patch/147074/) Remove redundant includes
-- 🟡 [#146961](https://patchwork.sourceware.org/patch/146961/) \[v2\] nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
+- 🟢 [#146961](https://patchwork.sourceware.org/patch/146961/) \[v2\] nss: Remove redundant seeks in fget\*ent \[BZ #31936\]
 - 🟡 [#146669](https://patchwork.sourceware.org/patch/146669/) \[v2\] intl: Reduce known\_translation\_t padding
 - 🟡 [#146668](https://patchwork.sourceware.org/patch/146668/) \[v2\] locale: Reduce \_\_locale\_data padding
 - 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
