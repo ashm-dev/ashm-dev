@@ -10,7 +10,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 35 принято, 2 открыто · Issues: 31 выполнено, 15 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 35 принято, 2 открыто · Issues: 31 выполнено, 16 открыто</summary>
 
 #### PR
 
@@ -54,6 +54,7 @@ Python-разработчик. Разрабатываю бэкенд-серви�
 
 #### Issues
 
+- 🟡 [#161075](https://github.com/python/cpython/issues/161075) Optimize `long_bitwise`: eliminate temporary allocations for negative ints and fast-path non-negative ops
 - 🟢 [#160679](https://github.com/python/cpython/issues/160679) Combining the argument-conversion loops in \_PyEval\_Vector
 - 🟡 [#160676](https://github.com/python/cpython/issues/160676) `for` loop swallows exceptions raised by a `sys.monitoring` callback for `StopIteration`
 - 🟡 [#160358](https://github.com/python/cpython/issues/160358) Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0
