@@ -751,6 +751,124 @@
   ]
  },
  {
+  "name": "sqlalchemy/sqlalchemy",
+  "summary": "Commits: 10 committed · Issues: 6 completed, 1 open",
+  "sections": [
+   {
+    "title": "Commits",
+    "items": [
+     {
+      "state": "done",
+      "label": "0aa47f8082",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/0aa47f8082513ecccc1638558f46b9fe8e610ad2",
+      "title": "Add sqlite.JSONB type for binary JSON storage (SQLite >= 3.45.0)"
+     },
+     {
+      "state": "done",
+      "label": "15f1d6dce6",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/15f1d6dce6870c6ca9b5ad72d79e5a3cdc3a47bd",
+      "title": "Remove unused TypeVars and compat import from typing modules"
+     },
+     {
+      "state": "done",
+      "label": "77c91b8df5",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/77c91b8df51c5a00d6940a9b63b2ba5bd01d9ceb",
+      "title": "Add mypy ignore comments for Python 3.14 module imports"
+     },
+     {
+      "state": "done",
+      "label": "6ee4d884f0",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/6ee4d884f04aa6bad21ad280a02441262863394c",
+      "title": "Fix parameter mutation in orm_pre_session_exec()"
+     },
+     {
+      "state": "done",
+      "label": "a057c474bf",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/a057c474bf84ccd0508b89aa5428f45c9a644ee3",
+      "title": "Fix type hint for with_for_update() to support tuples of table classes"
+     },
+     {
+      "state": "done",
+      "label": "37c5b2e3e2",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/37c5b2e3e2cea552b5000df9281285b9f74c8166",
+      "title": "Remove unused typing imports (#12568)"
+     },
+     {
+      "state": "done",
+      "label": "93b0be7009",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/93b0be7009b4f6efd091fda31229353f929f4cc9",
+      "title": "refactor (sql): simplify and optimize internal SQL handling"
+     },
+     {
+      "state": "done",
+      "label": "64f45d0a6b",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/64f45d0a6b4ad41cf570a8f0e09b86fba0ebb043",
+      "title": "refactor(testing-and-utils): Remove unused code and fix style issues"
+     },
+     {
+      "state": "done",
+      "label": "d1d81f80a3",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/d1d81f80a3764e3ebc38481fb6fd82cf6295dcf9",
+      "title": "refactor: clean up unused variables in engine module"
+     },
+     {
+      "state": "done",
+      "label": "bb5bfb4beb",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/commit/bb5bfb4beb35450ee8db7a173b9b438e065a90a9",
+      "title": "refactor: simplify and clean up dialect-specific code"
+     }
+    ]
+   },
+   {
+    "title": "Issues",
+    "items": [
+     {
+      "state": "done",
+      "label": "#13644",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13644",
+      "title": "postgresql.DOMAIN.copy() and to_metadata() drop CHECK, NOT NULL, DEFAULT, constraint_name, and collation"
+     },
+     {
+      "state": "done",
+      "label": "#13643",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13643",
+      "title": "MutableDict |= and MutableList *= do not emit change events; changes are not persisted"
+     },
+     {
+      "state": "done",
+      "label": "#13642",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13642",
+      "title": "str(select(func.aggregate_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)"
+     },
+     {
+      "state": "done",
+      "label": "#13641",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13641",
+      "title": "AttributeError when resetting logging_token or connecting with logging_token=None"
+     },
+     {
+      "state": "done",
+      "label": "#13617",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13617",
+      "title": "TypeDecorator.comparator_factory creates a new class with type() on every access"
+     },
+     {
+      "state": "open",
+      "label": "#13281",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13281",
+      "title": "Modernize type annotations to PEP 604 union syntax"
+     },
+     {
+      "state": "done",
+      "label": "#13240",
+      "url": "https://github.com/sqlalchemy/sqlalchemy/issues/13240",
+      "title": "mypy errors on Python 3.14 version-gated imports in compat.py"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "name": "open-webui/open-webui",
   "summary": "PR: 8 merged · Issues: 6 completed",
   "sections": [

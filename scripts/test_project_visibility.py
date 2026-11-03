@@ -9,7 +9,7 @@ def items(count, state="done"):
 
 
 class ProjectVisibilityTest(unittest.TestCase):
-    def test_hides_projects_with_at_most_five_prs_or_patches(self):
+    def test_hides_projects_with_at_most_five_prs_patches_or_commits(self):
         cases = [
             {},
             {"Pull requests": []},
@@ -17,11 +17,12 @@ class ProjectVisibilityTest(unittest.TestCase):
             {"Pull requests": items(5)},
             {"Patches": items(5)},
             {"Pull requests": items(3), "Patches": items(2)},
+            {"Commits": items(1)},
+            {"Commits": items(5)},
+            {"Pull requests": items(2), "Patches": items(1), "Commits": items(2)},
             {"Issues": items(10)},
-            {"Commits": items(10)},
             {"Bugs": items(10)},
-            {"Pull requests": items(5), "Issues": items(10),
-             "Commits": items(10), "Bugs": items(10)},
+            {"Pull requests": items(5), "Issues": items(10), "Bugs": items(10)},
         ]
         for sections in cases:
             with self.subTest(sections=sections):
@@ -30,11 +31,14 @@ class ProjectVisibilityTest(unittest.TestCase):
                 for lang in ("en", "ru"):
                     self.assertEqual(render_all(projects, lang), "")
 
-    def test_keeps_projects_with_more_than_five_prs_or_patches(self):
+    def test_keeps_projects_with_more_than_five_prs_patches_or_commits(self):
         cases = [
             {"Pull requests": items(6)},
             {"Patches": items(6)},
+            {"Commits": items(6)},
+            {"Commits": items(10)},
             {"Pull requests": items(3), "Patches": items(3)},
+            {"Pull requests": items(2), "Patches": items(2), "Commits": items(2)},
             {"Pull requests": items(5) + [("open", "#6", "https://example.test/6", "Change 6")]},
             {"Patches": items(6, "open")},
         ]

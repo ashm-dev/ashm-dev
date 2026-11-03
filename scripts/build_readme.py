@@ -45,7 +45,7 @@ def ordered(projects):
                    if title in ("Pull requests", "Patches", "Commits") for item in items)
         return -done, name
     return sorted(((name, sections) for name, sections in projects.items()
-                   if sum(len(sections.get(title, ())) for title in ("Pull requests", "Patches")) > 5), key=rank)
+                   if sum(len(sections.get(title, ())) for title in ("Pull requests", "Patches", "Commits")) > 5), key=rank)
 
 
 def ordered_items(title, items):
