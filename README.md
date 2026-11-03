@@ -6,7 +6,9 @@ Python backend developer. I build services and integrations, work with legacy co
 
 [Website and work experience](https://ashm-dev.github.io/) · [Telegram](https://t.me/ashamil435)
 
-## Open source
+## Experience
+
+### OpenSource
 
 <!-- contributions:start -->
 <details>
@@ -182,3 +184,29 @@ Python backend developer. I build services and integrations, work with legacy co
 
 </details>
 <!-- contributions:end -->
+
+### [Kartochka (now Omnium)](https://omniumtech.ru)
+
+Python Developer · Nov 2023 — Nov 2026
+
+- **Internal PaaS:** Designed and launched an internal PaaS to deploy and operate isolated customer environments.
+- **Services and deployment:** Split a monolith into services and set up CI/CD. Reduced deployment time from several hours to 15 minutes.
+- **Bitrix24 and MCP:** Built integrations with the Bitrix24 REST API to sync CRM records, tasks and smart processes while handling API rate limits. Wrote an MCP server so AI agents can work with the portal.
+- **AI automation:** Built LLM workflows to extract data from documents and fill CRM records. Integrated AI agents into company workflows.
+- **Open source:** Maintain a company fork of an open-source project and submit changes that are useful upstream.
+
+### [Orbitsoft](https://orbitsoft.com)
+
+Full Stack Developer · Mar — Aug 2023
+
+- **Django migration:** Upgraded a service from Django 3.2 to 4.2 LTS. Moved business logic from views and models into a service layer, updated dependencies and fixed compatibility issues.
+- **Go service:** Built a Go service running on Linux that checks digital signatures and certificates of Windows .exe files against a trusted database.
+- **Plotly Dash:** Fixed bugs and added functionality for customer projects, submitting changes to the upstream repository.
+
+### [Escape Tech](https://escape-team.tech)
+
+Python Developer · Jan 2022 — Mar 2023
+
+- **Data collection:** Designed data collection pipelines for 150+ e-commerce sites, refreshed hourly, using Scrapy and stream processing with Faust and Kafka.
+- **Playwright:** Set up scraping of dynamic sites using proxy pools, session emulation, captcha solving and browser rendering.
+- **Litestar migration:** Migrated a service from Django 2.x / DRF to async Litestar with Kafka and PostgreSQL. Reduced p95 response latency by more than 56% across all scenarios.
