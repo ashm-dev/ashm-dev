@@ -4,7 +4,7 @@
 
 [Website and work experience](https://ashm-dev.github.io/) · [Telegram](https://t.me/ashamil435)
 
-Staff Systems & Python Infrastructure Engineer
+Systems & Python Infrastructure Engineer
 
 Systems and distributed platforms engineer with 4+ years architecting high-throughput backend infrastructure, asynchronous engines (Litestar, Faust), and Go microservices. Core contributor to foundational open-source runtimes: 39+ merged PRs to CPython, 12 accepted patches to glibc, and 10 commits to SQLAlchemy. Proven expertise in architecting isolated multi-tenant PaaS, slashing deployment cycles by 90%, reducing sub-system p95 latency by 56%, and engineering enterprise-grade MCP servers for LLM-agent orchestration.
 

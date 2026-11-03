@@ -4,7 +4,7 @@
 
 [Сайт и опыт работы](https://ashm-dev.github.io/) · [Telegram](https://t.me/ashamil435)
 
-Staff / Principal Systems & Python Infrastructure Engineer
+Systems & Python Infrastructure Engineer
 
 Инженер распределённых систем и системной инфраструктуры с 4+ годами опыта проектирования высоконагруженных платформ на Python, Go и C. Участник развития базового стека: 39+ принятых PR в CPython, 12 патчей в glibc, 10 коммитов в SQLAlchemy. Специализируюсь на проектировании мульти-тенантных PaaS, декомпозиции монолитов с сокращением Time-to-Market в 8–10 раз, оптимизации p95/p99 задержек и внедрении автономных LLM-агентов через Model Context Protocol (MCP).
 
