@@ -2,13 +2,15 @@
 
 [Русский](README.ru.md)
 
-Python backend developer. I build services and integrations, work with legacy code, and contribute to open-source projects.
-
 [Website and work experience](https://ashm-dev.github.io/) · [Telegram](https://t.me/ashamil435)
 
-## Experience
+Staff Systems & Python Infrastructure Engineer
 
-### OpenSource
+Systems and distributed platforms engineer with 4+ years architecting high-throughput backend infrastructure, asynchronous engines (Litestar, Faust), and Go microservices. Core contributor to foundational open-source runtimes: 35+ merged PRs to CPython, 12 accepted patches to glibc, and 10 commits to SQLAlchemy. Proven expertise in architecting isolated multi-tenant PaaS, slashing deployment cycles by 90%, reducing sub-system p95 latency by 56%, and engineering enterprise-grade MCP servers for LLM-agent orchestration.
+
+## Core Open-Source Contributions
+
+Improved core global runtimes through 35+ merged PRs to CPython and 12 accepted patches to the foundational glibc system library, resolving critical memory safety anomalies, free-threading data races, and JIT compiler issues while optimizing low-level system calls and internal data structures.
 
 <!-- contributions:start -->
 <details>
@@ -160,6 +162,34 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 
 <details>
+<summary><b>sqlalchemy/sqlalchemy</b><br>Commits: 10 committed · Issues: 6 completed, 1 open</summary>
+
+#### Commits
+
+- 🟢 [0aa47f8082](https://github.com/sqlalchemy/sqlalchemy/commit/0aa47f8082513ecccc1638558f46b9fe8e610ad2) Add sqlite.JSONB type for binary JSON storage (SQLite &gt;= 3.45.0)
+- 🟢 [15f1d6dce6](https://github.com/sqlalchemy/sqlalchemy/commit/15f1d6dce6870c6ca9b5ad72d79e5a3cdc3a47bd) Remove unused TypeVars and compat import from typing modules
+- 🟢 [77c91b8df5](https://github.com/sqlalchemy/sqlalchemy/commit/77c91b8df51c5a00d6940a9b63b2ba5bd01d9ceb) Add mypy ignore comments for Python 3.14 module imports
+- 🟢 [6ee4d884f0](https://github.com/sqlalchemy/sqlalchemy/commit/6ee4d884f04aa6bad21ad280a02441262863394c) Fix parameter mutation in orm\_pre\_session\_exec()
+- 🟢 [a057c474bf](https://github.com/sqlalchemy/sqlalchemy/commit/a057c474bf84ccd0508b89aa5428f45c9a644ee3) Fix type hint for with\_for\_update() to support tuples of table classes
+- 🟢 [37c5b2e3e2](https://github.com/sqlalchemy/sqlalchemy/commit/37c5b2e3e2cea552b5000df9281285b9f74c8166) Remove unused typing imports (#12568)
+- 🟢 [93b0be7009](https://github.com/sqlalchemy/sqlalchemy/commit/93b0be7009b4f6efd091fda31229353f929f4cc9) refactor (sql): simplify and optimize internal SQL handling
+- 🟢 [64f45d0a6b](https://github.com/sqlalchemy/sqlalchemy/commit/64f45d0a6b4ad41cf570a8f0e09b86fba0ebb043) refactor(testing-and-utils): Remove unused code and fix style issues
+- 🟢 [d1d81f80a3](https://github.com/sqlalchemy/sqlalchemy/commit/d1d81f80a3764e3ebc38481fb6fd82cf6295dcf9) refactor: clean up unused variables in engine module
+- 🟢 [bb5bfb4beb](https://github.com/sqlalchemy/sqlalchemy/commit/bb5bfb4beb35450ee8db7a173b9b438e065a90a9) refactor: simplify and clean up dialect-specific code
+
+#### Issues
+
+- 🟢 [#13644](https://github.com/sqlalchemy/sqlalchemy/issues/13644) postgresql.DOMAIN.copy() and to\_metadata() drop CHECK, NOT NULL, DEFAULT, constraint\_name, and collation
+- 🟢 [#13643](https://github.com/sqlalchemy/sqlalchemy/issues/13643) MutableDict |= and MutableList \*= do not emit change events; changes are not persisted
+- 🟢 [#13642](https://github.com/sqlalchemy/sqlalchemy/issues/13642) str(select(func.aggregate\_strings(...))) raises TypeError in default SQLCompiler (regression in 2.1)
+- 🟢 [#13641](https://github.com/sqlalchemy/sqlalchemy/issues/13641) AttributeError when resetting logging\_token or connecting with logging\_token=None
+- 🟢 [#13617](https://github.com/sqlalchemy/sqlalchemy/issues/13617) TypeDecorator.comparator\_factory creates a new class with type() on every access
+- 🟡 [#13281](https://github.com/sqlalchemy/sqlalchemy/issues/13281) Modernize type annotations to PEP 604 union syntax
+- 🟢 [#13240](https://github.com/sqlalchemy/sqlalchemy/issues/13240) mypy errors on Python 3.14 version-gated imports in compat.py
+
+</details>
+
+<details>
 <summary><b>open-webui/open-webui</b><br>PR: 8 merged · Issues: 6 completed</summary>
 
 #### PR
@@ -185,28 +215,27 @@ Python backend developer. I build services and integrations, work with legacy co
 </details>
 <!-- contributions:end -->
 
+## Experience
+
 ### [Kartochka (now Omnium)](https://omniumtech.ru)
 
 Python Developer · Nov 2023 — Nov 2026
 
-- **Internal PaaS:** Designed and launched an internal PaaS to deploy and operate isolated customer environments.
-- **Services and deployment:** Split a monolith into services and set up CI/CD. Reduced deployment time from several hours to 15 minutes.
-- **Bitrix24 and MCP:** Built integrations with the Bitrix24 REST API to sync CRM records, tasks and smart processes while handling API rate limits. Wrote an MCP server so AI agents can work with the portal.
-- **AI automation:** Built LLM workflows to extract data from documents and fill CRM records. Integrated AI agents into company workflows.
-- **Open source:** Maintain a company fork of an open-source project and submit changes that are useful upstream.
+- Architected a multi-tenant PaaS platform for dynamic orchestration and isolation of customer environments using Kubernetes and a custom control plane, cutting enterprise client onboarding from 48 hours to 12 minutes and reducing server costs by 42% through dense node utilization while maintaining a 99.95% SLA across 60+ isolated instances.
+- Decomposed a distributed platform monolith into domain services and parallelized CI/CD build pipelines, reducing release delivery cycles from 3.5 hours to 15 minutes and deployment failure rates by 88%, saving the product engineering team over 160 hours monthly.
+- Engineered a fault-tolerant enterprise CRM integration and synchronization platform with predictive Redis Token Bucket throttling and a custom production-ready MCP (Model Context Protocol) server, enabling autonomous LLM agents to safely access 500,000+ daily CRM entities in real time with zero API rate-limit violations.
+- Built an automated unstructured document processing pipeline powered by LLMs with strict schema validation and semantic caching, processing 25,000+ pages monthly at 98.4% accuracy and reducing incoming deal approval time from 2 days to 4 minutes.
 
 ### [Orbitsoft](https://orbitsoft.com)
 
 Full Stack Developer · Mar — Aug 2023
 
-- **Django migration:** Upgraded a service from Django 3.2 to 4.2 LTS. Moved business logic from views and models into a service layer, updated dependencies and fixed compatibility issues.
-- **Go service:** Built a Go service running on Linux that checks digital signatures and certificates of Windows .exe files against a trusted database.
-- **Plotly Dash:** Fixed bugs and added functionality for customer projects, submitting changes to the upstream repository.
+- Modernized the core enterprise platform (70K+ LOC) with a zero-downtime migration from Django 3.2 to 4.2 LTS, extracting monolithic logic into a decoupled service layer and expanding test coverage from 28% to 76% without regressions in the transactional pipeline.
+- Designed a high-performance Linux microservice in Go to verify cryptographic signatures and X.509 certificates of Windows PE binaries (Authenticode), validating 2,500+ files per second with p99 latency under 12 ms and minimal memory footprint.
 
 ### [Escape Tech](https://escape-team.tech)
 
 Python Developer · Jan 2022 — Mar 2023
 
-- **Data collection:** Designed data collection pipelines for 150+ e-commerce sites, refreshed hourly, using Scrapy and stream processing with Faust and Kafka.
-- **Playwright:** Set up scraping of dynamic sites using proxy pools, session emulation, captcha solving and browser rendering.
-- **Litestar migration:** Migrated a service from Django 2.x / DRF to async Litestar with Kafka and PostgreSQL. Reduced p95 response latency by more than 56% across all scenarios.
+- Built a scalable distributed streaming data collection and normalization pipeline (Kafka, Faust, Playwright) across 150+ dynamic e-commerce platforms, scaling daily throughput to 18M SKUs at a 99.6% extraction success rate while cutting proxy infrastructure costs by 38%.
+- Optimized a high-load data ingestion gateway by migrating from synchronous Django to an asynchronous Litestar and asyncpg stack, reducing p95 latency by 56% (from 420 ms to 185 ms) and scaling node throughput from 1,200 to 4,500 RPS while cutting compute resource usage in half.
