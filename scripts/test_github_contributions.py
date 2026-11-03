@@ -6,7 +6,7 @@ from github_contributions import github_projects
 
 def row(number, state="MERGED", repo="python/cpython", private=False, **extra):
     return {"number": number, "title": f"Change {number}", "url": f"https://github.com/{repo}/pull/{number}",
-            "state": state, "baseRefName": "main", "headRefName": "fix", "body": "",
+            "state": state, "author": {"login": "ashm-dev"}, "baseRefName": "main", "headRefName": "fix", "body": "",
             "repository": {"nameWithOwner": repo, "isPrivate": private}, **extra}
 
 
@@ -55,12 +55,28 @@ class GithubTest(unittest.TestCase):
         self.assertEqual(sections["Commits"], [("done", "abc123def4", commits[0]["html_url"], "Different title")])
         self.assertEqual([x[1] for x in sections["Pull requests"]], ["#2"])
 
-    def test_backports_are_removed_but_release_specific_fixes_remain(self):
+    def test_keeps_all_authored_merged_cpython_prs_including_backports(self):
         prs = [row(1, title="Fix parser"),
                row(2, title="[3.13] Fix parser", baseRefName="3.13"),
-               row(3, "OPEN", baseRefName="3.14", body="<!-- Backport instructions -->")]
+               row(3, body="Manual backport of #1 to 3.14.", baseRefName="3.14"),
+               row(4, body="cherry picked from commit abc123", baseRefName="3.13")]
         projects = self.collect(prs)
-        self.assertEqual([x[1] for x in projects["python/cpython"]["Pull requests"]], ["#3", "#1"])
+        self.assertEqual([(item[0], item[1]) for item in projects["python/cpython"]["Pull requests"]],
+                         [("done", "#4"), ("done", "#3"), ("done", "#2"), ("done", "#1")])
+
+    def test_excludes_prs_not_authored_by_profile_owner(self):
+        prs = [row(1), row(2, author={"login": "miss-islington[bot]"}),
+               row(3, author={"login": "someone-else"}, body="Co-authored-by: ashm-dev"),
+               row(4, author=None)]
+        projects = self.collect(prs)
+        self.assertEqual([item[1] for item in projects["python/cpython"]["Pull requests"]], ["#1"])
+
+    def test_other_project_backports_are_removed_but_release_specific_fixes_remain(self):
+        prs = [row(1, repo="other/project", title="Fix parser"),
+               row(2, repo="other/project", title="[3.13] Fix parser", baseRefName="3.13"),
+               row(3, "OPEN", repo="other/project", baseRefName="3.14", body="<!-- Backport instructions -->")]
+        projects = self.collect(prs)
+        self.assertEqual([x[1] for x in projects["other/project"]["Pull requests"]], ["#3", "#1"])
 
 
 if __name__ == "__main__":

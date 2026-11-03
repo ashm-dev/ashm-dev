@@ -6,15 +6,15 @@
 
 Staff Systems & Python Infrastructure Engineer
 
-Systems and distributed platforms engineer with 4+ years architecting high-throughput backend infrastructure, asynchronous engines (Litestar, Faust), and Go microservices. Core contributor to foundational open-source runtimes: 35+ merged PRs to CPython, 12 accepted patches to glibc, and 10 commits to SQLAlchemy. Proven expertise in architecting isolated multi-tenant PaaS, slashing deployment cycles by 90%, reducing sub-system p95 latency by 56%, and engineering enterprise-grade MCP servers for LLM-agent orchestration.
+Systems and distributed platforms engineer with 4+ years architecting high-throughput backend infrastructure, asynchronous engines (Litestar, Faust), and Go microservices. Core contributor to foundational open-source runtimes: 39+ merged PRs to CPython, 12 accepted patches to glibc, and 10 commits to SQLAlchemy. Proven expertise in architecting isolated multi-tenant PaaS, slashing deployment cycles by 90%, reducing sub-system p95 latency by 56%, and engineering enterprise-grade MCP servers for LLM-agent orchestration.
 
 ## Core Open-Source Contributions
 
-Improved core global runtimes through 35+ merged PRs to CPython and 12 accepted patches to the foundational glibc system library, resolving critical memory safety anomalies, free-threading data races, and JIT compiler issues while optimizing low-level system calls and internal data structures.
+Improved core global runtimes through 39+ merged PRs to CPython and 12 accepted patches to the foundational glibc system library, resolving critical memory safety anomalies, free-threading data races, and JIT compiler issues while optimizing low-level system calls and internal data structures.
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 35 merged, 2 open · Issues: 31 completed, 16 open</summary>
+<summary><b>python/cpython</b><br>PR: 39 merged, 2 open · Issues: 31 completed, 16 open</summary>
 
 #### PR
 
@@ -31,6 +31,8 @@ Improved core global runtimes through 35+ merged PRs to CPython and 12 accepted 
 - 🟢 [#156403](https://github.com/python/cpython/pull/156403) gh-156402: Modernize annotation usage in libregrtest
 - 🟢 [#156300](https://github.com/python/cpython/pull/156300) gh-156114: Fix crash in perf trampoline with unencodable code names
 - 🟢 [#156130](https://github.com/python/cpython/pull/156130) gh-155911: Fix curses detection with libraries in LIBS
+- 🟢 [#150079](https://github.com/python/cpython/pull/150079) \[3.13\] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)
+- 🟢 [#150078](https://github.com/python/cpython/pull/150078) \[3.14\] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)
 - 🟢 [#148833](https://github.com/python/cpython/pull/148833) gh-148832: Use `-icf=0` in BOLT\_APPLY\_FLAGS
 - 🟢 [#148702](https://github.com/python/cpython/pull/148702) gh-148701: Add missing test coverage for asyncio.graph
 - 🟢 [#148595](https://github.com/python/cpython/pull/148595) gh-146553: Fix infinite loop in typing.get\_type\_hints() on circular \_\_wrapped\_\_
@@ -44,9 +46,11 @@ Improved core global runtimes through 35+ merged PRs to CPython and 12 accepted 
 - 🟢 [#141529](https://github.com/python/cpython/pull/141529) gh-42400: Fix buffer overflow in \_Py\_wrealpath for long paths
 - 🟢 [#140910](https://github.com/python/cpython/pull/140910) gh-140594: Fix an out of bounds read when feeding NUL byte to `PyOS_StdioReadline`
 - 🟢 [#140909](https://github.com/python/cpython/pull/140909) gh-140260: Fix data race in \_struct module initialization with subinterpreters
+- 🟢 [#140684](https://github.com/python/cpython/pull/140684) \[3.13\] gh-140301: Fix memory leak in subinterpreter PyConfig cleanup (GH-140303)
 - 🟢 [#140637](https://github.com/python/cpython/pull/140637) Remove dead stores to 'size' in UTF-8 decoder (unicodeobject.c)
 - 🟢 [#140585](https://github.com/python/cpython/pull/140585) Remove unreachable break statements in \_ctypes\_test.c
 - 🟢 [#140400](https://github.com/python/cpython/pull/140400) gh-140398: Fix memory leaks in readline module when PySys\_Audit fails
+- 🟢 [#140397](https://github.com/python/cpython/pull/140397) \[3.13\] gh-140306: Fix memory leaks in cross-interpreter data handling
 - 🟢 [#140307](https://github.com/python/cpython/pull/140307) gh-140306: Fix memory leaks in cross-interpreter data handling
 - 🟢 [#140303](https://github.com/python/cpython/pull/140303) gh-140301: Fix memory leak in subinterpreter PyConfig cleanup
 - 🟢 [#140274](https://github.com/python/cpython/pull/140274) gh-140272: Fix memory leak in \_gdbm.gdbm.clear()

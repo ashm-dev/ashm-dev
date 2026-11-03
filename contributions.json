@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 35 merged, 2 open · Issues: 31 completed, 16 open",
+  "summary": "PR: 39 merged, 2 open · Issues: 31 completed, 16 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -86,6 +86,18 @@
      },
      {
       "state": "done",
+      "label": "#150079",
+      "url": "https://github.com/python/cpython/pull/150079",
+      "title": "[3.13] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
+     },
+     {
+      "state": "done",
+      "label": "#150078",
+      "url": "https://github.com/python/cpython/pull/150078",
+      "title": "[3.14] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)"
+     },
+     {
+      "state": "done",
       "label": "#148833",
       "url": "https://github.com/python/cpython/pull/148833",
       "title": "gh-148832: Use `-icf=0` in BOLT_APPLY_FLAGS"
@@ -164,6 +176,12 @@
      },
      {
       "state": "done",
+      "label": "#140684",
+      "url": "https://github.com/python/cpython/pull/140684",
+      "title": "[3.13] gh-140301: Fix memory leak in subinterpreter PyConfig cleanup (GH-140303)"
+     },
+     {
+      "state": "done",
       "label": "#140637",
       "url": "https://github.com/python/cpython/pull/140637",
       "title": "Remove dead stores to 'size' in UTF-8 decoder (unicodeobject.c)"
@@ -179,6 +197,12 @@
       "label": "#140400",
       "url": "https://github.com/python/cpython/pull/140400",
       "title": "gh-140398: Fix memory leaks in readline module when PySys_Audit fails"
+     },
+     {
+      "state": "done",
+      "label": "#140397",
+      "url": "https://github.com/python/cpython/pull/140397",
+      "title": "[3.13] gh-140306: Fix memory leaks in cross-interpreter data handling"
      },
      {
       "state": "done",

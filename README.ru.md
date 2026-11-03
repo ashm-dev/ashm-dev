@@ -6,15 +6,15 @@
 
 Staff / Principal Systems & Python Infrastructure Engineer
 
-Инженер распределённых систем и системной инфраструктуры с 4+ годами опыта проектирования высоконагруженных платформ на Python, Go и C. Участник развития базового стека: 35+ принятых PR в CPython, 12 патчей в glibc, 10 коммитов в SQLAlchemy. Специализируюсь на проектировании мульти-тенантных PaaS, декомпозиции монолитов с сокращением Time-to-Market в 8–10 раз, оптимизации p95/p99 задержек и внедрении автономных LLM-агентов через Model Context Protocol (MCP).
+Инженер распределённых систем и системной инфраструктуры с 4+ годами опыта проектирования высоконагруженных платформ на Python, Go и C. Участник развития базового стека: 39+ принятых PR в CPython, 12 патчей в glibc, 10 коммитов в SQLAlchemy. Специализируюсь на проектировании мульти-тенантных PaaS, декомпозиции монолитов с сокращением Time-to-Market в 8–10 раз, оптимизации p95/p99 задержек и внедрении автономных LLM-агентов через Model Context Protocol (MCP).
 
 ## Ключевой вклад в Open Source
 
-Усовершенствовал ядро глобального рантайма через 35+ принятых PR в CPython и 12 патчей в фундаментальную системную библиотеку glibc, устранив критические аномалии работы с памятью, состояния гонки (free-threading / subinterpreters), ошибки JIT-компилятора и оптимизировав системные вызовы для стандартной библиотеки.
+Усовершенствовал ядро глобального рантайма через 39+ принятых PR в CPython и 12 патчей в фундаментальную системную библиотеку glibc, устранив критические аномалии работы с памятью, состояния гонки (free-threading / subinterpreters), ошибки JIT-компилятора и оптимизировав системные вызовы для стандартной библиотеки.
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 35 принято, 2 открыто · Issues: 31 выполнено, 16 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 39 принято, 2 открыто · Issues: 31 выполнено, 16 открыто</summary>
 
 #### PR
 
@@ -31,6 +31,8 @@ Staff / Principal Systems & Python Infrastructure Engineer
 - 🟢 [#156403](https://github.com/python/cpython/pull/156403) gh-156402: Modernize annotation usage in libregrtest
 - 🟢 [#156300](https://github.com/python/cpython/pull/156300) gh-156114: Fix crash in perf trampoline with unencodable code names
 - 🟢 [#156130](https://github.com/python/cpython/pull/156130) gh-155911: Fix curses detection with libraries in LIBS
+- 🟢 [#150079](https://github.com/python/cpython/pull/150079) \[3.13\] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)
+- 🟢 [#150078](https://github.com/python/cpython/pull/150078) \[3.14\] gh-142831: Fix use-after-free in json encoder during re-entrant mutation (gh-142851)
 - 🟢 [#148833](https://github.com/python/cpython/pull/148833) gh-148832: Use `-icf=0` in BOLT\_APPLY\_FLAGS
 - 🟢 [#148702](https://github.com/python/cpython/pull/148702) gh-148701: Add missing test coverage for asyncio.graph
 - 🟢 [#148595](https://github.com/python/cpython/pull/148595) gh-146553: Fix infinite loop in typing.get\_type\_hints() on circular \_\_wrapped\_\_
@@ -44,9 +46,11 @@ Staff / Principal Systems & Python Infrastructure Engineer
 - 🟢 [#141529](https://github.com/python/cpython/pull/141529) gh-42400: Fix buffer overflow in \_Py\_wrealpath for long paths
 - 🟢 [#140910](https://github.com/python/cpython/pull/140910) gh-140594: Fix an out of bounds read when feeding NUL byte to `PyOS_StdioReadline`
 - 🟢 [#140909](https://github.com/python/cpython/pull/140909) gh-140260: Fix data race in \_struct module initialization with subinterpreters
+- 🟢 [#140684](https://github.com/python/cpython/pull/140684) \[3.13\] gh-140301: Fix memory leak in subinterpreter PyConfig cleanup (GH-140303)
 - 🟢 [#140637](https://github.com/python/cpython/pull/140637) Remove dead stores to 'size' in UTF-8 decoder (unicodeobject.c)
 - 🟢 [#140585](https://github.com/python/cpython/pull/140585) Remove unreachable break statements in \_ctypes\_test.c
 - 🟢 [#140400](https://github.com/python/cpython/pull/140400) gh-140398: Fix memory leaks in readline module when PySys\_Audit fails
+- 🟢 [#140397](https://github.com/python/cpython/pull/140397) \[3.13\] gh-140306: Fix memory leaks in cross-interpreter data handling
 - 🟢 [#140307](https://github.com/python/cpython/pull/140307) gh-140306: Fix memory leaks in cross-interpreter data handling
 - 🟢 [#140303](https://github.com/python/cpython/pull/140303) gh-140301: Fix memory leak in subinterpreter PyConfig cleanup
 - 🟢 [#140274](https://github.com/python/cpython/pull/140274) gh-140272: Fix memory leak in \_gdbm.gdbm.clear()

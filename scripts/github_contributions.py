@@ -21,14 +21,15 @@ def authored(api, kind, extra):
     query = '''query($endCursor: String) {
       user(login: "ashm-dev") {
         KIND(first: 100, after: $endCursor) {
-          nodes { number title url state repository { nameWithOwner isPrivate } EXTRA }
+          nodes { number title url state author { login } repository { nameWithOwner isPrivate } EXTRA }
           pageInfo { hasNextPage endCursor }
         }
       }
     }'''.replace("KIND", kind).replace("EXTRA", extra)
     pages = api("graphql", "--paginate", "--slurp", "-f", "query=" + query)
     rows = [row for page in pages for row in page["data"]["user"][kind]["nodes"]
-            if not row["repository"]["isPrivate"]
+            if (row.get("author") or {}).get("login") == GITHUB_USER
+            and not row["repository"]["isPrivate"]
             and not row["repository"]["nameWithOwner"].startswith(SKIP_OWNERS)]
     return sorted(rows, key=lambda row: row["number"], reverse=True)
 
@@ -38,7 +39,9 @@ def github_projects(api=gh_api):
     prs = authored(api, "pullRequests", "baseRefName headRefName body")
     for pr in prs:
         repo = pr["repository"]["nameWithOwner"]
-        if pr["state"] not in ("OPEN", "MERGED") or is_backport(pr, prs):
+        if pr["state"] not in ("OPEN", "MERGED"):
+            continue
+        if (repo != "python/cpython" or pr["state"] != "MERGED") and is_backport(pr, prs):
             continue
         if repo == "sqlalchemy/sqlalchemy" and pr["state"] == "MERGED":
             continue
