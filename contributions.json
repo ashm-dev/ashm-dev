@@ -545,7 +545,7 @@
  },
  {
   "name": "glibc",
-  "summary": "Patches: 12 committed, 5 open · Bug reports: 2 fixed, 5 open",
+  "summary": "Patches: 12 committed, 4 open · Bug reports: 2 fixed, 5 open",
   "sections": [
    {
     "title": "Patches",
@@ -591,12 +591,6 @@
       "label": "#146653",
       "url": "https://patchwork.sourceware.org/patch/146653/",
       "title": "stdio-common: Reduce printf_spec padding"
-     },
-     {
-      "state": "open",
-      "label": "#145665",
-      "url": "https://patchwork.sourceware.org/patch/145665/",
-      "title": "libio: Reserve space for large obstack writes"
      },
      {
       "state": "done",

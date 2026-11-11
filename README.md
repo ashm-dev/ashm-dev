@@ -113,7 +113,7 @@ Improved core global runtimes through 39+ merged PRs to CPython and 12 accepted 
 </details>
 
 <details>
-<summary><b>glibc</b><br>Patches: 12 committed, 5 open · Bug reports: 2 fixed, 5 open</summary>
+<summary><b>glibc</b><br>Patches: 12 committed, 4 open · Bug reports: 2 fixed, 5 open</summary>
 
 #### Patches
 
@@ -124,7 +124,6 @@ Improved core global runtimes through 39+ merged PRs to CPython and 12 accepted 
 - 🟡 [#146656](https://patchwork.sourceware.org/patch/146656/) intl: Reduce loaded\_domain padding
 - 🟢 [#146655](https://patchwork.sourceware.org/patch/146655/) io: Reduce ftw\_frame padding
 - 🟢 [#146653](https://patchwork.sourceware.org/patch/146653/) stdio-common: Reduce printf\_spec padding
-- 🟡 [#145665](https://patchwork.sourceware.org/patch/145665/) libio: Reserve space for large obstack writes
 - 🟢 [#145006](https://patchwork.sourceware.org/patch/145006/) \[v3\] libio: Use \_\_wunderflow in \_IO\_getwline\_info
 - 🟢 [#143055](https://patchwork.sourceware.org/patch/143055/) elf: Do not load cache extensions from an old-format ld.so.cache \[BZ #34600\]
 - 🟢 [#142924](https://patchwork.sourceware.org/patch/142924/) \[v2\] math: Set errno to ERANGE for logb (+-0) \[BZ #6793\]
