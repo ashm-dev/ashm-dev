@@ -14,10 +14,11 @@ Systems & Python Infrastructure Engineer
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 40 принято, 1 открыто · Issues: 32 выполнено, 15 открыто</summary>
+<summary><b>python/cpython</b><br>PR: 40 принято, 2 открыто · Issues: 32 выполнено, 15 открыто</summary>
 
 #### PR
 
+- 🟡 [#161997](https://github.com/python/cpython/pull/161997)  gh-161075: Avoid over-allocation in non-negative int bitwise operations
 - 🟢 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: Сombine argument conversion loops
 - 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
 - 🟢 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
