@@ -14,13 +14,13 @@ Improved core global runtimes through 39+ merged PRs to CPython and 12 accepted 
 
 <!-- contributions:start -->
 <details>
-<summary><b>python/cpython</b><br>PR: 39 merged, 2 open · Issues: 31 completed, 16 open</summary>
+<summary><b>python/cpython</b><br>PR: 40 merged, 1 open · Issues: 32 completed, 15 open</summary>
 
 #### PR
 
 - 🟢 [#160838](https://github.com/python/cpython/pull/160838) gh-160679: Сombine argument conversion loops
 - 🟡 [#160379](https://github.com/python/cpython/pull/160379) gh-160353: Fix readline memory leak on re-import
-- 🟡 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
+- 🟢 [#160271](https://github.com/python/cpython/pull/160271) gh-160247: Reduce padding in \_PyInstructionSequence
 - 🟢 [#160266](https://github.com/python/cpython/pull/160266) gh-160245: Reduce padding in Memo
 - 🟢 [#160149](https://github.com/python/cpython/pull/160149) gh-160132: Reduce padding in \_PyCfgBasicblock
 - 🟢 [#158315](https://github.com/python/cpython/pull/158315) gh-158304: Avoid creating StopIteration for every value yielded by an async generator
@@ -67,7 +67,7 @@ Improved core global runtimes through 39+ merged PRs to CPython and 12 accepted 
 - 🟡 [#160676](https://github.com/python/cpython/issues/160676) `for` loop swallows exceptions raised by a `sys.monitoring` callback for `StopIteration`
 - 🟡 [#160358](https://github.com/python/cpython/issues/160358) Assertion `year >= 1' failed in 'days_before_year'` when unpickling datetime with year 0
 - 🟡 [#160353](https://github.com/python/cpython/issues/160353) readline leaks the completer delimiters buffer on re-import
-- 🟡 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
+- 🟢 [#160247](https://github.com/python/cpython/issues/160247) Reduce padding in the instruction sequence structure
 - 🟢 [#160245](https://github.com/python/cpython/issues/160245) Reduce padding in parser memo entries
 - 🟢 [#160132](https://github.com/python/cpython/issues/160132) Reduce padding in `_PyCfgBasicblock`
 - 🟡 [#158963](https://github.com/python/cpython/issues/158963) LeakSanitizer reports leaked code object when running Cython

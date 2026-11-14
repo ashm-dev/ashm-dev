@@ -1,7 +1,7 @@
 [
  {
   "name": "python/cpython",
-  "summary": "PR: 39 merged, 2 open · Issues: 31 completed, 16 open",
+  "summary": "PR: 40 merged, 1 open · Issues: 32 completed, 15 open",
   "sections": [
    {
     "title": "Pull requests",
@@ -19,7 +19,7 @@
       "title": "gh-160353: Fix readline memory leak on re-import"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#160271",
       "url": "https://github.com/python/cpython/pull/160271",
       "title": "gh-160247: Reduce padding in _PyInstructionSequence"
@@ -288,7 +288,7 @@
       "title": "readline leaks the completer delimiters buffer on re-import"
      },
      {
-      "state": "open",
+      "state": "done",
       "label": "#160247",
       "url": "https://github.com/python/cpython/issues/160247",
       "title": "Reduce padding in the instruction sequence structure"
